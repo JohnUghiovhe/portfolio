@@ -145,6 +145,3 @@ This project can be deployed to Vercel or any Next.js-compatible host.
 ## License
 
 This repository is intended for personal portfolio usage and customization.
-
-
-

@@ -57,7 +57,7 @@ export const PROJECTS = [
     description:
       'Simple and classic modern portfolio for who wants to present himself as a software developer. Portfolio build with highly customizable using Tailwind CSS, Next Js.',
     repoLink: 'https://github.com/JohnUghiovhe/portfolio',
-    sourceLink: 'https://john-ughiovhe-portfolio.vercel.app/',
+    sourceLink: 'https://portfolio-johnughiovhe.vercel.app/',
     category: [PROJECT_CATEGORY.OPEN_SOURCE],
   },
   {

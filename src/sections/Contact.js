@@ -120,9 +120,7 @@ export default function Contact() {
                     classes="inline-block text-lg mr-1 text-primary-700 dark:text-primary-300"
                     icon="bytesize:location"
                   />
-                  Ahmedabad
-                  <br />
-                  Gujarat, India
+                  Lagos, Nigeria
                 </p>
                 <div className="flex w-full justify-center">
                   <SocialLinks />

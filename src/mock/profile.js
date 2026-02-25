@@ -13,7 +13,7 @@ export const SOCIAL_LINKS = [
   },
 ];
 
-export const HERO_TITLES = ['John Ughiovhe', 'Full-stack Engineer', 'AI Enthusiast'];
+export const HERO_TITLES = ['John Ughiovhe', 'A Full-stack Engineer', 'An AI Enthusiast'];
 
 export const aboutParagraph =
   'Highly motivated and enthusiastic Full Stack Engineer with experience in designing, developing and maintaining web applications using technologies such as Generative AI, Typescript, React, Next.js, Nest.js, Node.js, Express.js.';

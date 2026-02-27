@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { motion } from 'framer-motion';
 // context
 import { ScrollContext } from '../context/ScrollContext';
+import { cvLink } from '../mock/profile';
 
 // ----------------------------------------------------------------------
 
@@ -42,6 +43,11 @@ export default function Header({ darkModeEnabled, toggleMode }) {
             <li>
               <a href="#contact" className="text-sm xs:text-base">
                 Contact
+              </a>
+            </li>
+            <li>
+              <a href={cvLink} target="_blank" rel="noreferrer" className="text-sm xs:text-base">
+                View CV
               </a>
             </li>
             <li>

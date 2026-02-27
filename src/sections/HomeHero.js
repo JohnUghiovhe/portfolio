@@ -1,9 +1,10 @@
 import React, { useContext } from 'react';
 import { Typewriter, Cursor } from 'react-simple-typewriter';
+import Iconify from '../components/Iconify';
 // components
 import SocialLinks from '../components/social/SocialLinks';
 // other
-import { aboutParagraph, HERO_TITLES } from '../mock/profile';
+import { aboutParagraph, cvLink, HERO_TITLES } from '../mock/profile';
 import { ScrollContext } from '../context/ScrollContext';
 import ScrollToTop from '../components/ScrollToTop';
 
@@ -37,6 +38,16 @@ export default function HomeHero() {
           </span>
         </h1>
         <p className="text-center text-sm sm:text-base md:w-3/5">{aboutParagraph}</p>
+        <a
+          href={cvLink}
+          download
+          target="_blank"
+          rel="noreferrer"
+          className="inline-flex items-center gap-2 rounded-lg bg-primary-700 px-4 py-2 text-sm font-medium text-primary-50 hover:bg-primary-700/80 dark:bg-primary-500 dark:hover:bg-primary-700"
+        >
+          Download CV
+          <Iconify icon="fluent:document-arrow-down-20-filled" />
+        </a>
         {/* Social Icons */}
         <SocialLinks />
       </div>

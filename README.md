@@ -82,8 +82,11 @@ Edit `src/mock/profile.js`:
 - `HERO_TITLES`
 - `aboutParagraph`
 - `contactEmail`
+- `cvLink`
 - `documentTitle`
 - `SOCIAL_LINKS`
+
+To enable CV download, place your CV file in `public/` (example: `public/John-Ughiovhe-CV.pdf`) and point `cvLink` to it.
 
 ### Skills
 

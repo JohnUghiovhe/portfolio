@@ -36,13 +36,12 @@ export default function Skills() {
               </HeadingAnimate>
               {/* Tech Stack  */}
               <div className="my-3 flex flex-wrap justify-items-center gap-x-4 gap-y-7 text-center sm:gap-x-7">
-                {FRONTEND_SKILLS.map(({ label, icon, proficiency, iconClasses }, i) => (
+                {FRONTEND_SKILLS.map(({ label, icon, iconClasses }, i) => (
                   <TechSkillIcon
                     key={`frontend-skill-${i}`}
                     icon={icon}
                     iconClasses={iconClasses}
                     label={label}
-                    proficiency={proficiency}
                   />
                 ))}
               </div>
@@ -69,14 +68,8 @@ export default function Skills() {
               </HeadingAnimate>
               {/* Tech Stack  */}
               <div className="my-3 flex flex-wrap justify-items-center gap-x-4 gap-y-7 text-center sm:gap-x-7">
-                {BACKEND_SKILLS.map(({ icon, iconClasses, label, proficiency }, i) => (
-                  <TechSkillIcon
-                    key={`backend-skill-${i}`}
-                    icon={icon}
-                    iconClasses={iconClasses}
-                    label={label}
-                    proficiency={proficiency}
-                  />
+                {BACKEND_SKILLS.map(({ icon, iconClasses, label }, i) => (
+                  <TechSkillIcon key={`backend-skill-${i}`} icon={icon} iconClasses={iconClasses} label={label} />
                 ))}
               </div>
               {/* Description Part  */}

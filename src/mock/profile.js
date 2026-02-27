@@ -20,4 +20,6 @@ export const aboutParagraph =
 
 export const contactEmail = 'ughiovhejohn@gmail.com';
 
+export const cvLink = '/John-Ughiovhe-CV.pdf';
+
 export const documentTitle = 'Hello I am John Ughiovhe | Full Stack Engineer | AI Enthusiast'

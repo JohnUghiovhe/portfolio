@@ -21,25 +21,21 @@ export const FRONTEND_SKILLS = [
   },
   {
     label: 'React.js',
-    proficiency: '80%',
     icon: 'vscode-icons:file-type-reactjs',
     iconClasses: 'text-2xl',
   },
   {
     label: 'Next.js',
-    proficiency: '80%',
     icon: 'cib:next-js',
     iconClasses: 'text-3xl',
   },
   {
     label: 'Tailwind CSS',
-    proficiency: '90%',
     icon: 'logos:tailwindcss-icon',
     iconClasses: 'text-2xl',
   },
   {
     label: 'Vite',
-    proficiency: '90%',
     icon: 'logos:vite',
     iconClasses: 'text-3xl',
   },
@@ -48,54 +44,46 @@ export const FRONTEND_SKILLS = [
 export const BACKEND_SKILLS = [
   {
     label: 'Node.js',
-    proficiency: '90%',
     icon: 'vscode-icons:file-type-node',
     iconClasses: 'text-3xl',
   },
   {
     label: 'Express (Node.js Framework)',
-    proficiency: '90%',
     icon: 'simple-icons:express',
     iconClasses: 'text-3xl',
   },
   {
     label: 'REST Api',
-    proficiency: '90%',
     icon: 'dashicons:rest-api',
     iconClasses: 'text-3xl',
   },
   {
     label: 'NestJS (Node.js Framework)',
-    proficiency: '90%',
     icon: 'logos:nestjs',
     iconClasses: 'text-2xl',
   },
   {
     label: 'PostgreSQL',
-    proficiency: '90%',
     icon: 'vscode-icons:file-type-pgsql',
     iconClasses: 'text-3xl',
   },
   {
     label: 'Swagger',
-    proficiency: '90%',
     icon: 'logos:swagger',
     iconClasses: 'text-2xl',
   },
   {
     label: 'Mongodb',
-    proficiency: '90%',
     icon: 'vscode-icons:file-type-mongo',
     iconClasses: 'text-3xl',
   },
-  {label: 'Redis',
-    proficiency: '80%',
+  {
+    label: 'Redis',
     icon: 'logos:redis',
     iconClasses: 'text-2xl',
   },
   {
     label: 'Socket.io',
-    proficiency: '80%',
     icon: 'logos:socket-io',
     iconClasses: 'text-3xl',
   },

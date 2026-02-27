@@ -46,7 +46,7 @@ export default function Header({ darkModeEnabled, toggleMode }) {
               </a>
             </li>
             <li>
-              <a href={cvLink} target="_blank" rel="noreferrer" className="text-sm xs:text-base">
+              <a href={cvLink} download className="text-sm xs:text-base">
                 View CV
               </a>
             </li>

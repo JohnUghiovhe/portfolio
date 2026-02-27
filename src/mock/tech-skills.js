@@ -35,8 +35,8 @@ export const FRONTEND_SKILLS = [
     iconClasses: 'text-2xl',
   },
   {
-    label: 'Vite',
-    icon: 'logos:vite',
+    label: 'Vite.js',
+    icon: 'logos:vitejs',
     iconClasses: 'text-3xl',
   },
 ];

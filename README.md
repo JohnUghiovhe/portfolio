@@ -47,7 +47,7 @@ npm install
 
 ### 2) Configure environment variables
 
-Create a `.env` file in the project root:
+Create a `.env.local` file in the project root:
 
 ```env
 NEXT_PUBLIC_EMAIL_SERVICE_ID="YOUR SERVICE ID"

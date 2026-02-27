@@ -26,7 +26,8 @@ export default function Contact() {
     if (!serviceId || !templateId || !publicKey) {
       setSendStatus({
         type: 'error',
-        message: 'Email service is not configured. Please set your EmailJS environment variables.',
+        message:
+          'Email service is not configured. Set NEXT_PUBLIC_EMAIL_SERVICE_ID, NEXT_PUBLIC_EMAIL_TEMPLATE_ID, and NEXT_PUBLIC_EMAIL_PUBLIC_KEY in .env.local, then restart the dev server.',
       });
       return;
     }

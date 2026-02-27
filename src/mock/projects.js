@@ -4,6 +4,8 @@ export const PROJECT_CATEGORY = {
   ALL: 'all',
   FULL_STACK: 'full-stack',
   OPEN_SOURCE: 'open-source',
+  FRONTEND: 'frontend',
+  BACKEND: 'backend',
 };
 
 export const TABS = [
@@ -21,6 +23,16 @@ export const TABS = [
     label: 'Open Source',
     value: PROJECT_CATEGORY.OPEN_SOURCE,
     icon: 'fluent-mdl2:open-source',
+  },
+  {
+    label: 'Frontend',
+    value: PROJECT_CATEGORY.FRONTEND,
+    icon: 'fluent-mdl2:color',
+  },
+  {
+    label: 'Backend',
+    value: PROJECT_CATEGORY.BACKEND,
+    icon: 'fluent-mdl2:server',
   },
 ];
 
@@ -43,22 +55,23 @@ export const PROJECTS = [
       'Eventful is a comprehensive event ticketing and management platform that connects event creators with attendees. From concerts to sports events, Eventful provides a seamless experience for creating, discovering, and attending events. built with React.js and Node.js. It features a responsive UI, user authentication, and integration with MongoDB for data storage.',
     repoLink: 'https://github.com/JohnUghiovhe/eventful',
     sourceLink: 'https://eventful-frontend-908q.onrender.com',
-    category: [PROJECT_CATEGORY.FULL_STACK, PROJECT_CATEGORY.OPEN_SOURCE],
+    category: [PROJECT_CATEGORY.FULL_STACK],
   },
   {
-    imgSrc: 'https://res.cloudinary.com/djd7bdpdm/image/upload/v1772047556/Portfolio_dhwbjb.png',
-    title: 'Portfolio',
+    imgSrc: 'https://res.cloudinary.com/djd7bdpdm/image/upload/v1772181316/Guessing_game_fihfum.jpg',
+    title: 'Guessing Game',
     techIcons: [
       getSkillByLabel(FRONTEND_SKILLS, 'HTML'),
       getSkillByLabel(FRONTEND_SKILLS, 'CSS'),
-      getSkillByLabel(FRONTEND_SKILLS, 'Tailwind CSS'),
-      getSkillByLabel(FRONTEND_SKILLS, 'Next.js'),
+      getSkillByLabel(FRONTEND_SKILLS, 'Javascript'),
+      getSkillByLabel(BACKEND_SKILLS, 'Express (Node.js Framework)'),
+      getSkillByLabel(BACKEND_SKILLS, 'socket.io'),
     ],
     description:
-      'Simple and classic modern portfolio for who wants to present himself as a software developer. Portfolio build with highly customizable using Tailwind CSS, Next Js.',
-    repoLink: 'https://github.com/JohnUghiovhe/portfolio',
-    sourceLink: 'https://portfolio-johnughiovhe.vercel.app/',
-    category: [PROJECT_CATEGORY.OPEN_SOURCE],
+      'A real-time guessing game using Express and Socket.IO. One player is the Game Master (GM) who sets the question/answer and starts the session. Players join, see each other’s scores, and have limited attempts to guess before the timer expires.',
+    repoLink: 'https://github.com/JohnUghiovhe/Guessing-Game',
+    sourceLink: 'https://guessing-game-6937.onrender.com',
+    category: [PROJECT_CATEGORY.FULL_STACK],
   },
   {
     imgSrc: 'https://res.cloudinary.com/djd7bdpdm/image/upload/v1772012148/Restaurant-ChatBot_wo6t78.png',
@@ -75,7 +88,7 @@ export const PROJECTS = [
       'A TypeScript/NestJS-based restaurant chatbot that assists customers in placing orders for their preferred meals.',
     repoLink: 'https://github.com/JohnUghiovhe/Restaurant-ChatBot',
     sourceLink: 'https://restaurant-chatbot-txcj.onrender.com/',
-    category: [PROJECT_CATEGORY.FULL_STACK, PROJECT_CATEGORY.OPEN_SOURCE],
+    category: [PROJECT_CATEGORY.FULL_STACK],
   },
   {
     imgSrc: 'https://res.cloudinary.com/djd7bdpdm/image/upload/v1772047132/Blogging-API_umrk2g.png',
@@ -89,6 +102,21 @@ export const PROJECTS = [
     description: 'This is a Blogging API built with Node.js and MongoDB. The API allows users to create, manage, and read blog articles. It supports user authentication and provides endpoints for both logged-in and non-logged-in users.',
     repoLink: 'https://github.com/JohnUghiovhe/blogging-api',
     sourceLink: 'https://blogging-api-d994.onrender.com',
-    category: [PROJECT_CATEGORY.OPEN_SOURCE],
+    category: [PROJECT_CATEGORY.FULL_STACK],
+  },
+    {
+    imgSrc: 'https://res.cloudinary.com/djd7bdpdm/image/upload/v1772047556/Portfolio_dhwbjb.png',
+    title: 'Portfolio',
+    techIcons: [
+      getSkillByLabel(FRONTEND_SKILLS, 'HTML'),
+      getSkillByLabel(FRONTEND_SKILLS, 'CSS'),
+      getSkillByLabel(FRONTEND_SKILLS, 'Tailwind CSS'),
+      getSkillByLabel(FRONTEND_SKILLS, 'Next.js'),
+    ],
+    description:
+      'Simple and classic modern portfolio for who wants to present himself as a software developer. Portfolio build with highly customizable using Tailwind CSS, Next Js.',
+    repoLink: 'https://github.com/JohnUghiovhe/portfolio',
+    sourceLink: 'https://portfolio-johnughiovhe.vercel.app/',
+    category: [PROJECT_CATEGORY.FRONTEND],
   },
 ];

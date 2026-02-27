@@ -103,16 +103,15 @@ export const BACKEND_SKILLS = [
 
 export const FRONTEND_DESCRIPTIONS = [
   'Built an Event ticketing and management application called Eventful using Typescript, React js and Tailwind CSS on the frontend.',
-  'Built a real-time chat application using React and Socket.io.',
+  'Built a Restaurant ChatBot application using HTML, CSS and Javascript on the frontend.',
+  'Built a real-time guessing game using Express and Socket.IO.',
   'Built a modern portfolio website using Next.js and Tailwind CSS.',
 ];
 
 export const BACKEND_DESCRIPTIONS = [
-  'Building RESTful APIs and GraphQL APIs.',
-  'Building server-side applications using Node.js and Express.',
-  'Building server-side applications using NestJS.',
-  'Integrating third-party APIs and services into applications.',
-  'Implementing authentication and authorization using technologies such as JWT and OAuth.',
-  'Worked with various Node.js modules and libraries, such as Express to develop full-stack applications.',
-  'Good understanding of database design in technologies such as MongoDB, PostgreSQL and MySQL.',
+  'Built an Event ticketing and management application called Eventful using Node.js, Express, MongoDB and Redis on the backend.',
+  'Integrated third-party OpenAPI tool(Swagger) into an application I designed called Eventful, to help developers and users easily navigate and test the API.',
+  'Built a Restaurant ChatBot application using NestJS and SQLite on the backend.',
+  'Designed and implemented a blogging API using Node.js and Express, providing endpoints for creating, reading, updating, and deleting blog posts.',
+  'Built a real-time Guessing game using Express and Socket.IO.',
 ];

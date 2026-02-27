@@ -81,8 +81,8 @@ export const PROJECTS = [
       getSkillByLabel(FRONTEND_SKILLS, 'CSS'),
       getSkillByLabel(FRONTEND_SKILLS, 'Javascript'),
       getSkillByLabel(FRONTEND_SKILLS, 'Typescript'),
-      getSkillByLabel(BACKEND_SKILLS, 'Node.js'),
-      getSkillByLabel(BACKEND_SKILLS, 'NestJS')
+      getSkillByLabel(BACKEND_SKILLS, 'NestJS (Node.js Framework)'),
+      getSkillByLabel(BACKEND_SKILLS, 'Sql')
     ],
     description:
       'A TypeScript/NestJS-based restaurant chatbot that assists customers in placing orders for their preferred meals.',

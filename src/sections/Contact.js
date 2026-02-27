@@ -12,23 +12,40 @@ import { contactEmail } from '../mock/profile';
 
 export default function Contact() {
   const [isSending, setIsSending] = useState(false);
+  const [sendStatus, setSendStatus] = useState({ type: '', message: '' });
 
   const formRef = useRef();
 
   const sendEmail = async (e) => {
     e.preventDefault();
 
+    const serviceId = process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID;
+    const templateId = process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID;
+    const publicKey = process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY;
+
+    if (!serviceId || !templateId || !publicKey) {
+      setSendStatus({
+        type: 'error',
+        message: 'Email service is not configured. Please set your EmailJS environment variables.',
+      });
+      return;
+    }
+
     try {
       setIsSending(true);
+      setSendStatus({ type: '', message: '' });
 
       await emailjs.sendForm(
-        process.env.EMAIL_SERVICE_ID,
-        process.env.EMAIL_TEMPLATE_ID,
+        serviceId,
+        templateId,
         formRef.current,
-        process.env.PUBLIC_KEY
+        publicKey
       );
+
+      e.target.reset();
+      setSendStatus({ type: 'success', message: 'Message sent successfully.' });
     } catch (error) {
-      // intentional
+      setSendStatus({ type: 'error', message: 'Failed to send message. Please try again.' });
     } finally {
       setIsSending(false);
     }
@@ -107,6 +124,17 @@ export default function Contact() {
                   )}
                 </button>
               </div>
+              {sendStatus.message ? (
+                <p
+                  className={`w-full px-2 text-sm ${
+                    sendStatus.type === 'success'
+                      ? 'text-primary-700 dark:text-primary-300'
+                      : 'text-red-600 dark:text-red-400'
+                  }`}
+                >
+                  {sendStatus.message}
+                </p>
+              ) : null}
               <div className="mt-4 w-full border-t border-neutral-700/50 p-2 pt-6 text-center dark:border-neutral-300/50">
                 <a
                   href={`mailto:${contactEmail}?subject=Inquiry&body=Hello Dhaval`}

@@ -1,25 +1,21 @@
 export const FRONTEND_SKILLS = [
   {
     label: 'HTML',
-    proficiency: '80%',
     icon: 'vscode-icons:file-type-html',
     iconClasses: 'text-3xl',
   },
   {
     label: 'CSS',
-    proficiency: '80%',
     icon: 'vscode-icons:file-type-css',
     iconClasses: 'text-3xl',
   },
   {
     label: 'Javascript',
-    proficiency: '90%',
     icon: 'logos:javascript',
     iconClasses: 'text-2xl',
   },
   {
     label: 'Typescript',
-    proficiency: '90%',
     icon: 'logos:typescript-icon',
     iconClasses: 'text-2xl',
   },
@@ -42,21 +38,9 @@ export const FRONTEND_SKILLS = [
     iconClasses: 'text-2xl',
   },
   {
-    label: 'Bootstrap',
+    label: 'Vite',
     proficiency: '90%',
-    icon: 'logos:bootstrap',
-    iconClasses: 'text-2xl',
-  },
-  {
-    label: 'React Router',
-    proficiency: '90%',
-    icon: 'logos:react-router',
-    iconClasses: 'text-xl',
-  },
-  {
-    label: 'React Query',
-    proficiency: '90%',
-    icon: 'logos:react-query-icon',
+    icon: 'logos:vite',
     iconClasses: 'text-3xl',
   },
 ];
@@ -81,9 +65,9 @@ export const BACKEND_SKILLS = [
     iconClasses: 'text-3xl',
   },
   {
-    label: 'NestJS',
+    label: 'NestJS (Node.js Framework)',
     proficiency: '90%',
-    icon: 'logos:nestjs-icon',
+    icon: 'logos:nestjs',
     iconClasses: 'text-2xl',
   },
   {
@@ -115,18 +99,12 @@ export const BACKEND_SKILLS = [
     icon: 'logos:socket-io',
     iconClasses: 'text-3xl',
   },
-  {
-    label: 'Docker',
-    proficiency: '80%',
-    icon: 'logos:docker-icon',
-    iconClasses: 'text-2xl',
-  },
 ];
 
 export const FRONTEND_DESCRIPTIONS = [
-  'Building complex, interactive user interfaces using React js.',
-  'Building Large scale Web applications using state management library such as redux.',
-  'Building responsive Web Applications.',
+  'Built an Event ticketing and management application called Eventful using Typescript, React js and Tailwind CSS on the frontend.',
+  'Built a real-time chat application using React and Socket.io.',
+  'Built a modern portfolio website using Next.js and Tailwind CSS.',
 ];
 
 export const BACKEND_DESCRIPTIONS = [

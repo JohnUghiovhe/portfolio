@@ -50,9 +50,9 @@ npm install
 Create a `.env` file in the project root:
 
 ```env
-EMAIL_SERVICE_ID="YOUR SERVICE ID"
-EMAIL_TEMPLATE_ID="YOUR TEMPLATE ID"
-PUBLIC_KEY="YOUR PUBLIC KEY"
+NEXT_PUBLIC_EMAIL_SERVICE_ID="YOUR SERVICE ID"
+NEXT_PUBLIC_EMAIL_TEMPLATE_ID="YOUR TEMPLATE ID"
+NEXT_PUBLIC_EMAIL_PUBLIC_KEY="YOUR PUBLIC KEY"
 ```
 
 You can copy values from `.env.example` and replace with your EmailJS credentials.

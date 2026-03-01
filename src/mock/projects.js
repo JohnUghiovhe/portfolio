@@ -40,7 +40,7 @@ const getSkillByLabel = (skills, techLabel) => skills.find(({ label }) => label 
 
 export const PROJECTS = [
   {
-    imgSrc: 'https://res.cloudinary.com/djd7bdpdm/image/upload/v1772010418/Eventful_ywn4m7.png',
+    imgSrc: 'https://res.cloudinary.com/djd7bdpdm/image/upload/v1772226789/Screenshot_9_lschdp.png',
     title: 'Eventful - Event Ticketing and Management Platform',
     techIcons: [
       getSkillByLabel(FRONTEND_SKILLS, 'Tailwind CSS'),
@@ -58,7 +58,7 @@ export const PROJECTS = [
     category: [PROJECT_CATEGORY.FULL_STACK],
   },
   {
-    imgSrc: 'https://res.cloudinary.com/djd7bdpdm/image/upload/v1772181316/Guessing_game_fihfum.jpg',
+    imgSrc: 'https://res.cloudinary.com/djd7bdpdm/image/upload/v1772226787/Screenshot_11_sr7zyq.png',
     title: 'Guessing Game',
     techIcons: [
       getSkillByLabel(FRONTEND_SKILLS, 'HTML'),
@@ -74,7 +74,7 @@ export const PROJECTS = [
     category: [PROJECT_CATEGORY.FULL_STACK],
   },
   {
-    imgSrc: 'https://res.cloudinary.com/djd7bdpdm/image/upload/v1772012148/Restaurant-ChatBot_wo6t78.png',
+    imgSrc: 'https://res.cloudinary.com/djd7bdpdm/image/upload/v1772226788/Screenshot_13_n8p5pa.png',
     title: 'Restaurant ChatBot - AI-Powered Food Ordering Assistant',
     techIcons: [
       getSkillByLabel(FRONTEND_SKILLS, 'HTML'),
@@ -91,7 +91,7 @@ export const PROJECTS = [
     category: [PROJECT_CATEGORY.FULL_STACK],
   },
   {
-    imgSrc: 'https://res.cloudinary.com/djd7bdpdm/image/upload/v1772047132/Blogging-API_umrk2g.png',
+    imgSrc: 'https://res.cloudinary.com/djd7bdpdm/image/upload/v1772226787/Screenshot_14_uq226j.png',
     title: 'Blogging API - A RESTful API for Blogging Platform',
     techIcons: [
       getSkillByLabel(BACKEND_SKILLS, 'Node.js'),
@@ -105,12 +105,13 @@ export const PROJECTS = [
     category: [PROJECT_CATEGORY.FULL_STACK],
   },
     {
-    imgSrc: 'https://res.cloudinary.com/djd7bdpdm/image/upload/v1772047556/Portfolio_dhwbjb.png',
+    imgSrc: 'https://res.cloudinary.com/djd7bdpdm/image/upload/v1772226788/Screenshot_12_mh5olq.png',
     title: 'Portfolio',
     techIcons: [
       getSkillByLabel(FRONTEND_SKILLS, 'HTML'),
       getSkillByLabel(FRONTEND_SKILLS, 'CSS'),
       getSkillByLabel(FRONTEND_SKILLS, 'Tailwind CSS'),
+      getSkillByLabel(FRONTEND_SKILLS, 'Javascript'),
       getSkillByLabel(FRONTEND_SKILLS, 'Next.js'),
     ],
     description:

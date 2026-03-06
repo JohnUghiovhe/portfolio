@@ -91,7 +91,7 @@ export const PROJECTS = [
     category: [PROJECT_CATEGORY.FULL_STACK],
   },
   {
-    imgSrc: 'https://res.cloudinary.com/djd7bdpdm/image/upload/v1772226787/Screenshot_14_uq226j.png',
+    imgSrc: 'https://res.cloudinary.com/djd7bdpdm/image/upload/v1772794723/Jay_Blog_resucv.png',
     title: 'Blogging API - A RESTful API for Blogging Platform',
     techIcons: [
       getSkillByLabel(BACKEND_SKILLS, 'Node.js'),

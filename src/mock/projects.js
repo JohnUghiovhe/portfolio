@@ -70,7 +70,7 @@ export const PROJECTS = [
     description:
       'A real-time guessing game using Express and Socket.IO. One player is the Game Master (GM) who sets the question/answer and starts the session. Players join, see each other’s scores, and have limited attempts to guess before the timer expires.',
     repoLink: 'https://github.com/JohnUghiovhe/Guessing-Game',
-    sourceLink: 'https://guessing-game-6937.onrender.com',
+    sourceLink: 'https://guessing-game-6937.onrender.com', 
     category: [PROJECT_CATEGORY.FULL_STACK],
   },
   {

@@ -36,7 +36,7 @@ export default function Works() {
       <section className="container mx-auto mt-16 space-y-10 pb-16 sm:pb-16 space-x-5 md:space-x-0">
         <HeadingAnimate amount={1}>
           <h2 className="text-center font-lato text-3xl font-semibold text-primary-700 dark:text-primary-300 sm:text-4xl">
-            Recent Works
+            Recent Projects
           </h2>
         </HeadingAnimate>
 

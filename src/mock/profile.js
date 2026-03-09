@@ -13,13 +13,13 @@ export const SOCIAL_LINKS = [
   },
 ];
 
-export const HERO_TITLES = ['John Ughiovhe', 'A Full-stack Engineer', 'An AI Enthusiast'];
+export const HERO_TITLES = ['John Ughiovhe', 'A Backend Engineer', 'An AI Enthusiast', 'An open-source contributor'];
 
 export const aboutParagraph =
-  'Highly motivated and enthusiastic Full Stack Engineer with experience in designing, developing and maintaining web applications using technologies such as Generative AI, Typescript, React, Next.js, Nest.js, Node.js, Express.js.';
+  'Experienced in API design, authentication systems, and database architecture. Focused on performance, clean code, and production-ready backend solutions.';
 
 export const contactEmail = 'ughiovhejohn@gmail.com';
 
 export const cvLink = '/John-Ughiovhe-CV.pdf';
 
-export const documentTitle = 'Hello I am John Ughiovhe | Full Stack Engineer | AI Enthusiast'
+export const documentTitle = 'Hello I am John Ughiovhe | Backend Engineer | AI Enthusiast | Open Source Contributor';

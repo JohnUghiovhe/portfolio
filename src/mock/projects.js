@@ -58,7 +58,7 @@ export const PROJECTS = [
     category: [PROJECT_CATEGORY.FULL_STACK],
   },
   {
-    imgSrc: 'https://res.cloudinary.com/djd7bdpdm/image/upload/v1772226787/Screenshot_11_sr7zyq.png',
+    imgSrc: 'https://res.cloudinary.com/djd7bdpdm/image/upload/v1772798770/Guessing-game_lgqh0w.png',
     title: 'Guessing Game',
     techIcons: [
       getSkillByLabel(FRONTEND_SKILLS, 'HTML'),
@@ -105,7 +105,7 @@ export const PROJECTS = [
     category: [PROJECT_CATEGORY.FULL_STACK],
   },
     {
-    imgSrc: 'https://res.cloudinary.com/djd7bdpdm/image/upload/v1772798770/Guessing-game_lgqh0w.png',
+    imgSrc: 'https://res.cloudinary.com/djd7bdpdm/image/upload/v1772226788/Screenshot_12_mh5olq.png',
     title: 'Portfolio',
     techIcons: [
       getSkillByLabel(FRONTEND_SKILLS, 'HTML'),

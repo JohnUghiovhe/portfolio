@@ -61,6 +61,7 @@ html {
 
 #mouse-scroll {
   -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 #mouse-scroll span {
   display: block;
@@ -88,6 +89,7 @@ html {
 #mouse-scroll .down-arrow-3 {
   -webkit-animation: mouse-scroll 1s infinite;
   -moz-animation: mouse-scroll 1s infinite;
+  animation: mouse-scroll 1s infinite;
 }
 #mouse-scroll .down-arrow-1 {
   -webkit-animation-delay: 0.1s;
@@ -113,7 +115,7 @@ html {
 }
 #mouse-scroll .mouse-in {
   -webkit-animation: animated-mouse 1.2s ease infinite;
-  moz-animation: mouse-animated 1.2s ease infinite;
+  animation: animated-mouse 1.2s ease infinite;
 }
 
 @media screen and (min-height: 650px) {

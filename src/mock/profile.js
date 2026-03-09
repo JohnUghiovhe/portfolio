@@ -1,8 +1,4 @@
 export const SOCIAL_LINKS = [
-  // {
-  //   link: 'https://twitter.com/john_ughiovhe',       
-  //   icon: 'akar-icons:twitter-fill',        
-  // },
   {
     link: 'https://github.com/JohnUghiovhe',
     icon: 'akar-icons:github-fill',
@@ -36,7 +32,7 @@ export const FOOTER_SOCIAL_LINKS = [
   },
 ];
 
-export const HERO_TITLES = ['John Ughiovhe', 'A Backend Engineer', 'An AI Enthusiast', 'An open-source contributor'];
+export const HERO_TITLES = ['A Backend Engineer', 'An AI Enthusiast', 'An API Designer'];
 
 export const aboutParagraph =
   'Experienced in API design, authentication systems, and database architecture. Focused on performance, clean code, and production-ready backend solutions.';
@@ -45,4 +41,4 @@ export const contactEmail = 'ughiovhejohn@gmail.com';
 
 export const cvLink = '/John-Ughiovhe-CV.pdf';
 
-export const documentTitle = 'Hello I am John Ughiovhe | Backend Engineer | AI Enthusiast | Open Source Contributor';
+export const documentTitle = 'Hello I am John Ughiovhe | Backend Engineer | AI Enthusiast | API Designer';

@@ -14,16 +14,24 @@ export default function HomeHero() {
   const { isScroll, jumpToDown } = useContext(ScrollContext);
 
   return (
-    <section className="container mx-auto mt-3 flex max-h-screen min-h-screen flex-col items-center justify-around px-5 md:px-1">
+    <section className="relative container mx-auto flex max-h-screen min-h-screen flex-col items-center justify-center overflow-hidden px-5 pt-16 md:px-1">
+      <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_20%_20%,rgba(93,55,255,0.25),transparent_45%),radial-gradient(circle_at_80%_10%,rgba(31,199,255,0.18),transparent_40%),radial-gradient(circle_at_50%_65%,rgba(24,8,68,0.85),transparent_60%)]" />
+      <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(#4fd4ff_0.75px,transparent_0.75px)] bg-size-[38px_38px] opacity-35" />
+
+      <p className="text-center font-lato text-xl font-semibold tracking-wide text-neutral-100 sm:text-2xl md:text-4xl">
+        Hi, I&apos;m
+      </p>
+      <p className="mb-4 bg-linear-to-r from-[#6f53ff] via-[#26bfff] to-[#db67b2] bg-clip-text text-center font-lato text-5xl font-black tracking-tight text-transparent sm:text-6xl md:text-7xl lg:text-8xl">
+        John Ughiovhe
+      </p>
       <div className="relative z-0 mx-auto h-full w-full max-w-lg">
-        <div className="absolute top-0 -right-4 h-56 w-56 animate-blob rounded-full bg-red-500 opacity-50 mix-blend-multiply blur-2xl filter" />
-        <div className="animation-delay-2000 absolute top-0 -left-4 h-56 w-56 animate-blob rounded-full bg-teal-600 opacity-50 mix-blend-multiply blur-2xl filter" />
-        <div className="animation-delay-3000 absolute -top-14 left-20 h-56 w-56 animate-blob rounded-full bg-yellow-400 opacity-50 mix-blend-multiply blur-2xl filter" />
+        <div className="absolute top-0 -right-4 h-56 w-56 animate-blob rounded-full bg-[#7d48ff] opacity-35 blur-2xl filter" />
+        <div className="animation-delay-2000 absolute top-0 -left-4 h-56 w-56 animate-blob rounded-full bg-[#1bc8ff] opacity-30 blur-2xl filter" />
+        <div className="animation-delay-3000 absolute -top-14 left-20 h-56 w-56 animate-blob rounded-full bg-[#d85fae] opacity-25 blur-2xl filter" />
       </div>
-      <div className="z-50 flex flex-col items-center space-y-5 sm:space-y-10">
-        <h1 className="z-50 font-lato text-2xl font-bold sm:text-4xl md:font-semibold">
-          Hi, I am{' '}
-          <span className="text-primary-700 dark:text-primary-300">
+      <div className="z-50 flex flex-col items-center space-y-4 sm:space-y-8">
+        <h1 className="z-50 text-center font-lato text-2xl font-bold text-neutral-100 sm:text-4xl md:text-5xl">
+          <span className="bg-linear-to-r from-[#6f53ff] via-[#26bfff] to-[#db67b2] bg-clip-text text-transparent">
             <Typewriter
               style={{ color: 'inherit' }}
               words={HERO_TITLES}
@@ -37,15 +45,15 @@ export default function HomeHero() {
             <Cursor />
           </span>
         </h1>
-        <p className="text-center text-sm sm:text-base md:w-3/5">{aboutParagraph}</p>
+        <p className="text-center text-base font-medium text-neutral-300 sm:text-lg md:w-3/5 md:text-2xl">{aboutParagraph}</p>
         <a
           href={cvLink}
           download
           target="_blank"
           rel="noreferrer"
-          className="inline-flex items-center gap-2 rounded-lg bg-primary-700 px-4 py-2 text-sm font-medium text-primary-50 hover:bg-primary-700/80 dark:bg-primary-500 dark:hover:bg-primary-700"
+          className="inline-flex items-center gap-2 rounded-xl bg-linear-to-r from-[#6e46ff] to-[#15c7ff] px-7 py-3 text-base font-bold text-white shadow-lg shadow-[#0d1a42] transition hover:brightness-110"
         >
-          Download CV
+          Download Resume
           <Iconify icon="fluent:document-arrow-down-20-filled" />
         </a>
         {/* Social Icons */}

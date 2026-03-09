@@ -9,13 +9,13 @@ import useDarkMode from '../hooks/useDarkMode';
 // -----------------------------------------------------------
 
 export default function MainLayout({ children, meta }) {
-  const { darkModeEnabled, toggleMode } = useDarkMode();
+  useDarkMode();
 
   return (
     <>
       <Head>{meta}</Head>
 
-      <Header darkModeEnabled={darkModeEnabled} toggleMode={toggleMode} />
+      <Header />
 
       <main className="overflow-x-hidden">{children}</main>
     </>

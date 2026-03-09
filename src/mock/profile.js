@@ -1,8 +1,8 @@
 export const SOCIAL_LINKS = [
-  {
-    link: 'https://twitter.com/john_ughiovhe',       
-    icon: 'akar-icons:twitter-fill',        
-  },
+  // {
+  //   link: 'https://twitter.com/john_ughiovhe',       
+  //   icon: 'akar-icons:twitter-fill',        
+  // },
   {
     link: 'https://github.com/JohnUghiovhe',
     icon: 'akar-icons:github-fill',
@@ -10,6 +10,29 @@ export const SOCIAL_LINKS = [
   {
     link: 'https://www.linkedin.com/in/john-ughiovhe',
     icon: 'akar-icons:linkedin-fill',
+  },
+];
+
+export const FOOTER_SOCIAL_LINKS = [
+  {
+    link: 'https://github.com/JohnUghiovhe',
+    icon: 'akar-icons:github-fill',
+    label: 'GitHub',
+  },
+  {
+    link: 'https://www.linkedin.com/in/john-ughiovhe',
+    icon: 'akar-icons:linkedin-fill',
+    label: 'LinkedIn',
+  },
+  {
+    link: 'https://twitter.com/john_ughiovhe',
+    icon: 'akar-icons:twitter-fill',
+    label: 'X (Twitter)',
+  },
+  {
+    link: 'mailto:ughiovhejohn@gmail.com',
+    icon: 'clarity:email-solid',
+    label: 'Email',
   },
 ];
 

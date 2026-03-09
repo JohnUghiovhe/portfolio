@@ -6,6 +6,8 @@ import HomeHero from '../sections/HomeHero';
 import Skills from '../sections/Skills';
 import Works from '../sections/Works';
 import Contact from '../sections/Contact';
+// components
+import Footer from '../components/Footer';
 // mock
 import { documentTitle } from '../mock/profile';
 
@@ -27,6 +29,8 @@ export default function Home() {
       <Works />
       {/* Contact Section  */}
       <Contact />
+      {/* Footer */}
+      <Footer />
     </MainLayout>
   );
 }

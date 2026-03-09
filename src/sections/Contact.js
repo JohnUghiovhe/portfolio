@@ -2,7 +2,6 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 // components
 import Iconify from '../components/Iconify';
-import SocialLinks from '../components/social/SocialLinks';
 import HeadingAnimate from '../components/animate/HeadingAnimate';
 import LoadAnimate from '../components/animate/LoadAnimate';
 // mock
@@ -137,7 +136,7 @@ export default function Contact() {
               ) : null}
               <div className="mt-4 w-full border-t border-neutral-700/50 p-2 pt-6 text-center dark:border-neutral-300/50">
                 <a
-                  href={`mailto:${contactEmail}?subject=Inquiry&body=Hello Dhaval`}
+                  href={`mailto:${contactEmail}?subject=Inquiry&body=Hello John`}
                   className="inline-flex items-center space-x-2 hover:text-primary-700 dark:hover:text-primary-300"
                 >
                   <Iconify classes="text-lg text-primary-700 dark:text-primary-300" icon="clarity:email-solid" />
@@ -150,9 +149,6 @@ export default function Contact() {
                   />
                   Lagos, Nigeria
                 </p>
-                <div className="flex w-full justify-center">
-                  <SocialLinks />
-                </div>
               </div>
             </div>
           </form>

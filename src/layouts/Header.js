@@ -36,7 +36,7 @@ export default function Header({ darkModeEnabled, toggleMode }) {
         >
           <ul className="flex items-center space-x-3">
             <li>
-              <a href="#w" className="text-sm xs:text-base">
+              <a href="#" className="text-sm xs:text-base">
                 Skills
               </a>
             </li>

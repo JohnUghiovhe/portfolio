@@ -22,15 +22,20 @@ export default function ProjectCard({ imgSrc, title, description, repoLink, sour
         )}
       </div>
       {(sourceLink !== '' || repoLink !== '') && (
-        <div className="absolute bottom-5 right-5 flex items-center space-x-10">
+        <div className="absolute bottom-5 right-5 flex items-center space-x-6">
           {repoLink !== '' && (
             <a
               href={repoLink}
               target="_blank"
               rel="noreferrer"
-              className="transform transition-all duration-200 hover:scale-110 hover:text-primary-600 dark:hover:text-primary-300"
+              className="group flex flex-col items-center space-y-1 transition-all duration-200"
+              title="Repository Link"
             >
-              <Iconify classes="text-2xl" icon="akar-icons:github-fill" />
+              <Iconify
+                classes="text-2xl transform transition-transform group-hover:scale-110 hover:text-primary-600 dark:hover:text-primary-300"
+                icon="akar-icons:github-fill"
+              />
+              <span className="text-[10px] font-medium text-gray-600 dark:text-gray-400">View Repo</span>
             </a>
           )}
           {sourceLink !== '' && (
@@ -38,9 +43,14 @@ export default function ProjectCard({ imgSrc, title, description, repoLink, sour
               href={sourceLink}
               target="_blank"
               rel="noreferrer"
-              className="transform transition-all duration-200 hover:scale-110 hover:text-primary-600 dark:hover:text-primary-300"
+              className="group flex flex-col items-center space-y-1 transition-all duration-200"
+              title="Live Demo"
             >
-              <Iconify classes="text-2xl" icon="iconoir:open-new-window" />
+              <Iconify
+                classes="text-2xl transform transition-transform group-hover:scale-110 hover:text-primary-600 dark:hover:text-primary-300"
+                icon="iconoir:open-new-window"
+              />
+              <span className="text-[10px] font-medium text-gray-600 dark:text-gray-400">Live Demo</span>
             </a>
           )}
         </div>

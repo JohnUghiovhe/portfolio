@@ -13,7 +13,7 @@ export default function SocialLinks() {
           href={link}
           rel="noreferrer"
           target="_blank"
-          className="dark:border-primary-500 inline-flex items-center rounded-full border border-primary-700 p-2.5 text-center text-sm font-medium text-primary-700 transition hover:bg-primary-600 hover:text-neutral-50 focus:outline-none focus:ring-2 focus:ring-primary-600 dark:text-primary-300 dark:hover:bg-primary-400 dark:hover:text-neutral-50 dark:focus:ring-primary-800"
+          className="inline-flex items-center rounded-xl border border-white/15 bg-white/5 p-3 text-center text-sm font-medium text-neutral-100 shadow-md shadow-[#0a0f2c]/60 backdrop-blur-sm transition hover:-translate-y-0.5 hover:border-[#5fd6ff]/40 hover:bg-[#15244f] focus:outline-none focus:ring-2 focus:ring-[#38c9ff]"
         >
           <Iconify classes="text-xl" icon={icon} />
         </a>

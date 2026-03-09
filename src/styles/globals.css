@@ -12,7 +12,7 @@
 :root {
   --primary-color: #0ca4eb;
   --secondary-color: #6b6b6b;
-  --background-color: #383838;
+  --background-color: #0a1929;
   --text-color: #ffffff;
 }
 
@@ -32,7 +32,7 @@ html {
 
 ::-webkit-scrollbar {
   width: 10px;
-  background-color: #383838;
+  background-color: #0a1929;
 }
 
 ::-webkit-scrollbar-button {
@@ -51,15 +51,15 @@ html {
   background: rgba(12, 164, 235, 0.6);
 }
 ::-webkit-scrollbar-track {
-  background: #383838;
+  background: #0a1929;
   border: 50px none #ffffff;
   border-radius: 0px;
 }
 ::-webkit-scrollbar-track:hover {
-  background: #3b3b3b;
+  background: #132f4c;
 }
 ::-webkit-scrollbar-track:active {
-  background: #333333;
+  background: #1e3a5f;
 }
 ::-webkit-scrollbar-corner {
   background: transparent;

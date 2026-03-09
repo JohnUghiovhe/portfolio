@@ -61,8 +61,7 @@ export default function Contact() {
         </HeadingAnimate>
         <LoadAnimate amount={0}>
           <p className="mx-auto mt-5 text-base leading-relaxed opacity-80 md:w-1/2">
-            I'm actively looking for any new opportunities, my inbox is always open. Whether you have a question or want
-            to hire me or just want to say hello, I'll try my best to get back to you!
+          Feel free to reach out with inquiries, collaboration opportunities, or simply to connect. I'm committed to responding to all messages promptly.
           </p>
         </LoadAnimate>
       </div>

@@ -28,7 +28,7 @@ export default function Skills() {
             <div className="mb-10 md:mb-0 md:w-1/2 lg:w-full lg:max-w-lg">
               <AnimatedLottie animationDataFile={codingAnimationData} />
             </div>
-            <div className="flex flex-col items-center text-center md:w-1/2 md:items-start md:pl-16 md:text-left lg:flex-grow lg:pl-24">
+            <div className="flex flex-col items-center text-center md:w-1/2 md:items-start md:pl-16 md:text-left lg:grow lg:pl-24">
               <HeadingAnimate>
                 <h1 className="mb-4 text-xl font-semibold tracking-wide text-primary-700 dark:text-primary-300 sm:text-2xl">
                   Frontend Development
@@ -60,7 +60,7 @@ export default function Skills() {
             <div className="mb-10 w-full md:mb-0 md:w-1/2 lg:w-full lg:max-w-lg">
               <AnimatedLottie animationDataFile={cloudAnimationData} />
             </div>
-            <div className="flex flex-col items-center text-center md:w-1/2 md:items-start md:pl-16 md:text-left lg:flex-grow lg:pl-24">
+            <div className="flex flex-col items-center text-center md:w-1/2 md:items-start md:pl-16 md:text-left lg:grow lg:pl-24">
               <HeadingAnimate>
                 <h1 className="mb-4 text-xl font-semibold tracking-wide text-primary-700 dark:text-primary-300 sm:text-2xl">
                   Backend Development

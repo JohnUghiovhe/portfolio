@@ -105,7 +105,7 @@ export const PROJECTS = [
     category: [PROJECT_CATEGORY.FULL_STACK],
   },
     {
-    imgSrc: 'https://res.cloudinary.com/djd7bdpdm/image/upload/v1772226788/Screenshot_12_mh5olq.png',
+    imgSrc: 'https://res.cloudinary.com/djd7bdpdm/image/upload/v1772798770/Guessing-game_lgqh0w.png',
     title: 'Portfolio',
     techIcons: [
       getSkillByLabel(FRONTEND_SKILLS, 'HTML'),

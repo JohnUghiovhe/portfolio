@@ -33,7 +33,7 @@ export default function Header() {
           transition={{ duration: 2, delay: 0.5 }}
         >
           <h3
-            className="text-md cursor-pointer bg-linear-to-r from-[#0059ff] to-[#ffd166] bg-clip-text font-lato font-black tracking-widest text-transparent md:text-2xl"
+            className="text-md cursor-pointer bg-linear-to-r from-[#d5deee] to-[#ffd166] bg-clip-text font-lato font-black tracking-widest text-transparent md:text-2xl"
             onClick={jumpToTop}
           >
             &lt;JohnUghiovhe/&gt;

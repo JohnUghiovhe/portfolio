@@ -23,7 +23,7 @@ export default function Header() {
     <header className="container mx-auto">
       <nav
         className={`fixed top-0 right-0 z-1000 flex h-16 w-full items-center px-4 md:px-[4%] ${
-          isScroll ? 'bg-[#050d22]/85 backdrop-blur-xl' : 'bg-[#050d22]/70 backdrop-blur-md'
+          isScroll ? 'bg-[#0b1220]/88 backdrop-blur-xl' : 'bg-[#0b1220]/72 backdrop-blur-md'
         }`}
       >
         <motion.div
@@ -33,7 +33,7 @@ export default function Header() {
           transition={{ duration: 2, delay: 0.5 }}
         >
           <h3
-            className="text-md cursor-pointer bg-gradient-to-r from-[#5f4dff] to-[#1ac6ff] bg-clip-text font-lato font-black tracking-widest text-transparent md:text-2xl"
+            className="text-md cursor-pointer bg-linear-to-r from-[#0059ff] to-[#ffd166] bg-clip-text font-lato font-black tracking-widest text-transparent md:text-2xl"
             onClick={jumpToTop}
           >
             &lt;JohnUghiovhe/&gt;
@@ -50,7 +50,7 @@ export default function Header() {
               <li key={`nav-item-${index}`}>
                 <a
                   href={href}
-                  className="text-sm font-medium text-neutral-300/85 transition hover:text-white xs:text-base"
+                  className="text-sm font-medium text-neutral-300/90 transition hover:text-[#ffd166] xs:text-base"
                 >
                   {label}
                 </a>
@@ -67,8 +67,9 @@ export default function Header() {
         >
           <a
             href={cvLink}
-            download
-            className="rounded-xl bg-gradient-to-r from-[#6e46ff] to-[#15c7ff] px-6 py-2 text-sm font-bold text-white shadow-lg shadow-[#0d1a42] transition hover:brightness-110"
+            download="John-Ughiovhe-CV.pdf"
+            type="application/pdf"
+            className="rounded-xl bg-linear-to-r from-[#704d01dd] to-[#0240b3] px-6 py-2 text-sm font-bold text-white shadow-lg shadow-[#2b1424] transition hover:brightness-110"
           >
             Resume
           </a>

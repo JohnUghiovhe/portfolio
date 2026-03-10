@@ -32,13 +32,13 @@ export const FOOTER_SOCIAL_LINKS = [
   },
 ];
 
-export const HERO_TITLES = ['A Backend Engineer', 'An AI Enthusiast', 'An API Designer'];
+export const HERO_TITLES = ['A Backend Engineer', 'An API Designer', 'An AI Enthusiast'];
 
 export const aboutParagraph =
   'Experienced in API design, authentication systems, and database architecture. Focused on performance, clean code, and production-ready backend solutions.';
 
 export const contactEmail = 'ughiovhejohn@gmail.com';
 
-export const cvLink = '/John-Ughiovhe-CV.pdf';
+export const cvLink = '/John-Ughiovhe-CV.pdf?v=20260310';
 
-export const documentTitle = 'Hello I am John Ughiovhe | Backend Engineer | AI Enthusiast | API Designer';
+export const documentTitle = 'Hello I am John Ughiovhe | Backend Engineer | API Designer | AI Enthusiast';

@@ -11,20 +11,18 @@ export default function Header() {
 
   const navItems = [
     { label: 'Home', href: '#' },
-    { label: 'About', href: '#skills' },
+    { label: 'About', href: '#about' },
     { label: 'Skills', href: '#skills' },
     { label: 'Projects', href: '#works' },
     { label: 'Experience', href: '#works' },
-    { label: 'Blog', href: '#works' },
     { label: 'Contact', href: '#contact' },
   ];
 
   return (
     <header className="relative w-full max-w-none">
       <nav
-        className={`neon-border-bottom fixed top-0 right-0 z-1000 flex h-16 w-full items-center px-4 md:px-[4%] ${
-          isScroll ? 'bg-[#0b1220]/88 backdrop-blur-xl' : 'bg-[#0b1220]/72 backdrop-blur-md'
-        }`}
+        className={`neon-border-bottom fixed top-0 right-0 z-1000 flex h-16 w-full items-center px-4 md:px-[4%] ${isScroll ? 'bg-[#0b1220]/88 backdrop-blur-xl' : 'bg-[#0b1220]/72 backdrop-blur-md'
+          }`}
       >
         {/* Navy blue ambient glow behind nav content */}
         <div className="neon-section-ambient pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_50%_100%,rgba(15,40,130,0.35),transparent_70%)]" />

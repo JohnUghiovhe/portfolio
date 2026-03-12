@@ -3,6 +3,7 @@ import React from 'react';
 import MainLayout from '../layouts/MainLayout';
 // sections
 import HomeHero from '../sections/HomeHero';
+import About from '../sections/About';
 import Skills from '../sections/Skills';
 import Works from '../sections/Works';
 import Contact from '../sections/Contact';
@@ -23,6 +24,8 @@ export default function Home() {
   return (
     <MainLayout meta={meta}>
       <HomeHero />
+      {/* About Section  */}
+      <About />
       {/* Skill Section  */}
       <Skills />
       {/* Works Section  */}

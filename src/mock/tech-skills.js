@@ -1,3 +1,65 @@
+export const SKILL_GROUPS = [
+  {
+    id: 'languages',
+    label: 'Languages',
+    accent: '#ffd166',
+    skills: [
+      { label: 'JavaScript', icon: 'logos:javascript' },
+      { label: 'TypeScript', icon: 'logos:typescript-icon' },
+    ],
+  },
+  {
+    id: 'backend',
+    label: 'Backend & Frameworks',
+    accent: '#00b4ff',
+    skills: [
+      { label: 'Node.js',    icon: 'vscode-icons:file-type-node' },
+      { label: 'Express.js', icon: 'simple-icons:express' },
+      { label: 'NestJS',     icon: 'logos:nestjs' },
+      { label: 'REST APIs',  icon: 'dashicons:rest-api' },
+    ],
+  },
+  {
+    id: 'databases',
+    label: 'Databases & ORMs',
+    accent: '#c400ff',
+    skills: [
+      { label: 'MongoDB',    icon: 'vscode-icons:file-type-mongo' },
+      { label: 'PostgreSQL', icon: 'vscode-icons:file-type-pgsql' },
+      { label: 'TypeORM',    icon: 'logos:typeorm' },
+      { label: 'Redis',      icon: 'logos:redis' },
+      { label: 'Mongoose',   icon: 'devicon:mongoose' },
+    ],
+  },
+  {
+    id: 'tools',
+    label: 'Tools & Development',
+    accent: '#1a5fff',
+    skills: [
+      { label: 'Git',        icon: 'logos:git-icon' },
+      { label: 'GitHub',     icon: 'akar-icons:github-fill' },
+      { label: 'React',      icon: 'vscode-icons:file-type-reactjs' },
+      { label: 'TailwindCSS',icon: 'logos:tailwindcss-icon' },
+      { label: 'Jest',       icon: 'logos:jest' },
+      { label: 'Docker',     icon: 'logos:docker-icon' },
+      { label: 'Postman',    icon: 'logos:postman-icon' },
+      { label: 'Swagger',    icon: 'logos:swagger' },
+    ],
+  },
+  {
+    id: 'other',
+    label: 'Other Skills',
+    accent: '#00d4a6',
+    skills: [
+      { label: 'API Design',            icon: null },
+      { label: 'Backend Architecture',  icon: null },
+      { label: 'Scalable Systems',      icon: null },
+      { label: 'Problem Solving',       icon: null },
+    ],
+  },
+];
+
+// Legacy exports kept for reference
 export const FRONTEND_SKILLS = [
   {
     label: 'HTML',

@@ -51,7 +51,9 @@ export default function Contact() {
     }
   };
   return (
-    <section className="container mx-auto mt-12 px-5 py-12">
+    <section className="relative container mx-auto mt-12 px-5 py-12">
+      {/* Neon ambient glow */}
+      <div className="neon-section-ambient pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_50%_0%,rgba(255,107,0,0.07),transparent_55%)]" />
       <HeadingAnimate>
         <h2 className="mb-12 text-center font-lato text-3xl font-semibold text-primary-700 dark:text-primary-300 sm:text-4xl">
           Get In Touch

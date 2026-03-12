@@ -4,6 +4,9 @@
   .animation-delay-2000 {
     animation-delay: 2s;
   }
+  .animation-delay-3000 {
+    animation-delay: 3s;
+  }
   .animation-delay-4000 {
     animation-delay: 4s;
   }
@@ -32,11 +35,137 @@ html {
 
 body {
   background:
-    radial-gradient(circle at 16% 14%, rgba(59, 57, 55, 0.2), transparent 34%),
-    radial-gradient(circle at 84% 12%, rgba(0, 212, 166, 0.18), transparent 36%),
-    linear-gradient(180deg, #0b1220 0%, #0b1020 50%, #120c18 100%);
+    radial-gradient(circle at 16% 14%, rgba(255, 107, 0, 0.18), transparent 34%),
+    radial-gradient(circle at 84% 12%, rgba(0, 245, 255, 0.14), transparent 36%),
+    radial-gradient(circle at 50% 90%, rgba(123, 0, 255, 0.10), transparent 40%),
+    linear-gradient(180deg, #0b1220 0%, #0b1020 50%, #0d0b1a 100%);
   color: #e9efff;
 }
+
+/* ─── Neon Animated Background System ─────────────────────────────── */
+
+@keyframes neon-border-sweep {
+  0%   { background-position: 0%   50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0%   50%; }
+}
+
+@keyframes neon-scan-line {
+  0%   { top: -2px;             opacity: 0;    }
+  8%   { opacity: 0.65; }
+  92%  { opacity: 0.65; }
+  100% { top: calc(100% + 2px); opacity: 0;    }
+}
+
+@keyframes neon-glow-pulse {
+  0%, 100% {
+    box-shadow:
+      0 0 12px rgba(0, 245, 255, 0.35),
+      0 0 30px rgba(0, 245, 255, 0.18),
+      0 0 60px rgba(0, 245, 255, 0.08);
+  }
+  50% {
+    box-shadow:
+      0 0 20px rgba(0, 245, 255, 0.75),
+      0 0 50px rgba(0, 245, 255, 0.45),
+      0 0 90px rgba(0, 245, 255, 0.25);
+  }
+}
+
+@keyframes neon-ambient-pulse {
+  0%, 100% { opacity: 0.12; }
+  50%       { opacity: 0.30; }
+}
+
+/* Header: animated navy-blue sweep border */
+.neon-border-bottom {
+  position: relative;
+}
+.neon-border-bottom::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1.5px;
+  background: linear-gradient(
+    90deg,
+    transparent  0%,
+    #0a1e5e      12%,
+    #1a5fff      35%,
+    #00b4ff      55%,
+    #1a5fff      75%,
+    #0a1e5e      88%,
+    transparent  100%
+  );
+  background-size: 300% 100%;
+  animation: neon-border-sweep 3.5s linear infinite;
+  box-shadow:
+    0 0 6px  rgba(26, 95, 255, 0.70),
+    0 0 14px rgba(26, 95, 255, 0.40),
+    0 1px 22px rgba(0, 180, 255, 0.30);
+  pointer-events: none;
+}
+
+/* ─── Space Background System ──────────────────────────────────────── */
+
+@keyframes star-twinkle-1 {
+  0%, 100% { opacity: 0.20; }
+  45%       { opacity: 0.55; }
+  75%       { opacity: 0.12; }
+}
+
+@keyframes star-twinkle-2 {
+  0%, 100% { opacity: 0.28; }
+  30%       { opacity: 0.08; }
+  65%       { opacity: 0.48; }
+}
+
+@keyframes nebula-drift {
+  0%   { transform: translate(0px, 0px) scale(1);      }
+  33%  { transform: translate(20px, -14px) scale(1.04); }
+  66%  { transform: translate(-16px, 10px) scale(0.97); }
+  100% { transform: translate(0px, 0px) scale(1);      }
+}
+
+/* Drifting nebula layer */
+.space-nebula {
+  background:
+    radial-gradient(ellipse at 18% 28%, rgba(80, 0, 200, 0.22), transparent 55%),
+    radial-gradient(ellipse at 82% 18%, rgba(0, 60, 190, 0.18), transparent 50%),
+    radial-gradient(ellipse at 50% 85%, rgba(0, 160, 255, 0.12), transparent 45%);
+  animation: nebula-drift 20s ease-in-out infinite;
+}
+
+/* Dense distant star field */
+.star-field-far {
+  background-image: radial-gradient(#d8e8ff 0.55px, transparent 0.55px);
+  background-size: 30px 30px;
+  animation: star-twinkle-1 7s ease-in-out infinite;
+}
+
+/* Medium-depth star field */
+.star-field-mid {
+  background-image: radial-gradient(#b8d0ff 1px, transparent 1px);
+  background-size: 72px 72px;
+  background-position: 18px 22px;
+  animation: star-twinkle-2 11s ease-in-out infinite;
+}
+
+/* Sparse bright foreground stars */
+.star-field-near {
+  background-image: radial-gradient(#ffffff 1.8px, transparent 1.8px);
+  background-size: 145px 145px;
+  background-position: 55px 44px;
+  animation: star-twinkle-1 15s ease-in-out infinite reverse;
+}
+
+/* Ambient neon glow for sections */
+.neon-section-ambient {
+  animation: neon-ambient-pulse 5s ease-in-out infinite;
+}
+
+/* ─────────────────────────────────────────────────────────────────── */
 
 ::-webkit-scrollbar {
   width: 10px;

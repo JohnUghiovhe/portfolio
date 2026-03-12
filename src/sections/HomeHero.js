@@ -13,20 +13,26 @@ export default function HomeHero() {
   const { isScroll, jumpToDown } = useContext(ScrollContext);
 
   return (
-    <section className="relative container mx-auto flex max-h-screen min-h-screen flex-col items-center justify-center overflow-hidden px-5 pt-16 md:px-1">
-      <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_16%_20%,rgba(255,138,0,0.28),transparent_42%),radial-gradient(circle_at_84%_14%,rgba(0,212,166,0.2),transparent_40%),radial-gradient(circle_at_50%_70%,rgba(12,18,36,0.92),transparent_62%)]" />
-      <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(#ffd166_0.7px,transparent_0.7px)] bg-size-[40px_40px] opacity-30" />
+    <section className="relative w-full max-w-none flex max-h-screen min-h-screen flex-col items-center justify-center overflow-hidden px-0 pt-16">
+      {/* Space: nebula drift */}
+      <div className="space-nebula pointer-events-none absolute inset-0 -z-10" />
+      {/* Space: three-depth star fields */}
+      <div className="star-field-far pointer-events-none absolute inset-0 -z-10 opacity-20" />
+      <div className="star-field-mid pointer-events-none absolute inset-0 -z-10 opacity-25" />
+      <div className="star-field-near pointer-events-none absolute inset-0 -z-10 opacity-30" />
+      {/* Deep space radial vignette */}
+      <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_50%_50%,transparent_30%,#0b1220_100%)]" />
 
       <p className="text-center font-lato text-xl font-semibold tracking-wide text-neutral-100 sm:text-2xl md:text-4xl">
         Hi, I&apos;m
       </p>
-      <p className="relative z-10 mb-8 pb-2 leading-[1.15] bg-linear-to-r from-[#ff7a18] via-[#ffd166] to-[#00d4a6] bg-clip-text text-center font-lato text-5xl font-black tracking-tight text-transparent sm:text-6xl md:text-7xl lg:text-8xl">
+      <p className="relative z-10 mb-8 pb-2 leading-[1.15] bg-linear-to-r from-[#f3bb93] via-[#ffd166] to-[#00d4a6] bg-clip-text text-center font-lato text-5xl font-black tracking-tight text-transparent sm:text-6xl md:text-7xl lg:text-8xl">
         John Ughiovhe
       </p>
       <div className="relative z-0 mx-auto h-full w-full max-w-lg">
-        <div className="absolute top-0 -right-4 h-56 w-56 animate-blob rounded-full bg-[#ff8a00] opacity-30 blur-2xl filter" />
-        <div className="animation-delay-2000 absolute top-0 -left-4 h-56 w-56 animate-blob rounded-full bg-[#00d4a6] opacity-28 blur-2xl filter" />
-        <div className="animation-delay-3000 absolute -top-14 left-20 h-56 w-56 animate-blob rounded-full bg-[#ff4d6d] opacity-22 blur-2xl filter" />
+        <div className="absolute top-0 -right-4 h-56 w-56 animate-blob rounded-full bg-[#ff6b00] opacity-40 blur-2xl filter" />
+        <div className="animation-delay-2000 absolute top-0 -left-4 h-56 w-56 animate-blob rounded-full bg-[#00f5ff] opacity-35 blur-2xl filter" />
+        <div className="animation-delay-3000 absolute -top-14 left-20 h-56 w-56 animate-blob rounded-full bg-[#c400ff] opacity-30 blur-2xl filter" />
       </div>
       <div className="z-50 flex flex-col items-center space-y-4 sm:space-y-8">
         <h1 className="z-50 text-center font-lato text-2xl font-bold text-neutral-100 sm:text-4xl md:text-5xl">

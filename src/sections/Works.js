@@ -33,7 +33,9 @@ export default function Works() {
 
   return (
     <>
-      <section className="container mx-auto mt-16 space-y-10 pb-16 sm:pb-16 space-x-5 md:space-x-0">
+      <section className="relative container mx-auto mt-16 space-y-10 pb-16 sm:pb-16 space-x-5 md:space-x-0">
+        {/* Neon ambient glow */}
+        <div className="neon-section-ambient pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_50%_0%,rgba(123,0,255,0.07),transparent_55%)]" />
         <HeadingAnimate amount={1}>
           <h2 className="text-center font-lato text-3xl font-semibold text-primary-700 dark:text-primary-300 sm:text-4xl">
             Recent Projects

@@ -15,7 +15,9 @@ import cloudAnimationData from '../mock/lottie/cloudinfra.json';
 export default function Skills() {
   return (
     <>
-      <section id="skills" className="container mx-auto mt-16 text-center sm:mt-10">
+      <section id="skills" className="relative container mx-auto mt-16 text-center sm:mt-10">
+        {/* Neon ambient glow */}
+        <div className="neon-section-ambient pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_50%_0%,rgba(0,245,255,0.07),transparent_60%)]" />
         <HeadingAnimate>
           <h2 className="mb-5 font-lato text-3xl font-semibold text-primary-700 dark:text-primary-300 sm:text-4xl">
             What i do

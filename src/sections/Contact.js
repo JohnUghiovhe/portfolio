@@ -51,7 +51,7 @@ export default function Contact() {
     }
   };
   return (
-    <section className="relative container mx-auto mt-12 px-5 py-12">
+    <section id="contact" className="relative container mx-auto mt-12 px-5 py-12">
       {/* Neon ambient glow */}
       <div className="neon-section-ambient pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_50%_0%,rgba(255,107,0,0.07),transparent_55%)]" />
       <HeadingAnimate>
@@ -199,7 +199,7 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={isSending}
-                className="w-full rounded-lg bg-primary-600 px-6 py-3 font-semibold text-white transition hover:bg-primary-700 disabled:opacity-50 dark:bg-primary-500 dark:hover:bg-primary-600"
+                className="w-full cursor-pointer rounded-lg bg-primary-600 px-6 py-3 font-semibold text-white shadow-md shadow-primary-800/30 transition-all duration-200 hover:-translate-y-0.5 hover:bg-primary-700 hover:shadow-lg hover:shadow-primary-700/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-300 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a1929] active:translate-y-0 active:scale-[0.99] disabled:cursor-not-allowed disabled:opacity-50 disabled:shadow-none disabled:hover:translate-y-0 disabled:hover:bg-primary-600 dark:bg-primary-500 dark:hover:bg-primary-600"
               >
                 {isSending ? 'Sending...' : 'Send Message'}
               </button>
@@ -207,8 +207,6 @@ export default function Contact() {
           </div>
         </div>
       </LoadAnimate>
-
-      <div id="contact" />
     </section>
   );
 }

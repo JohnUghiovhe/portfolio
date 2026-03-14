@@ -26,7 +26,7 @@ export default function HomeHero() {
       <p className="text-center font-lato text-xl font-semibold tracking-wide text-neutral-100 sm:text-2xl md:text-4xl">
         Hi, I&apos;m
       </p>
-      <p className="relative z-10 mb-8 pb-2 leading-[1.15] bg-linear-to-r from-[#f3bb93] via-[#ffd166] to-[#00d4a6] bg-clip-text text-center font-lato text-5xl font-black tracking-tight text-transparent sm:text-6xl md:text-7xl lg:text-8xl">
+      <p className="relative z-10 mb-8 pb-2 leading-[1.15] bg-linear-to-r from-[#0eaddd] via-[#f7dffa] to-[#0eaddd] bg-clip-text text-center font-lato text-5xl font-black tracking-tight text-transparent sm:text-6xl md:text-7xl lg:text-8xl">
         John Ughiovhe
       </p>
       <div className="relative z-0 mx-auto h-full w-full max-w-lg">
@@ -36,7 +36,7 @@ export default function HomeHero() {
       </div>
       <div className="z-50 flex flex-col items-center space-y-4 sm:space-y-8">
         <h1 className="z-50 text-center font-lato text-2xl font-bold text-neutral-100 sm:text-4xl md:text-5xl">
-          <span className="bg-linear-to-r from-[#ff7a18] via-[#ffd166] to-[#00d4a6] bg-clip-text text-transparent">
+          <span className="bg-linear-to-r from-[#0eaddd] via-[#e7beec] to-[#0eaddd] bg-clip-text text-transparent">
             <Typewriter
               style={{ color: 'inherit' }}
               words={HERO_TITLES}

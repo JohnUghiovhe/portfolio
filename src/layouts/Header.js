@@ -14,7 +14,7 @@ export default function Header() {
     { label: 'About', href: '#about' },
     { label: 'Skills', href: '#skills' },
     { label: 'Projects', href: '#works' },
-    { label: 'Experience', href: '#works' },
+    { label: 'Experience', href: '#experience' },
     { label: 'Contact', href: '#contact' },
   ];
 
@@ -33,10 +33,10 @@ export default function Header() {
           transition={{ duration: 2, delay: 0.5 }}
         >
           <h3
-            className="text-md cursor-pointer bg-linear-to-r from-[#d5deee] to-[#ffd166] bg-clip-text font-lato font-black tracking-widest text-transparent md:text-2xl"
+            className="text-md cursor-pointer bg-linear-to-r from-[#d5deee] to-[#0eaddd] bg-clip-text font-lato font-black tracking-widest text-transparent md:text-2xl"
             onClick={jumpToTop}
           >
-            &lt;JohnUghiovhe/&gt;
+            &lt;JU/&gt;
           </h3>
         </motion.div>
         <motion.div

@@ -70,7 +70,6 @@ export default function Works() {
           </div>
         </LoadAnimate>
       </section>
-      <div id="contact" />
     </>
   );
 }

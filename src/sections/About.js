@@ -51,17 +51,17 @@ export default function About() {
                             </div>
 
                             <div className="mt-10 grid grid-cols-2 gap-6 md:grid-cols-3">
-                                <div className="rounded-lg bg-[#1a2f5a]/40 p-4">
+                                {/* <div className="rounded-lg bg-[#1a2f5a]/40 p-4">
                                     <p className="text-sm font-semibold text-[#00b4ff]">Experience</p>
                                     <p className="mt-2 text-lg font-bold text-neutral-100">Add Years</p>
-                                </div>
+                                </div> */}
                                 <div className="rounded-lg bg-[#1a2f5a]/40 p-4">
                                     <p className="text-sm font-semibold text-[#1a5fff]">Projects</p>
                                     <p className="mt-2 text-lg font-bold text-neutral-100">5+</p>
                                 </div>
                                 <div className="rounded-lg bg-[#1a2f5a]/40 p-4">
                                     <p className="text-sm font-semibold text-[#00b4ff]">Focus</p>
-                                    <p className="mt-2 text-lg font-bold text-neutral-100">Add Focus</p>
+                                    <p className="mt-2 text-lg font-bold text-neutral-100">Backend Development • API Design • Scalable Web Applications • System Architecture</p>
                                 </div>
                             </div>
                         </div>

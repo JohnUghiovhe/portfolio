@@ -51,8 +51,12 @@ export const PROJECTS = [
       getSkillByLabel(BACKEND_SKILLS, 'Redis'),
       getSkillByLabel(BACKEND_SKILLS, 'Mongodb'),
     ],
-    description:
-      'Eventful is a comprehensive event ticketing and management platform that connects event creators with attendees. From concerts to sports events, Eventful provides a seamless experience for creating, discovering, and attending events. built with React.js and Node.js. It features a responsive UI, user authentication, and integration with MongoDB for data storage.',
+    description: [
+      'Built a full-stack event ticketing platform enabling event creation, ticket checkout, and attendee management, replacing manual event coordination workflows.',
+      'Designed modular REST APIs with Node.js, TypeScript, and Express for event, ticketing, and user services, improving scalability and development speed.',
+      'Reduced API response latency by integrating Redis caching for frequently accessed event and ticket data.',
+      'Implemented a scalable backend architecture using TypeScript, Express, and MongoDB to support secure and maintainable platform growth.',
+    ],
     repoLink: 'https://github.com/JohnUghiovhe/eventful',
     sourceLink: 'https://eventful-frontend-908q.onrender.com',
     category: [PROJECT_CATEGORY.FULL_STACK],
@@ -67,8 +71,13 @@ export const PROJECTS = [
       getSkillByLabel(BACKEND_SKILLS, 'Express (Node.js Framework)'),
       getSkillByLabel(BACKEND_SKILLS, 'socket.io'),
     ],
-    description:
-      'A real-time guessing game using Express and Socket.IO. One player is the Game Master (GM) who sets the question/answer and starts the session. Players join, see each other’s scores, and have limited attempts to guess before the timer expires.',
+    description: [
+      'Built a real-time multiplayer game using Node.js, Express, and Socket.IO.', 
+      'Implemented WebSocket-based bidirectional communication for low-latency gameplay.', 
+      'Developed game logic including timers, scoring system, rounds, and player attempts.',
+      'Created a responsive frontend interface using HTML, CSS, and JavaScript.',
+      'Designed scalable event-driven server architecture to support multiple concurrent users. '
+    ],
     repoLink: 'https://github.com/JohnUghiovhe/Guessing-Game',
     sourceLink: 'https://guessing-game-6937.onrender.com', 
     category: [PROJECT_CATEGORY.FULL_STACK],
@@ -84,8 +93,13 @@ export const PROJECTS = [
       getSkillByLabel(BACKEND_SKILLS, 'NestJS (Node.js Framework)'),
       getSkillByLabel(BACKEND_SKILLS, 'Sql')
     ],
-    description:
-      'A TypeScript/NestJS-based restaurant chatbot that assists customers in placing orders for their preferred meals.',
+    description: [
+      'Built modular REST APIs using NestJS and TypeScript for menu management, orders, and payments, adhering to web architecture best practices.',
+      'Designed session-based ordering system without login requirement to improve accessibility. ',
+      'Integrated Paystack payment gateway with real-time verification handling.',
+      'Structured relational database schema using SQLite and TypeORM.',
+      'Developed responsive frontend chat interface with real-time backend integration using HTML, CSS, and JavaScript.',
+    ],
     repoLink: 'https://github.com/JohnUghiovhe/Restaurant-ChatBot',
     sourceLink: 'https://restaurant-chatbot-txcj.onrender.com/',
     category: [PROJECT_CATEGORY.FULL_STACK],
@@ -99,7 +113,11 @@ export const PROJECTS = [
       getSkillByLabel(FRONTEND_SKILLS, 'Javascript'),
       getSkillByLabel(BACKEND_SKILLS, 'REST Api'),
     ],
-    description: 'This is a Blogging API built with Node.js and MongoDB. The API allows users to create, manage, and read blog articles. It supports user authentication and provides endpoints for both logged-in and non-logged-in users.',
+    description: [
+      'Delivered a blogging backend that supports article publishing, management, and public content access through REST endpoints.',
+      'Implemented authentication and access control to separate author actions from public reader interactions.',
+      'Created a reusable API structure that makes content operations straightforward for both protected and open routes.',
+    ],
     repoLink: 'https://github.com/JohnUghiovhe/blogging-api',
     sourceLink: 'https://blogging-api-d994.onrender.com',
     category: [PROJECT_CATEGORY.FULL_STACK],
@@ -114,8 +132,11 @@ export const PROJECTS = [
       getSkillByLabel(FRONTEND_SKILLS, 'Javascript'),
       getSkillByLabel(FRONTEND_SKILLS, 'Next.js'),
     ],
-    description:
-      'Simple and classic modern portfolio for who wants to present himself as a software developer. Portfolio build with highly customizable using Tailwind CSS, Next Js.',
+    description: [
+      'Created a personal portfolio that presents projects, skills, and contact paths in a clear developer-focused narrative.',
+      'Used Tailwind CSS and Next.js to ship a responsive interface that is easy to customize and extend over time.',
+      'Improved professional presentation by turning static profile content into a polished, live web presence.',
+    ],
     repoLink: 'https://github.com/JohnUghiovhe/portfolio',
     sourceLink: 'https://portfolio-johnughiovhe.vercel.app/',
     category: [PROJECT_CATEGORY.FRONTEND],

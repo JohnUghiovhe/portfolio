@@ -68,7 +68,7 @@ export default function Contact() {
               Let's Connect
             </h3>
             <p className="mb-8 text-sm leading-relaxed text-gray-700 dark:text-gray-300">
-              Feel free to reach out if you have a question, a project idea, or simply want to connect. I'm always open to discussing new opportunities and collaborations.
+              I’m currently open to backend or full-stack engineering opportunities where I can contribute to building scalable applications and reliable systems. If you have a project idea, collaboration, or opportunity in mind, feel free to reach out.
             </p>
 
             {/* Contact Details */}

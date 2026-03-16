@@ -5,13 +5,30 @@ import Iconify from '../Iconify';
 // ----------------------------------------------------------------------
 
 export default function ProjectCard({ imgSrc, title, description, repoLink, sourceLink, techIcons }) {
+  const impactPoints = Array.isArray(description) ? description : [description];
+
   return (
     <div className="flex h-full min-h-124 w-full max-w-xs flex-col rounded-lg border border-gray-200 shadow-md dark:border-gray-700 dark:bg-[#132f4c]/70">
       <img className="h-37.5 w-full rounded-t-lg object-cover" src={imgSrc} alt={title} />
 
       <div className="flex flex-1 flex-col p-5">
         <h1 className="mb-2 text-lg font-semibold  text-gray-900 dark:text-white">{title}</h1>
-        <p className="mb-3 text-sm font-normal text-gray-700 dark:text-gray-400">{description}</p>
+        <div className="mb-3">
+          <p className="mb-2 text-[11px] font-bold tracking-widest text-primary-600 dark:text-primary-300">
+            IMPACT
+          </p>
+          <ul className="space-y-2">
+            {impactPoints.filter(Boolean).map((point, index) => (
+              <li
+                key={`impact-${index}`}
+                className="flex items-start gap-2 text-sm font-normal text-gray-700 dark:text-gray-400"
+              >
+                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary-600 dark:bg-primary-300" />
+                <span>{point}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
 
         {techIcons && techIcons.length > 0 && (
           <div className="mt-4 flex flex-wrap gap-5">
@@ -67,7 +84,7 @@ export default function ProjectCard({ imgSrc, title, description, repoLink, sour
 ProjectCard.propTypes = {
   imgSrc: PropTypes.string,
   title: PropTypes.string,
-  description: PropTypes.string,
+  description: PropTypes.oneOfType([PropTypes.string, PropTypes.arrayOf(PropTypes.string)]),
   repoLink: PropTypes.string,
   sourceLink: PropTypes.string,
   techIcons: PropTypes.array,

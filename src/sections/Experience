@@ -12,35 +12,31 @@ import LoadAnimate from '../components/animate/LoadAnimate';
  *   company     — company / organisation name
  *   period      — date range string, e.g. "Jan 2024 – Present"
  *   location    — optional city / remote label
- *   description — short summary paragraph
- *   highlights  — array of bullet-point achievements
+ *   highlights  — impact-based bullet points (outcomes/results)
  */
 const EXPERIENCES = [
   {
     role: 'Software Engineer',
+    company: 'Independent Projects',
     period: 'March 2025 – Present',
     location: 'Lagos, Nigeria',
-    description:
-      'Add a short summary of your responsibilities and the impact you had in this role.',
     highlights: [
-      'Built a full-stack event ticketing platform using Node.js, Express, MongoDB, and Redis',
-      'Designed RESTful APIs for event creation, ticket purchases, and user management',
-      'Implemented caching with Redis to improve response performance',
-      'Structured scalable backend architecture with TypeScript and Express.'
+      'Launched a full-stack ticketing platform with Node.js, Express, MongoDB, and Redis that supports end-to-end event creation and checkout.',
+      'Delivered modular REST APIs for events, ticketing, and user flows, improving feature delivery speed across the product.',
+      'Improved API responsiveness by introducing Redis caching for frequently accessed resources.',
+      'Designed a scalable TypeScript + Express backend structure to reduce maintenance overhead and support future growth.'
     ],
   },
-  // {
-  //   role: 'Add Your Job Title',
-  //   company: 'Company Name',
-  //   period: 'Month Year – Month Year',
-  //   location: 'Location / Remote',
-  //   description:
-  //     'Add a short summary of your responsibilities and the impact you had in this role.',
-  //   highlights: [
-  //     'Key achievement or responsibility',
-  //     'Another key achievement',
-  //   ],
-  // },
+
+  {    role: 'Backend Developer (Intern)',
+    company: 'AltSchool Africa',
+    period: 'June 2024 – September 2024',
+    location: 'Remote',
+    highlights: [
+      'Developed a backend for an event ticketing and management system using Node.js, Express, MongoDB, and Redis.',
+    ],
+  },
+
 ];
 
 // ----------------------------------------------------------------------
@@ -70,7 +66,7 @@ export default function Experience() {
             <div className="absolute left-5 top-0 h-full w-px bg-linear-to-b from-[#1a5fff] via-[#00b4ff]/40 to-transparent md:left-1/2 md:-translate-x-px" />
 
             <div className="space-y-12">
-              {EXPERIENCES.map(({ role, company, period, location, description, highlights }, i) => (
+              {EXPERIENCES.map(({ role, company, period, location, highlights }, i) => (
                 <div
                   key={`experience-${i}`}
                   className="relative pl-14 md:pl-0"
@@ -98,24 +94,21 @@ export default function Experience() {
                       </div>
 
                       {/* Company + location */}
-                      <div className={`mb-4 flex flex-wrap items-center gap-x-2 text-sm ${i % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}>
-                        <span className="font-semibold text-[#1a5fff]">{company}</span>
-                        {location && (
-                          <>
-                            <span className="text-gray-600 dark:text-gray-500">·</span>
-                            <span className="text-gray-400">{location}</span>
-                          </>
-                        )}
-                      </div>
-
-                      {/* Description */}
-                      <p className="mb-4 text-sm leading-relaxed text-neutral-300">
-                        {description}
-                      </p>
+                      {(company || location) && (
+                        <div className={`mb-4 flex flex-wrap items-center gap-x-2 text-sm ${i % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}>
+                          {company && <span className="font-semibold text-[#1a5fff]">{company}</span>}
+                          {company && location && <span className="text-gray-600 dark:text-gray-500">·</span>}
+                          {location && <span className="text-gray-400">{location}</span>}
+                        </div>
+                      )}
 
                       {/* Highlights */}
                       {highlights?.length > 0 && (
-                        <ul className={`space-y-1.5 ${i % 2 !== 0 ? 'md:items-end' : ''} flex flex-col`}>
+                        <div>
+                          <p className={`mb-3 text-xs font-bold tracking-widest text-[#00b4ff] ${i % 2 !== 0 ? 'md:text-right' : ''}`}>
+                            IMPACT HIGHLIGHTS
+                          </p>
+                          <ul className={`space-y-2 ${i % 2 !== 0 ? 'md:items-end' : ''} flex flex-col`}>
                           {highlights.map((point, j) => (
                             <li
                               key={`highlight-${i}-${j}`}
@@ -125,7 +118,8 @@ export default function Experience() {
                               {point}
                             </li>
                           ))}
-                        </ul>
+                          </ul>
+                        </div>
                       )}
                     </div>
                   </div>

@@ -10,8 +10,7 @@ import { SKILL_GROUPS } from '../mock/tech-skills';
 
 export default function Skills() {
   return (
-    <>
-      <section id="skills" className="relative container mx-auto mt-16 pb-16 text-center sm:mt-10">
+    <section id="skills" className="relative container mx-auto mt-16 pb-16 text-center sm:mt-10">
         {/* Neon ambient glow */}
         <div className="neon-section-ambient pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_50%_0%,rgba(0,245,255,0.07),transparent_60%)]" />
 
@@ -62,7 +61,5 @@ export default function Skills() {
           </div>
         </LoadAnimate>
       </section>
-      <div id="works" />
-    </>
   );
 }

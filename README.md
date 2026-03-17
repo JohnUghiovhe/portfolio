@@ -1,353 +1,166 @@
-# John Ughiovhe - Portfolio
+# John Ughiovhe Portfolio
 
-[![Next.js](https://img.shields.io/badge/Next.js-16.1.6-black?logo=next.js)](https://nextjs.org/)
-[![React](https://img.shields.io/badge/React-18.2.0-blue?logo=react)](https://reactjs.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.2.1-38bdf8?logo=tailwind-css)](https://tailwindcss.com/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+A production-ready personal portfolio built with Next.js, React, Tailwind CSS, Framer Motion, and EmailJS.
 
-A modern, professional portfolio website built with Next.js, Tailwind CSS, Framer Motion, and EmailJS.
+## Overview
 
-## 🌟 Key Features
+This project showcases:
+- Professional profile and social presence
+- Skills and tech stack
+- Filterable project gallery
+- Experience timeline
+- Working contact form powered by EmailJS
 
-### Design & UX
-- **Navy Blue Theme** (`#0a1929`) - Professional dark mode with custom color palette
-- **Responsive Layout** - Mobile-first design, optimized for all screen sizes
-- **Smooth Animations** - Framer Motion powered hero, sections, and skill reveals
-- **Dark/Light Mode Toggle** - Theme preference persisted in local storage
-- **Animated Blob Background** - Dynamic gradient orbs on hero section
+## Current Features
 
-### Sections
-- **Hero Section** - Typewriter effect with professional titles and social links (GitHub, LinkedIn)
-- **Skills ("What I Do")** - Frontend & Backend development showcases with Lottie animations
-- **Projects** - Filterable project gallery with tabs (All, Full Stack, Open Source)
-  - Live demo and repository links with labels
-  - Tech stack icons for each project
-- **Contact** - Two-column layout with contact info and EmailJS integration
-- **Footer** - Social links (GitHub, LinkedIn, X, Email) with copyright notice
+- Responsive layout for desktop and mobile
+- Anchor-based smooth section navigation
+- Animated hero with typewriter text and layered visual effects
+- Project filtering by category (All, Full Stack, Open Source, Frontend, Backend)
+- Experience timeline section
+- Contact form with loading state and success/error feedback
 
-### Technical Features
-- **EmailJS Integration** - Working contact form with success/error handling
-- **Smooth Scroll Navigation** - Anchor-based navigation to all sections
-- **Project Filtering** - Category-based project showcase
-- **Iconify Icons** - 100k+ icons available via `@iconify/react`
-- **Custom Scrollbar** - Styled to match navy blue theme
+## Tech Stack
 
-## 🛠️ Tech Stack
-
-**Framework & Libraries:**
-- [Next.js 16.1.6](https://nextjs.org/) - React framework with SSR/SSG
-- [React 18.2.0](https://reactjs.org/) - UI library
-- [Tailwind CSS 4.2.1](https://tailwindcss.com/) - Utility-first CSS framework
-- [Framer Motion 7.6.5](https://www.framer.com/motion/) - Animation library
-- [EmailJS 3.9.1](https://www.emailjs.com/) - Email service integration
-
-**Additional Tools:**
-- [Iconify React 4.0.0](https://iconify.design/) - Icon library
-- [Lottie React 2.3.1](https://airbnb.io/lottie/) - JSON-based animations
-- [React Simple Typewriter 4.0.5](https://github.com/awran5/react-simple-typewriter) - Typewriter effect
+- Next.js 16.1.6
+- React 18.2.0
+- Tailwind CSS 4.2.1
+- Framer Motion 7.6.5
+- EmailJS Browser 3.9.1
+- Iconify React 4.0.0
+- React Simple Typewriter 4.0.5
 
 ## Project Structure
 
 ```text
 src/
-  components/      Reusable UI building blocks
-  context/         Scroll and shared UI state
-  hooks/           Custom hooks (theme mode)
-  layouts/         App shell / header
-  mock/            Editable portfolio content
-  pages/           Next.js pages
-  sections/        Home page sections
-  styles/          Global styles
+  components/
+    animate/
+    social/
+    works/
+  context/
+  hooks/
+  layouts/
+  mock/
+  pages/
+  sections/
+    About.js
+    Contact.js
+    Experience
+    HomeHero.js
+    Projects.js
+    Skills.js
+  styles/
 ```
 
 ## Getting Started
 
-### 1) Clone and install
+### 1) Install dependencies
 
 ```bash
-git clone https://github.com/JohnUghiovhe/portfolio.git
-cd portfolio
 npm install
 ```
 
 ### 2) Configure environment variables
 
-Create a `.env.local` file in the project root:
+Create `.env.local` in the project root:
 
 ```env
-NEXT_PUBLIC_EMAIL_SERVICE_ID="YOUR SERVICE ID"
-NEXT_PUBLIC_EMAIL_TEMPLATE_ID="YOUR TEMPLATE ID"
-NEXT_PUBLIC_EMAIL_PUBLIC_KEY="YOUR PUBLIC KEY"
+NEXT_PUBLIC_EMAIL_SERVICE_ID="YOUR_SERVICE_ID"
+NEXT_PUBLIC_EMAIL_TEMPLATE_ID="YOUR_TEMPLATE_ID"
+NEXT_PUBLIC_EMAIL_PUBLIC_KEY="YOUR_PUBLIC_KEY"
 ```
 
-You can copy values from `.env.example` and replace with your EmailJS credentials.
-
-### 3) Run locally
+### 3) Start development server
 
 ```bash
-# Development server (http://localhost:3031)
 npm run dev
 ```
 
-## Available Scripts
+The app runs on `http://localhost:3031`.
 
-- `npm run dev` — start development server on port `3031`
-- `npm run build` — create production build in `.next`
-- `npm start` — start production server (requires `npm run build` first)
-- `npm run lint` — run Next.js lint
-- `npm run lint:es` — run ESLint on `.js/.jsx`
-- `npm run lint:fix` — auto-fix lint issues
+## Scripts
 
-## 🎨 Design System
+- `npm run dev` - Start development server on port 3031
+- `npm run build` - Create production build
+- `npm run start` - Start production server
+- `npm run lint` - Run Next.js lint
+- `npm run lint:es` - Run ESLint on .js/.jsx files
+- `npm run lint:fix` - Auto-fix lint issues
 
-### Color Palette
+### Maintenance scripts in package.json
 
-```css
-/* Primary Navy Blue Theme */
---background-color: #0a1929;        /* Main background */
---secondary-bg: #132f4c;            /* Card backgrounds */
---hover-bg: #1e3a5f;                /* Hover states */
+The following scripts use `rm -rf` and are Unix-style:
+- `clear-all`
+- `re-start`
+- `re-build`
 
-/* Primary Colors */
---primary-300: #7cd1fd;             /* Light accent */
---primary-500: #0ca3eb;             /* Main brand */
---primary-700: #0168a3;             /* Dark accent */
---primary-900: #06283d;             /* Deepest shade */
-```
+If you are on Windows PowerShell, replace `rm -rf` with `Remove-Item -Recurse -Force` equivalents before using them.
 
-### Typography
-- **Headings:** Lato (sans-serif)
-- **Body:** Roboto (sans-serif)
+## Content Customization
 
-## 📝 Customization Guide
+Update the following files to personalize the portfolio:
 
-### Personal Info & Social Links
+- `src/mock/profile.js` - Name, hero text, bio, social links, email, CV link
+- `src/mock/tech-skills.js` - Skills groups and labels
+- `src/mock/projects.js` - Projects data, categories, links, and media
+- `src/sections/Experience` - Experience timeline entries
 
-Edit `src/mock/profile.js`:
+## Verified Updates Made So Far
 
-```javascript
-export const HERO_TITLES = [
-  'John Ughiovhe',
-  'A Backend Engineer',
-  'An AI Enthusiast',
-  'An open-source contributor'
-];
+This section records the implemented fixes and cleanup completed in this codebase.
 
-export const aboutParagraph = 'Your professional bio...';
-export const contactEmail = 'your.email@example.com';
-export const cvLink = '/Your-CV.pdf';
-export const documentTitle = 'Your Name | Title';
+### Navigation and section fix
 
-// Social links for hero section (GitHub, LinkedIn)
-export const SOCIAL_LINKS = [
-  { link: 'https://github.com/username', icon: 'akar-icons:github-fill' },
-  { link: 'https://linkedin.com/in/username', icon: 'akar-icons:linkedin-fill' }
-];
+1. Updated navbar Projects link target:
+   - `#works` -> `#projects` in `src/layouts/Header.js`
+2. Ensured Projects section is anchor-targetable:
+   - Added `id="projects"` and `scroll-mt-24` in `src/sections/Projects.js`
+3. Replaced old section usage in home page:
+   - `Works` import/component -> `Projects` in `src/pages/index.js`
+4. Removed deprecated section file:
+   - Deleted `src/sections/Works.js`
 
-// Footer social links (all platforms)
-export const FOOTER_SOCIAL_LINKS = [
-  { link: 'https://github.com/username', icon: 'akar-icons:github-fill', label: 'GitHub' },
-  { link: 'https://linkedin.com/in/username', icon: 'akar-icons:linkedin-fill', label: 'LinkedIn' },
-  { link: 'https://twitter.com/username', icon: 'akar-icons:twitter-fill', label: 'X (Twitter)' },
-  { link: 'mailto:your@email.com', icon: 'clarity:email-solid', label: 'Email' }
-];
-```
+### Dead code and cleanup
 
-**CV Setup:** Place your CV file in `public/` (e.g., `public/John-Ughiovhe-CV.pdf`) and update `cvLink`.
+1. Removed unused components:
+   - Deleted `src/components/Lottie.js`
+   - Deleted `src/components/skills/ListItem.js`
+   - Deleted `src/components/skills/TechIcon.js`
+2. Removed unused data assets:
+   - Deleted `src/mock/lottie/coding.json`
+   - Deleted `src/mock/lottie/cloudinfra.json`
+3. Removed obsolete placeholder/stale code:
+   - Removed legacy `<div id="works" />` from `src/sections/Skills.js`
+   - Removed stale commented nav item in `src/layouts/Header.js`
+   - Removed stale commented block in `src/sections/About.js`
+4. Removed unused Tailwind import:
+   - Deleted `const colors = require('tailwindcss/colors');` from `tailwind.config.js`
 
-### Skills
+### Validation status
 
-Edit `src/mock/tech-skills.js`:
+After the cleanup and navigation updates:
+- `npm run lint:es` passed
+- `npm run build` passed (last run exit code: 0)
 
-- `FRONTEND_SKILLS`
-- `BACKEND_SKILLS`
-- `FRONTEND_DESCRIPTIONS`
-- `BACKEND_DESCRIPTIONS`
+## Troubleshooting
 
-Each skill item shape:
+### Contact form not sending
 
-```js
-{
-  label: 'Your Skill',
-  proficiency: '90%',
-  icon: 'iconify:icon-name',
-  iconClasses: 'text-3xl'
-}
-```
+- Ensure all `NEXT_PUBLIC_EMAIL_*` variables are set in `.env.local`
+- Restart the dev server after adding/changing env vars
 
-### Projects
+### Anchor navigation not scrolling correctly
 
-Edit `src/mock/projects.js`:
+- Confirm nav href values match section IDs:
+  - `#about` -> `id="about"`
+  - `#skills` -> `id="skills"`
+  - `#projects` -> `id="projects"`
+  - `#contact` -> `id="contact"`
 
-```javascript
-export const PROJECTS = [
-  {
-    imgSrc: '/project-image.jpg',
-    title: 'Project Name',
-    description: 'Brief project description',
-    repoLink: 'https://github.com/username/repo',
-    sourceLink: 'https://live-demo.com',
-    category: [PROJECT_CATEGORY.FULL_STACK],
-    techIcons: [
-      { icon: 'logos:react' },
-      { icon: 'logos:nodejs' }
-    ]
-  }
-];
+## Author
 
-// Project categories for filtering
-export const PROJECT_CATEGORY = {
-  ALL: 'all',
-  FULL_STACK: 'full-stack',
-  OPEN_SOURCE: 'open-source'
-};
-```
-
-**Project Images:** Place images in `public/` and reference them with `/image-name.jpg`.
-
-### Lottie Animations
-
-Place animation JSON files in `src/mock/lottie/` and import:
-
-```javascript
-import codingAnimation from '../mock/lottie/coding.json';
-
-// Use in component
-<AnimatedLottie animationDataFile={codingAnimation} />
-```
-
-**Free Lottie Animations:** [LottieFiles](https://lottiefiles.com/)
-
-## Production Build
-
-```bash
-npm run build
-npm start
-```
-
-If `npm start` fails with “Could not find a production build”, run `npm run build` first.
-
-## Deployment
-
-This project can be deployed to Vercel or any Next.js-compatible host.
-
-### Vercel (recommended)
-
-1. Push this repository to GitHub
-2. Import the repo into Vercel
-3. Add environment variables in Vercel project settings
-4. Deploy
-
-## 🔧 Troubleshooting
-
-### Common Issues
-
-**Production build missing:**
-```bash
-# Error: "Could not find a production build in .next folder"
-npm run build && npm start
-```
-
-**Email form not working:**
-1. Verify EmailJS credentials in `.env.local`
-2. Check EmailJS service is active
-3. Restart dev server after adding env vars
-
-**Icons not showing:**
-- Verify icon names on [Iconify](https://icon-sets.iconify.design/)
-- Check spelling in `src/mock/*` files
-- Format: `collection-name:icon-name` (e.g., `akar-icons:github-fill`)
-
-**Dark mode not persisting:**
-- Check browser's local storage is enabled
-- Clear site data and try again
-
-**Navigation not scrolling:**
-- Ensure section IDs match anchor hrefs:
-  - `#skills` → `<section id="skills">`
-  - `#works` → `<div id="works">`
-  - `#contact` → `<div id="contact">`
-
-## 📁 Project Structure Details
-
-```text
-📦 portfolio/
-├── 📂 public/                  # Static assets
-│   ├── favicon.ico
-│   ├── John-Ughiovhe-CV.pdf
-│   └── [project-images].jpg
-├── 📂 src/
-│   ├── 📂 assets/              # Images and media
-│   ├── 📂 components/          # Reusable components
-│   │   ├── Iconify.js          # Icon wrapper
-│   │   ├── Lottie.js           # Animation wrapper
-│   │   ├── Footer.js           # Site footer
-│   │   ├── ScrollToTop.js      # Scroll to top button
-│   │   ├── animate/            # Animation components
-│   │   ├── skills/             # Skill display components
-│   │   ├── social/             # Social link components
-│   │   └── works/              # Project card component
-│   ├── 📂 context/
-│   │   └── ScrollContext.js    # Scroll state management
-│   ├── 📂 hooks/
-│   │   └── useDarkMode.js      # Theme toggle hook
-│   ├── 📂 layouts/
-│   │   ├── Header.js           # Navigation bar
-│   │   └── MainLayout.js       # Page wrapper
-│   ├── 📂 mock/                # Editable content
-│   │   ├── profile.js          # Personal info & social
-│   │   ├── projects.js         # Project data
-│   │   ├── tech-skills.js      # Skills data
-│   │   └── lottie/             # Animation files
-│   ├── 📂 pages/
-│   │   ├── _app.js             # App initialization
-│   │   ├── _document.js        # HTML document
-│   │   └── index.js            # Home page
-│   ├── 📂 sections/            # Page sections
-│   │   ├── HomeHero.js         # Hero/landing section
-│   │   ├── Skills.js           # Skills showcase
-│   │   ├── Works.js            # Projects gallery
-│   │   └── Contact.js          # Contact form
-│   └── 📂 styles/
-│       └── globals.css         # Global styles & theme
-├── .env.local                  # Environment variables
-├── jsconfig.json               # Path aliases
-├── next.config.js              # Next.js config
-├── package.json                # Dependencies
-├── postcss.config.js           # PostCSS config
-├── tailwind.config.js          # Tailwind customization
-└── README.md                   # This file
-```
-
-## 🚀 Performance Optimization
-
-- **Image Optimization:** Use Next.js `<Image>` component for better performance
-- **Code Splitting:** Next.js automatically splits code by page
-- **Font Loading:** Preconnected to Google Fonts API
-- **Animation Performance:** Framer Motion uses GPU acceleration
-- **CSS Purging:** Tailwind removes unused styles in production
-
-## 🤝 Contributing
-
-This is a personal portfolio project, but suggestions and improvements are welcome:
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is open source and available for personal portfolio use and customization.
-
-## 👨‍💻 Author
-
-**John Ughiovhe**
-- GitHub: [@JohnUghiovhe](https://github.com/JohnUghiovhe)
-- LinkedIn: [john-ughiovhe](https://www.linkedin.com/in/john-ughiovhe)
+John Ughiovhe
+- GitHub: https://github.com/JohnUghiovhe
+- LinkedIn: https://www.linkedin.com/in/john-ughiovhe
 - Email: ughiovhejohn@gmail.com
-
----
-
-⭐ **Star this repo if you found it helpful!**

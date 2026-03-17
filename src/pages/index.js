@@ -5,7 +5,7 @@ import MainLayout from '../layouts/MainLayout';
 import HomeHero from '../sections/HomeHero';
 import About from '../sections/About';
 import Skills from '../sections/Skills';
-import Works from '../sections/Works';
+import Projects from '../sections/Projects';
 import Experience from '../sections/Experience';
 import Contact from '../sections/Contact';
 // components
@@ -29,8 +29,8 @@ export default function Home() {
       <About />
       {/* Skill Section  */}
       <Skills />
-      {/* Works Section  */}
-      <Works />
+      {/* Projects Section  */}
+      <Projects />
       {/* Experience Section  */}
       <Experience />
       {/* Contact Section  */}

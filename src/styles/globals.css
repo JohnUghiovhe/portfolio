@@ -128,13 +128,22 @@ body {
   100% { transform: translate(0px, 0px) scale(1);      }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
 /* Drifting nebula layer */
 .space-nebula {
   background:
     radial-gradient(ellipse at 18% 28%, rgba(80, 0, 200, 0.22), transparent 55%),
     radial-gradient(ellipse at 82% 18%, rgba(0, 60, 190, 0.18), transparent 50%),
     radial-gradient(ellipse at 50% 85%, rgba(0, 160, 255, 0.12), transparent 45%);
-  animation: nebula-drift 20s ease-in-out infinite;
+  animation: nebula-drift 28s ease-in-out infinite;
+  will-change: transform;
 }
 
 /* Dense distant star field */
@@ -142,6 +151,7 @@ body {
   background-image: radial-gradient(#d8e8ff 0.55px, transparent 0.55px);
   background-size: 30px 30px;
   animation: star-twinkle-1 7s ease-in-out infinite;
+  will-change: opacity;
 }
 
 /* Medium-depth star field */
@@ -150,6 +160,7 @@ body {
   background-size: 72px 72px;
   background-position: 18px 22px;
   animation: star-twinkle-2 11s ease-in-out infinite;
+  will-change: opacity;
 }
 
 /* Sparse bright foreground stars */
@@ -158,11 +169,13 @@ body {
   background-size: 145px 145px;
   background-position: 55px 44px;
   animation: star-twinkle-1 15s ease-in-out infinite reverse;
+  will-change: opacity;
 }
 
 /* Ambient neon glow for sections */
 .neon-section-ambient {
   animation: neon-ambient-pulse 5s ease-in-out infinite;
+  will-change: opacity;
 }
 
 /* ─────────────────────────────────────────────────────────────────── */
@@ -275,6 +288,17 @@ body {
 #mouse-scroll .mouse-in {
   -webkit-animation: animated-mouse 1.2s ease infinite;
   animation: animated-mouse 1.2s ease infinite;
+}
+
+/* Performance optimization: Reduce animations on mobile devices */
+@media (max-width: 768px) {
+  .animate-blob {
+    animation-duration: 9s !important;
+  }
+  
+  .neon-border-bottom::after {
+    animation-duration: 5s !important;
+  }
 }
 
 @media screen and (min-height: 650px) {

@@ -7,6 +7,7 @@ import About from '../sections/About';
 import Skills from '../sections/Skills';
 import Projects from '../sections/Projects';
 import Experience from '../sections/Experience';
+import EducationCertifications from '../sections/EducationCertifications';
 import Contact from '../sections/Contact';
 // components
 import Footer from '../components/Footer';
@@ -33,6 +34,8 @@ export default function Home() {
       <Projects />
       {/* Experience Section  */}
       <Experience />
+      {/* Education & Certifications Section */}
+      <EducationCertifications />
       {/* Contact Section  */}
       <Contact />
       {/* Footer */}

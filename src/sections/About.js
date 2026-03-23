@@ -46,7 +46,7 @@ export default function About() {
                                 </p>
 
                                 <p className="leading-relaxed text-neutral-300">
-                                    Through my training with AltSchool Africa and hands-on project development, I’ve gained practical experience designing backend services, building full-stack applications, and working with modern development tools to bring ideas to life.
+                                    I just completed a Diploma in Backend Engineering with AltSchool Africa where i was named Best Learner and have gained practical experience designing backend services, building full-stack applications, and working with modern development tools to bring ideas to life.
                                 </p>
                             </div>
 

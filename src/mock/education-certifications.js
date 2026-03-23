@@ -21,7 +21,7 @@ export const EDUCATION = [
     institution: 'Ambrose Alli University',
     period: '2013 - 2017',
     location: 'Edo, Nigeria',
-    details: '',
+    details: 'Graduated with a focus on technical education and pedagogy.',
   },
 ];
 

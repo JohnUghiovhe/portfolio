@@ -119,7 +119,7 @@ export const PROJECTS = [
       'Created a reusable API structure that makes content operations straightforward for both protected and open routes.',
     ],
     repoLink: 'https://github.com/JohnUghiovhe/blogging-api',
-    sourceLink: 'https://blogging-api-d994.onrender.com',
+    sourceLink: 'https://jayeffblog.vercel.app/',
     category: [PROJECT_CATEGORY.FULL_STACK],
   },
     {

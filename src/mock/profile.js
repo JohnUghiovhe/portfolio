@@ -32,10 +32,10 @@ export const FOOTER_SOCIAL_LINKS = [
   },
 ];
 
-export const HERO_TITLES = ['A Backend Engineer', 'An API Designer', 'An AI Enthusiast'];
+export const HERO_TITLES = ['A Backend Engineer', '(Node.js | TypeScript | APIs | Scalable Systems)', 'An AI Enthusiast'];
 
 export const aboutParagraph =
-  'Experienced in API design, authentication systems, and database architecture. Focused on performance, clean code, and production-ready backend solutions.';
+  'I build reliable backend systems and APIs that power real-world applications. I focus on performance, clean architecture, and scalable design.';
 
 export const contactEmail = 'ughiovhejohn@gmail.com';
 

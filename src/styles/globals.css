@@ -31,15 +31,24 @@
 
 html {
   scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 body {
+  width: 100%;
+  overflow-x: hidden;
   background:
     radial-gradient(circle at 16% 14%, rgba(255, 107, 0, 0.18), transparent 34%),
     radial-gradient(circle at 84% 12%, rgba(0, 245, 255, 0.14), transparent 36%),
     radial-gradient(circle at 50% 90%, rgba(123, 0, 255, 0.10), transparent 40%),
     linear-gradient(180deg, #0b1220 0%, #0b1020 50%, #0d0b1a 100%);
   color: #e9efff;
+}
+
+#__next {
+  width: 100%;
+  overflow-x: hidden;
 }
 
 /* ─── Neon Animated Background System ─────────────────────────────── */

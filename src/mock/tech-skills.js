@@ -1,6 +1,6 @@
 export const SKILL_GROUPS = [
   {
-    id: 'languages',
+    id: 'Languages',
     label: 'Languages',
     accent: '#ffd166',
     skills: [
@@ -16,7 +16,7 @@ export const SKILL_GROUPS = [
       { label: 'Node.js',    icon: 'vscode-icons:file-type-node' },
       { label: 'Express.js', icon: 'simple-icons:express' },
       { label: 'NestJS',     icon: 'logos:nestjs' },
-      { label: 'REST APIs',  icon: 'dashicons:rest-api' },
+      ,
     ],
   },
   {
@@ -27,8 +27,7 @@ export const SKILL_GROUPS = [
       { label: 'MongoDB',    icon: 'vscode-icons:file-type-mongo' },
       { label: 'PostgreSQL', icon: 'vscode-icons:file-type-pgsql' },
       { label: 'TypeORM',    icon: 'logos:typeorm' },
-      { label: 'Redis',      icon: 'logos:redis' },
-      { label: 'Mongoose',   icon: 'devicon:mongoose' },
+      { label: 'SQLite',     icon: 'vscode-icons:file-type-sqlite' },
     ],
   },
   {
@@ -36,14 +35,12 @@ export const SKILL_GROUPS = [
     label: 'Tools & Development',
     accent: '#1a5fff',
     skills: [
-      { label: 'Git',        icon: 'logos:git-icon' },
-      { label: 'GitHub',     icon: 'akar-icons:github-fill' },
-      { label: 'React',      icon: 'vscode-icons:file-type-reactjs' },
-      { label: 'TailwindCSS',icon: 'logos:tailwindcss-icon' },
+      { label: 'Git',        icon: 'logos:git' },
       { label: 'Jest',       icon: 'logos:jest' },
       { label: 'Docker',     icon: 'logos:docker-icon' },
       { label: 'Postman',    icon: 'logos:postman-icon' },
       { label: 'Swagger',    icon: 'logos:swagger' },
+      { label: 'Redis',      icon: 'logos:redis' },
     ],
   },
   {
@@ -51,10 +48,11 @@ export const SKILL_GROUPS = [
     label: 'Other Skills',
     accent: '#00d4a6',
     skills: [
-      { label: 'API Design',            icon: null },
-      { label: 'Backend Architecture',  icon: null },
+      { label: 'REST APIs',  icon: 'dashicons:rest-api' },
+      { label: 'Authentication (JWT)',  icon: 'logos:jwt' },
+      { label: 'WebSockets',            icon: 'logos:socket-io' },
+      { label: 'Backend MVC Architecture',  icon: null },
       { label: 'Scalable Systems',      icon: null },
-      { label: 'Problem Solving',       icon: null },
     ],
   },
 ];

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 // components
 import Iconify from '../components/Iconify';
 import ProjectCard from '../components/works/ProjectCard';
@@ -11,25 +11,25 @@ import { PROJECTS, PROJECT_CATEGORY, TABS } from '../mock/projects';
 
 export default function Works() {
   const [currentTab, setCurrentTab] = useState('all');
+  const [showAllProjects, setShowAllProjects] = useState(false);
 
   const activeClass =
     'inline-flex min-w-fit items-center space-x-4 p-4 text-primary-700 rounded-t-lg border-b-2 border-primary-700 active dark:text-primary-300 dark:border-primary-300 group';
 
   const handleOnClick = (_value) => {
     setCurrentTab(_value);
+    setShowAllProjects(false);
   };
 
-  const renderTabContent = PROJECTS.map((project, i) => {
+  const filteredProjects = useMemo(() => {
     if (currentTab === PROJECT_CATEGORY.ALL) {
-      return <ProjectCard key={`project-${i}`} {...project} />;
+      return PROJECTS;
     }
 
-    if (project.category.includes(currentTab)) {
-      return <ProjectCard key={`project-${i}`} {...project} />;
-    }
+    return PROJECTS.filter((project) => project.category.includes(currentTab));
+  }, [currentTab]);
 
-    return null;
-  });
+  const visibleProjects = showAllProjects ? filteredProjects : filteredProjects.slice(0, 4);
 
   return (
     <>
@@ -65,8 +65,21 @@ export default function Works() {
             </ul>
 
             <div className="mt-10 grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-y-7 lg:grid-cols-3 lg:px-7 xl:grid-cols-4 xl:px-0">
-              {renderTabContent}
+              {visibleProjects.map((project, i) => (
+                <ProjectCard key={`project-${currentTab}-${i}`} {...project} />
+              ))}
             </div>
+
+            {filteredProjects.length > 4 && (
+              <button
+                type="button"
+                className="mt-10 inline-flex items-center gap-2 rounded-full border border-[#1a5fff]/30 bg-[#0b1220]/80 px-5 py-3 text-sm font-semibold text-[#d5deee] transition hover:border-[#1a5fff]/60 hover:text-white hover:shadow-lg hover:shadow-[#1a5fff]/10"
+                onClick={() => setShowAllProjects((previousState) => !previousState)}
+              >
+                {showAllProjects ? 'Show fewer projects' : 'Show all projects'}
+                <Iconify icon={showAllProjects ? 'tabler:chevron-up' : 'tabler:chevron-down'} />
+              </button>
+            )}
           </div>
         </LoadAnimate>
       </section>

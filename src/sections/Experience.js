@@ -16,26 +16,24 @@ import LoadAnimate from '../components/animate/LoadAnimate';
  */
 const EXPERIENCES = [
   {
-    role: 'Software Engineer',
-    company: 'Independent Projects',
-    period: 'March 2025 – Present',
+    role: 'Backend Engineer Intern',
+    company: 'HNG Tech',
+    period: 'April 2026 – Present',
     location: 'Lagos, Nigeria',
     highlights: [
-      'Launched a full-stack ticketing platform with Node.js, Express, MongoDB, and Redis that supports end-to-end event creation and checkout.',
-      'Delivered modular REST APIs for events, ticketing, and user flows, improving feature delivery speed across the product.',
-      'Improved API responsiveness by introducing Redis caching for frequently accessed resources.',
-      'Designed a scalable TypeScript + Express backend structure to reduce maintenance overhead and support future growth.'
+      'Built Insighta Labs+. A TypeScript/Express backend that powers a profile intelligence platform across both web and CLI interfaces. It provides secure GitHub OAuth (PKCE) authentication, role-based API access, deterministic natural-language search, and a unified token model—ensuring consistent behavior, security, and data integrity regardless of how the system is accessed.',
+      'Built a full-stack invoice management system with a backend-first architecture, supporting structured invoice workflows (draft → pending → paid), server-side validation, and dual persistence (PostgreSQL with automatic schema bootstrap and JSON fallback for local/test isolation). Designed for reliability across environments, with clean API design, validation boundaries, and testable data flows.',
     ],
   },
 
-  {    role: 'Backend Developer (Intern)',
-    company: 'AltSchool Africa',
-    period: 'June 2024 – September 2024',
-    location: 'Remote',
-    highlights: [
-      'Developed a backend for an event ticketing and management system using Node.js, Express, MongoDB, and Redis.',
-    ],
-  },
+  // {    role: 'Backend Developer (Intern)',
+  //   company: 'AltSchool Africa',
+  //   period: 'June 2024 – September 2024',
+  //   location: 'Remote',
+  //   highlights: [
+  //     'Developed a backend for an event ticketing and management system using Node.js, Express, MongoDB, and Redis.',
+  //   ],
+  // },
 
 ];
 

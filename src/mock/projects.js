@@ -40,7 +40,7 @@ const getSkillByLabel = (skills, techLabel) => skills.find(({ label }) => label 
 
 export const PROJECTS = [
   {
-    imgSrc: 'https://res.cloudinary.com/djd7bdpdm/image/upload/v1772226788/Screenshot_12_mh5olq.png',
+    imgSrc: 'https://res.cloudinary.com/djd7bdpdm/image/upload/v1777813377/Insighta_Labs_Web_fxcglg.png',
     title: 'Insighta Labs+',
     techIcons: [
       getSkillByLabel(FRONTEND_SKILLS, 'HTML'),

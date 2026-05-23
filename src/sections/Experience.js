@@ -5,15 +5,6 @@ import LoadAnimate from '../components/animate/LoadAnimate';
 
 // ----------------------------------------------------------------------
 
-/**
- * EXPERIENCE DATA — edit this array to populate the timeline.
- * Each entry supports:
- *   role        — job title
- *   company     — company / organisation name
- *   period      — date range string, e.g. "Jan 2024 – Present"
- *   location    — optional city / remote label
- *   highlights  — impact-based bullet points (outcomes/results)
- */
 const EXPERIENCES = [
   {
     role: 'Backend Engineer Intern',
@@ -21,19 +12,29 @@ const EXPERIENCES = [
     period: 'April 2026 – Present',
     location: 'Lagos, Nigeria',
     highlights: [
-      'Built Insighta Labs+. A TypeScript/Express backend that powers a profile intelligence platform across both web and CLI interfaces. It provides secure GitHub OAuth (PKCE) authentication, role-based API access, deterministic natural-language search, and a unified token model—ensuring consistent behavior, security, and data integrity regardless of how the system is accessed.',
-      'Built a full-stack invoice management system with a backend-first architecture, supporting structured invoice workflows (draft → pending → paid), server-side validation, and dual persistence (PostgreSQL with automatic schema bootstrap and JSON fallback for local/test isolation). Designed for reliability across environments, with clean API design, validation boundaries, and testable data flows.',
+      'Contributing to the backend development of SEIL, a guided marketing funnel platform helping SMBs generate and execute personalized marketing workflows through conversational onboarding, automated funnel blueprint generation, and guided activation flows.',
+      'Collaborating in a cross-functional team environment to build scalable APIs and workflow orchestration logic supporting MVP delivery under real product constraints and iterative development cycles.',
+      'Built Insighta Labs+, a multi-interface TypeScript/Express backend powering both Web and CLI experiences with secure GitHub OAuth (PKCE), role-based access control, deterministic natural-language profile search, and a unified token model ensuring consistent authentication and authorization across clients.',
+      'Architected secure authentication infrastructure with token rotation, hashed token storage, middleware-driven request pipelines, and route-scoped access enforcement to improve reliability and system security.',
+      'Built a backend-driven invoice workflow system supporting structured invoice lifecycle states (draft → pending → paid), PostgreSQL persistence with development fallbacks, schema-driven validation, and testable API flows.',
+      'Designed modular backend systems with clear separation between routing, validation, business logic, persistence, and error handling to improve maintainability and scalability across projects.'
     ],
   },
 
-  // {    role: 'Backend Developer (Intern)',
-  //   company: 'AltSchool Africa',
-  //   period: 'June 2024 – September 2024',
-  //   location: 'Remote',
-  //   highlights: [
-  //     'Developed a backend for an event ticketing and management system using Node.js, Express, MongoDB, and Redis.',
-  //   ],
-  // },
+  {    role: 'Backend Developer (Intern)',
+    company: 'AltSchool Africa',
+    period: 'September 2025 – February 2026',
+    location: 'Remote',
+    highlights: [
+      'Built Eventful, a full-stack event ticketing and management platform that streamlined event creation, ticket checkout, and attendee workflows, replacing manual coordination processes with a scalable digital system.',
+      'Designed modular REST APIs using Node.js, TypeScript, and Express, and integrated Redis caching to improve response performance and support long-term scalability across backend services.',
+      'Developed a real-time multiplayer game system using WebSockets and Socket.IO, implementing low-latency bidirectional communication, event-driven game logic, timers, scoring systems, and concurrent user interactions.',
+      'Built a chat-based food ordering platform using NestJS and TypeScript, implementing modular APIs, session-driven workflows, and payment verification flows to improve user accessibility and transaction handling.',
+      'Designed backend systems supporting authentication, access control, relational data modeling, and payment integrations, strengthening experience with production-style application architecture.',
+      'Developed a content publishing backend with role-based access controls and reusable RESTful API structures for protected and public content operations.',
+      'Applied modern backend engineering practices including modular architecture, API design, validation, persistence design, and scalable system organization across multiple projects.'
+    ],
+  },
 
 ];
 
@@ -59,71 +60,49 @@ export default function Experience() {
         </HeadingAnimate>
 
         <LoadAnimate amount={0}>
-          <div className="relative mx-auto max-w-3xl">
-            {/* Vertical timeline spine */}
-            <div className="absolute left-5 top-0 h-full w-px bg-linear-to-b from-[#1a5fff] via-[#00b4ff]/40 to-transparent md:left-1/2 md:-translate-x-px" />
-
-            <div className="space-y-12">
-              {EXPERIENCES.map(({ role, company, period, location, highlights }, i) => (
-                <div
-                  key={`experience-${i}`}
-                  className="relative pl-14 md:pl-0"
-                >
-                  {/* Timeline dot */}
-                  <div className="absolute left-3.25 top-1.5 h-4 w-4 rounded-full border-2 border-[#1a5fff] bg-[#0b1220] shadow-[0_0_8px_rgba(26,95,255,0.7)] md:left-1/2 md:-translate-x-1/2" />
-
-                  {/* Card — alternates sides on desktop */}
-                  <div
-                    className={`md:w-[calc(50%-2rem)] ${
-                      i % 2 === 0
-                        ? 'md:ml-auto md:pl-8'
-                        : 'md:mr-auto md:pr-8 md:text-right'
-                    }`}
-                  >
-                    <div className="rounded-xl border border-gray-700/50 bg-[#0b1220]/70 p-6 backdrop-blur-sm transition hover:border-[#1a5fff]/40 hover:shadow-lg hover:shadow-[#1a5fff]/10">
-                      {/* Role + period */}
-                      <div className={`mb-3 flex flex-wrap items-start gap-x-3 gap-y-1 ${i % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}>
-                        <h3 className="font-lato text-lg font-bold text-neutral-100">
-                          {role}
-                        </h3>
-                        <span className="mt-0.5 shrink-0 rounded-full bg-[#1a5fff]/20 px-2.5 py-0.5 text-xs font-semibold text-[#00b4ff]">
-                          {period}
-                        </span>
-                      </div>
-
-                      {/* Company + location */}
-                      {(company || location) && (
-                        <div className={`mb-4 flex flex-wrap items-center gap-x-2 text-sm ${i % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}>
-                          {company && <span className="font-semibold text-[#1a5fff]">{company}</span>}
-                          {company && location && <span className="text-gray-600 dark:text-gray-500">·</span>}
-                          {location && <span className="text-gray-400">{location}</span>}
-                        </div>
-                      )}
-
-                      {/* Highlights */}
-                      {highlights?.length > 0 && (
-                        <div>
-                          <p className={`mb-3 text-xs font-bold tracking-widest text-[#00b4ff] ${i % 2 !== 0 ? 'md:text-right' : ''}`}>
-                            IMPACT HIGHLIGHTS
-                          </p>
-                          <ul className={`space-y-2 ${i % 2 !== 0 ? 'md:items-end' : ''} flex flex-col`}>
-                          {highlights.map((point, j) => (
-                            <li
-                              key={`highlight-${i}-${j}`}
-                              className={`flex items-start gap-2 text-sm text-neutral-400 ${i % 2 !== 0 ? 'md:flex-row-reverse md:text-right' : ''}`}
-                            >
-                              <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-[#00b4ff]" />
-                              {point}
-                            </li>
-                          ))}
-                          </ul>
-                        </div>
-                      )}
-                    </div>
-                  </div>
+          <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-8">
+            {EXPERIENCES.map(({ role, company, period, location, highlights }, i) => (
+              <article
+                key={`experience-${i}`}
+                className="rounded-xl border border-gray-700/50 bg-[#0b1220]/70 p-6 backdrop-blur-sm transition hover:border-[#1a5fff]/40 hover:shadow-lg hover:shadow-[#1a5fff]/10"
+              >
+                <div className="mb-3 flex flex-wrap items-start gap-x-3 gap-y-1">
+                  <h3 className="font-lato text-lg font-bold text-neutral-100">
+                    {role}
+                  </h3>
+                  <span className="mt-0.5 shrink-0 rounded-full bg-[#1a5fff]/20 px-2.5 py-0.5 text-xs font-semibold text-[#00b4ff]">
+                    {period}
+                  </span>
                 </div>
-              ))}
-            </div>
+
+                {(company || location) && (
+                  <div className="mb-4 flex flex-wrap items-center gap-x-2 text-sm">
+                    {company && <span className="font-semibold text-[#1a5fff]">{company}</span>}
+                    {company && location && <span className="text-gray-600 dark:text-gray-500">·</span>}
+                    {location && <span className="text-gray-400">{location}</span>}
+                  </div>
+                )}
+
+                {highlights?.length > 0 && (
+                  <div>
+                    <p className="mb-3 text-xs font-bold tracking-widest text-[#00b4ff]">
+                      IMPACT HIGHLIGHTS
+                    </p>
+                    <ul className="flex flex-col space-y-2">
+                      {highlights.map((point, j) => (
+                        <li
+                          key={`highlight-${i}-${j}`}
+                          className="flex items-start gap-2 text-sm text-neutral-400"
+                        >
+                          <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-[#00b4ff]" />
+                          {point}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </article>
+            ))}
           </div>
         </LoadAnimate>
       </div>

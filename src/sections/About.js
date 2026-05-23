@@ -38,16 +38,22 @@ export default function About() {
                             {/* About text placeholder */}
                             <div className="space-y-6">
                                 <p className="leading-relaxed text-neutral-300">
-                                    I’m John Ughiovhe, a software engineer passionate about building scalable backend systems and modern web applications. I specialize in developing reliable APIs and server-side architectures that power digital products.
+                                I’m John Ughiovhe, a software engineer passionate about building scalable backend systems and modern web applications. I specialize in designing reliable APIs, secure server-side architectures, and backend systems that power real-world digital products.
                                 </p>
 
                                 <p className="leading-relaxed text-neutral-300">
-                                    My journey into software engineering started with curiosity about how applications work behind the scenes. That curiosity quickly grew into a passion for solving problems with code and building systems that deliver real value to users.
+                                My journey into software engineering started with curiosity about how applications work behind the scenes. That curiosity evolved into a passion for solving complex problems with code and designing systems that remain reliable, maintainable, and scalable as products grow.
                                 </p>
 
                                 <p className="leading-relaxed text-neutral-300">
-                                    I just completed a Diploma in Backend Engineering with AltSchool Africa where i was named Best Learner and have gained practical experience designing backend services, building full-stack applications, and working with modern development tools to bring ideas to life.
+                                I recently completed a Diploma in Backend Engineering at AltSchool Africa, where I was recognized as Best Learner. Through that experience and hands-on engineering work, I gained practical experience building backend services, full-stack applications, and production-style systems using modern development tools and workflows.
                                 </p>
+
+                                <p className="leading-relaxed text-neutral-300">
+                                My work spans multi-interface platforms, workflow-driven systems, secure authentication architectures, and API-first applications. I’ve built projects ranging from backend systems supporting Web and CLI experiences to workflow engines with strict validation and data integrity rules, and I currently contribute to SEIL, a real-world product helping SMBs simplify marketing execution.
+                                </p>
+
+                                <p className="leading-relaxed text-neutral-300">I enjoy thinking beyond endpoints and features, focusing on system design, developer experience, reliability, and building technology that creates measurable value for users.</p>
                             </div>
 
                             <div className="mt-10 grid grid-cols-2 gap-6 md:grid-cols-3">

@@ -56,6 +56,25 @@ export const PROJECTS = [
     category: [PROJECT_CATEGORY.FULL_STACK],
   },
   {
+    imgSrc: 'https://res.cloudinary.com/djd7bdpdm/image/upload/v1772226789/Screenshot_9_lschdp.png',
+    title: 'Eventful - Event Ticketing and Management Platform',
+    techIcons: [
+      getSkillByLabel(FRONTEND_SKILLS, 'Tailwind CSS'),
+      getSkillByLabel(FRONTEND_SKILLS, 'React.js'),
+      getSkillByLabel(FRONTEND_SKILLS, 'Typescript'),
+      getSkillByLabel(BACKEND_SKILLS, 'Node.js'),
+      getSkillByLabel(BACKEND_SKILLS, 'Express (Node.js Framework)'),
+      getSkillByLabel(BACKEND_SKILLS, 'Redis'),
+      getSkillByLabel(BACKEND_SKILLS, 'Mongodb'),
+    ],
+    description: [
+      'Built a full-stack event ticketing platform that streamlines event creation, ticket checkout, and attendee management, replacing manual coordination workflows. Designed modular REST APIs using Node.js, TypeScript, and Express to improve scalability and maintainability, integrated Redis caching to reduce API response latency, and implemented a secure backend architecture with MongoDB to support long-term platform growth.',
+    ],
+    repoLink: 'https://github.com/JohnUghiovhe/eventful',
+    sourceLink: 'https://eventful-frontend-908q.onrender.com',
+    category: [PROJECT_CATEGORY.FULL_STACK],
+  },
+  {
     imgSrc: 'https://res.cloudinary.com/djd7bdpdm/image/upload/v1777813377/Invoice_management_app_fn51t7.png',
     title: 'Invoice Workflow Engine',
     techIcons: [
@@ -74,28 +93,6 @@ export const PROJECTS = [
     category: [PROJECT_CATEGORY.FULL_STACK],
   },
   {
-    imgSrc: 'https://res.cloudinary.com/djd7bdpdm/image/upload/v1772226789/Screenshot_9_lschdp.png',
-    title: 'Eventful - Event Ticketing and Management Platform',
-    techIcons: [
-      getSkillByLabel(FRONTEND_SKILLS, 'Tailwind CSS'),
-      getSkillByLabel(FRONTEND_SKILLS, 'React.js'),
-      getSkillByLabel(FRONTEND_SKILLS, 'Typescript'),
-      getSkillByLabel(BACKEND_SKILLS, 'Node.js'),
-      getSkillByLabel(BACKEND_SKILLS, 'Express (Node.js Framework)'),
-      getSkillByLabel(BACKEND_SKILLS, 'Redis'),
-      getSkillByLabel(BACKEND_SKILLS, 'Mongodb'),
-    ],
-    description: [
-      'Built a full-stack event ticketing platform enabling event creation, ticket checkout, and attendee management, replacing manual event coordination workflows.',
-      'Designed modular REST APIs with Node.js, TypeScript, and Express for event, ticketing, and user services, improving scalability and development speed.',
-      'Reduced API response latency by integrating Redis caching for frequently accessed event and ticket data.',
-      'Implemented a scalable backend architecture using TypeScript, Express, and MongoDB to support secure and maintainable platform growth.',
-    ],
-    repoLink: 'https://github.com/JohnUghiovhe/eventful',
-    sourceLink: 'https://eventful-frontend-908q.onrender.com',
-    category: [PROJECT_CATEGORY.FULL_STACK],
-  },
-  {
     imgSrc: 'https://res.cloudinary.com/djd7bdpdm/image/upload/v1772798770/Guessing-game_lgqh0w.png',
     title: 'Guessing Game',
     techIcons: [
@@ -106,11 +103,7 @@ export const PROJECTS = [
       getSkillByLabel(BACKEND_SKILLS, 'socket.io'),
     ],
     description: [
-      'Built a real-time multiplayer game using Node.js, Express, and Socket.IO.', 
-      'Implemented WebSocket-based bidirectional communication for low-latency gameplay.', 
-      'Developed game logic including timers, scoring system, rounds, and player attempts.',
-      'Created a responsive frontend interface using HTML, CSS, and JavaScript.',
-      'Designed scalable event-driven server architecture to support multiple concurrent users. '
+      'Developed a real-time multiplayer guessing game using Node.js, Express, and Socket.IO, enabling low-latency gameplay through WebSocket-based bidirectional communication. Implemented core game mechanics including timers, scoring, rounds, and player attempts while designing an event-driven architecture capable of supporting multiple concurrent users, alongside a responsive frontend built with HTML, CSS, and JavaScript.', 
     ],
     repoLink: 'https://github.com/JohnUghiovhe/Guessing-Game',
     sourceLink: 'https://jayguessgame.vercel.app', 
@@ -128,11 +121,7 @@ export const PROJECTS = [
       getSkillByLabel(BACKEND_SKILLS, 'Sql')
     ],
     description: [
-      'Built modular REST APIs using NestJS and TypeScript for menu management, orders, and payments, adhering to web architecture best practices.',
-      'Designed session-based ordering system without login requirement to improve accessibility. ',
-      'Integrated Paystack payment gateway with real-time verification handling.',
-      'Structured relational database schema using SQLite and TypeORM.',
-      'Developed responsive frontend chat interface with real-time backend integration using HTML, CSS, and JavaScript.',
+      'Built a chat-based food ordering system using NestJS and TypeScript with modular REST APIs for menu management, ordering, and payment processing. Designed a session-based ordering flow to improve accessibility, integrated Paystack payment verification, structured relational data using SQLite and TypeORM, and developed a responsive frontend with real-time backend interactions.',
     ],
     repoLink: 'https://github.com/JohnUghiovhe/Restaurant-ChatBot',
     sourceLink: 'https://jayeffchatbot.vercel.app',
@@ -148,9 +137,7 @@ export const PROJECTS = [
       getSkillByLabel(BACKEND_SKILLS, 'REST Api'),
     ],
     description: [
-      'Delivered a blogging backend that supports article publishing, management, and public content access through REST endpoints.',
-      'Implemented authentication and access control to separate author actions from public reader interactions.',
-      'Created a reusable API structure that makes content operations straightforward for both protected and open routes.',
+      'Developed a blogging backend that supports article publishing, content management, and public content access through RESTful endpoints. Implemented authentication and access control mechanisms to separate author permissions from public reader interactions, while creating a reusable API structure that simplifies content operations across both protected and open routes.',
     ],
     repoLink: 'https://github.com/JohnUghiovhe/blogging-api',
     sourceLink: 'https://jayeffblog.vercel.app/',

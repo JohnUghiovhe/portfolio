@@ -59,7 +59,7 @@ export default function About() {
                             <div className="mt-10 grid grid-cols-2 gap-6 md:grid-cols-3">
                                 <div className="rounded-lg bg-[#1a2f5a]/40 p-4">
                                     <p className="text-sm font-semibold text-[#1a5fff]">Projects</p>
-                                    <p className="mt-2 text-lg font-bold text-neutral-100">7+</p>
+                                    <p className="mt-2 text-lg font-bold text-neutral-100">10+</p>
                                 </div>
                                 <div className="rounded-lg bg-[#1a2f5a]/40 p-4">
                                     <p className="text-sm font-semibold text-[#00b4ff]">Focus</p>

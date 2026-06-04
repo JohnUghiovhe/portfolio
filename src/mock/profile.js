@@ -32,13 +32,12 @@ export const FOOTER_SOCIAL_LINKS = [
   },
 ];
 
-export const HERO_TITLES = ['Backend Engineer', '(Node.js | TypeScript | Express | PostgreSQL | MongoDB)', 'An AI Enthusiast'];
-
+export const HERO_TITLES = ['Backend Engineer', 'Building reliable services'];
 export const aboutParagraph =
-  'Backend Engineer specializing in TypeScript and Node.js, focused on building scalable systems with strong data integrity, secure authentication, and production-ready architecture. I’ve built multi-interface platforms, workflow-driven services, and currently contribute to a real-world product helping SMBs simplify marketing execution.';
+  'Backend Engineer focused on scalable TypeScript/Node.js systems, secure APIs, and production-ready backend architecture';
 
 export const contactEmail = 'ughiovhejohn@gmail.com';
 
 export const cvLink = '/John-Ughiovhe-CV.pdf?v=20260310';
 
-export const documentTitle = 'Hello I am John Ughiovhe | Backend Engineer | API Designer | AI Enthusiast';
+export const documentTitle = 'Hello I am John Ughiovhe | Backend Engineer | AI Enthusiast';

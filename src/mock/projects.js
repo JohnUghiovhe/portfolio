@@ -143,4 +143,16 @@ export const PROJECTS = [
     sourceLink: 'https://jayeffblog.vercel.app/',
     category: [PROJECT_CATEGORY.FULL_STACK],
   },
+  {
+    imgSrc: 'https://res.cloudinary.com/djd7bdpdm/image/upload/v1780355490/request-detail_xftryp.png',
+    title: 'Retry Engine - A Node.js Library for Reliable API Request Retrying',
+    techStack: ['TypeScript', 'Node.js', 'SQLite'],
+    description: [
+      'Built the retry strategies, circuit-breaker logic, and lifecycle tracking for outbound requests.',
+      'Persisted request state in SQLite and exposed simple operational endpoints.',
+      'Added jittered backoff, validation, timeout cancellation, and worker locking.'
+    ],
+    repoLink: 'https://github.com/JohnUghiovhe/retry-engine',
+    category: [PROJECT_CATEGORY.BACKEND]
+  },
 ];

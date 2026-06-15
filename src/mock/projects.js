@@ -94,7 +94,7 @@ export const PROJECTS = [
       'Built a full-stack event ticketing platform that streamlines event creation, ticket checkout, and attendee management, replacing manual coordination workflows. Designed modular REST APIs using Node.js, TypeScript, and Express to improve scalability and maintainability, integrated Redis caching to reduce API response latency, and implemented a secure backend architecture with MongoDB to support long-term platform growth.',
     ],
     repoLink: 'https://github.com/JohnUghiovhe/eventful',
-    sourceLink: 'https://eventful-frontend-908q.onrender.com',
+    sourceLink: 'https://eventta.vercel.app',
     category: [PROJECT_CATEGORY.FULL_STACK],
   },
   {

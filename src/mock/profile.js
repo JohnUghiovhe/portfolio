@@ -38,6 +38,6 @@ export const aboutParagraph =
 
 export const contactEmail = 'ughiovhejohn@gmail.com';
 
-export const cvLink = '/John-Ughiovhe-CV.pdf?v=20260310';
+export const cvLink = '/John-Ughiovhe-Resume.pdf';
 
 export const documentTitle = 'Hello I am John Ughiovhe | Backend Engineer | AI Enthusiast';

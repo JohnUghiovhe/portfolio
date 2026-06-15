@@ -9,6 +9,13 @@
  */
 export const EDUCATION = [
   {
+    program: 'Backend Engineering',
+    institution: 'TechCrush (Cohort 7)',
+    period: 'May 2026 - Present',
+    location: 'Remote',
+    details: 'Immersive training focused on designing, building, and maintaining server-side applications, relational and non-relational databases, and robust APIs using modern backend technologies.'
+  },
+  {
     program: 'Diploma in Backend Engineering',
     institution: 'AltSchool Africa',
     period: 'March 2025 - February 2026',

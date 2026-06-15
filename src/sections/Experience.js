@@ -9,7 +9,7 @@ const EXPERIENCES = [
   {
     role: 'Backend Engineer Intern',
     company: 'HNG Tech',
-    period: 'April 2026 – Present',
+    period: 'April 2026 – June 2026',
     location: 'Lagos, Nigeria',
     highlights: [
       'Contributing to the backend development of SEIL, a guided marketing funnel platform helping SMBs generate and execute personalized marketing workflows through conversational onboarding, automated funnel blueprint generation, and guided activation flows.',

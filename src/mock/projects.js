@@ -43,16 +43,39 @@ export const PROJECTS = [
     imgSrc: 'https://res.cloudinary.com/djd7bdpdm/image/upload/v1777813377/Insighta_Labs_Web_fxcglg.png',
     title: 'Insighta Labs+',
     techIcons: [
-      getSkillByLabel(FRONTEND_SKILLS, 'HTML'),
-      getSkillByLabel(FRONTEND_SKILLS, 'Tailwind CSS'),
-      getSkillByLabel(FRONTEND_SKILLS, 'Javascript'),
+      getSkillByLabel(FRONTEND_SKILLS, 'Typescript'),
       getSkillByLabel(FRONTEND_SKILLS, 'Next.js'),
+      getSkillByLabel(FRONTEND_SKILLS, 'CSS'),
+      getSkillByLabel(BACKEND_SKILLS, 'Node.js'),
+      getSkillByLabel(BACKEND_SKILLS, 'Express (Node.js Framework)'),
+      getSkillByLabel(BACKEND_SKILLS, 'PostgreSQL'),
+      getSkillByLabel(BACKEND_SKILLS, 'Authentication (JWT)'),
     ],
     description: [
       'Insighta Labs+ is a TypeScript/Express backend that powers a profile intelligence platform across both web and CLI interfaces. It provides secure GitHub OAuth (PKCE) authentication, role-based API access, deterministic natural-language search, and a unified token model, ensuring consistent behavior, security, and data integrity regardless of how the system is accessed.'
     ],
     repoLink: 'https://github.com/JohnUghiovhe/insighta-backend',
     sourceLink: 'https://insighta-web-pied.vercel.app',
+    category: [PROJECT_CATEGORY.FULL_STACK],
+  },
+  {
+    imgSrc: 'https://res.cloudinary.com/djd7bdpdm/image/upload/v1781512109/background-job-scheduler_lgzwtj.png',
+    title: 'Background job Scheduler',
+    techIcons: [
+      getSkillByLabel(BACKEND_SKILLS, 'Node.js'),
+      getSkillByLabel(BACKEND_SKILLS, 'NestJS (Node.js Framework)'),
+      getSkillByLabel(BACKEND_SKILLS, 'Redis'),
+      getSkillByLabel(BACKEND_SKILLS, 'Swagger'),
+      getSkillByLabel(FRONTEND_SKILLS, 'React.js'),
+      getSkillByLabel(FRONTEND_SKILLS, 'Tailwind CSS'),
+      getSkillByLabel(FRONTEND_SKILLS, 'Typescript'),
+      getSkillByLabel(FRONTEND_SKILLS, 'Vite'),
+    ],
+    description: [
+      'Built a background job scheduler that accepts jobs, schedules them for later execution, and persists their status in Redis. Implemented job prioritization, scheduling, and retry logic with exponential backoff and jitter.'
+    ],
+    repoLink: 'https://github.com/JohnUghiovhe/background-job-scheduler',
+    sourceLink: 'https://63.183.193.95.sslip.io',
     category: [PROJECT_CATEGORY.FULL_STACK],
   },
   {
@@ -73,6 +96,18 @@ export const PROJECTS = [
     repoLink: 'https://github.com/JohnUghiovhe/eventful',
     sourceLink: 'https://eventful-frontend-908q.onrender.com',
     category: [PROJECT_CATEGORY.FULL_STACK],
+  },
+  {
+    imgSrc: 'https://res.cloudinary.com/djd7bdpdm/image/upload/v1780355490/request-detail_xftryp.png',
+    title: 'Retry Engine - A Node.js Library for Reliable API Request Retrying',
+    techStack: ['TypeScript', 'Node.js', 'SQLite'],
+    description: [
+      'Built the retry strategies, circuit-breaker logic, and lifecycle tracking for outbound requests.',
+      'Persisted request state in SQLite and exposed simple operational endpoints.',
+      'Added jittered backoff, validation, timeout cancellation, and worker locking.'
+    ],
+    repoLink: 'https://github.com/JohnUghiovhe/retry-engine',
+    category: [PROJECT_CATEGORY.BACKEND]
   },
   {
     imgSrc: 'https://res.cloudinary.com/djd7bdpdm/image/upload/v1777813377/Invoice_management_app_fn51t7.png',
@@ -142,17 +177,5 @@ export const PROJECTS = [
     repoLink: 'https://github.com/JohnUghiovhe/blogging-api',
     sourceLink: 'https://jayeffblog.vercel.app/',
     category: [PROJECT_CATEGORY.FULL_STACK],
-  },
-  {
-    imgSrc: 'https://res.cloudinary.com/djd7bdpdm/image/upload/v1780355490/request-detail_xftryp.png',
-    title: 'Retry Engine - A Node.js Library for Reliable API Request Retrying',
-    techStack: ['TypeScript', 'Node.js', 'SQLite'],
-    description: [
-      'Built the retry strategies, circuit-breaker logic, and lifecycle tracking for outbound requests.',
-      'Persisted request state in SQLite and exposed simple operational endpoints.',
-      'Added jittered backoff, validation, timeout cancellation, and worker locking.'
-    ],
-    repoLink: 'https://github.com/JohnUghiovhe/retry-engine',
-    category: [PROJECT_CATEGORY.BACKEND]
   },
 ];

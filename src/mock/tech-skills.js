@@ -38,6 +38,7 @@ export const SKILL_GROUPS = [
       { label: 'Git',        icon: 'logos:git' },
       { label: 'Jest',       icon: 'logos:jest' },
       { label: 'Docker',     icon: 'logos:docker-icon' },
+      { label: 'AWS',        icon: 'logos:aws' },
       { label: 'Postman',    icon: 'logos:postman-icon' },
       { label: 'Swagger',    icon: 'logos:swagger' },
       { label: 'Redis',      icon: 'logos:redis' },

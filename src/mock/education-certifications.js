@@ -11,24 +11,26 @@ export const EDUCATION = [
   {
     program: 'Backend Engineering',
     institution: 'TechCrush (Cohort 7)',
-    period: 'May 2026 - Present',
+    period: 'May 2026 – Present',
     location: 'Remote',
-    details: 'Immersive training focused on designing, building, and maintaining server-side applications, relational and non-relational databases, and robust APIs using modern backend technologies.'
+    details:
+      'Advanced backend engineering program focused on scalable distributed systems, modern backend architecture, cloud-native development, and production software engineering.',
   },
   {
     program: 'Diploma in Backend Engineering',
     institution: 'AltSchool Africa',
-    period: 'March 2025 - February 2026',
+    period: 'March 2025 – February 2026',
     location: 'Remote',
     details:
-      'Completed a backend engineering diploma focused on scalable API development, authentication, data modeling, and production-ready software design.',
+      'Graduated as Best Learner. Specialized in backend engineering with emphasis on API design, authentication, database systems, scalable architectures, and production-ready software development.',
   },
   {
-    program: 'B.Sc.(Ed.) in Technical Education',
+    program: 'B.Sc. (Ed.) in Technical Education',
     institution: 'Ambrose Alli University',
-    period: '2013 - 2017',
+    period: '2013 – 2017',
     location: 'Edo, Nigeria',
-    details: 'Graduated with a focus on technical education and pedagogy.',
+    details:
+      'Bachelor’s degree in Technical Education, building strong foundations in analytical thinking, technical instruction, and structured problem solving.',
   },
 ];
 
@@ -43,6 +45,21 @@ export const EDUCATION = [
  * - skills: (Optional) Array of skills obtained from the certification
  */
 export const CERTIFICATIONS = [
+  {
+    title: 'HNG Internship 14 Backend Finalist',
+    issuer: 'HNG Tech',
+    issued: 'June 2026',
+    credentialType: 'Internship Recognition',
+    note: 'Finished as a Top 140 finalist out of 22,487 participants in the highly competitive Backend Engineering track.',
+    skills: [
+      'Backend Engineering',
+      'API Development',
+      'Git Collaboration',
+      'Code Reviews',
+      'Agile Development',
+      'Team Collaboration',
+    ],
+  },
   {
     title: 'Backend Engineering Diploma',
     issuer: 'AltSchool Africa',

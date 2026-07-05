@@ -51,8 +51,16 @@ export const PROJECTS = [
       getSkillByLabel(BACKEND_SKILLS, 'PostgreSQL'),
       getSkillByLabel(BACKEND_SKILLS, 'Authentication (JWT)'),
     ],
+    engineeringConcepts: [
+      'Authentication',
+      'OAuth 2.0',
+      'PKCE',
+      'RBAC',
+      'JWT',
+      'REST API',
+    ],
     description: [
-      'Insighta Labs+ is a TypeScript/Express backend that powers a profile intelligence platform across both web and CLI interfaces. It provides secure GitHub OAuth (PKCE) authentication, role-based API access, deterministic natural-language search, and a unified token model, ensuring consistent behavior, security, and data integrity regardless of how the system is accessed.'
+      'Designed and built the backend for a profile intelligence platform supporting both web and CLI clients. Implemented GitHub OAuth (PKCE), role-based authorization, deterministic natural-language search, and a unified authentication model to deliver secure, consistent API behavior across multiple interfaces.'
     ],
     repoLink: 'https://github.com/JohnUghiovhe/insighta-backend',
     sourceLink: 'https://insighta-web-pied.vercel.app',
@@ -71,8 +79,16 @@ export const PROJECTS = [
       getSkillByLabel(FRONTEND_SKILLS, 'Typescript'),
       getSkillByLabel(FRONTEND_SKILLS, 'Vite'),
     ],
+    engineeringConcepts: [
+      'Background Jobs',
+      'Redis',
+      'Priority Queues',
+      'Retry Strategy',
+      'Exponential Backoff',
+      'Distributed Systems',
+    ],
     description: [
-      'Built a background job scheduler that accepts jobs, schedules them for later execution, and persists their status in Redis. Implemented job prioritization, scheduling, and retry logic with exponential backoff and jitter.'
+      'Engineered a distributed background job scheduler with NestJS and Redis, supporting delayed execution, priority queues, automatic retries, exponential backoff with jitter, and persistent job state management. Designed for reliable asynchronous processing in production-style environments.'
     ],
     repoLink: 'https://github.com/JohnUghiovhe/background-job-scheduler',
     sourceLink: 'https://63.183.193.95.sslip.io',
@@ -90,8 +106,15 @@ export const PROJECTS = [
       getSkillByLabel(BACKEND_SKILLS, 'Redis'),
       getSkillByLabel(BACKEND_SKILLS, 'Mongodb'),
     ],
+    engineeringConcepts: [
+      'REST API',
+      'Redis',
+      'Caching',
+      'MongoDB',
+      'Scalability',
+    ],
     description: [
-      'Built a full-stack event ticketing platform that streamlines event creation, ticket checkout, and attendee management, replacing manual coordination workflows. Designed modular REST APIs using Node.js, TypeScript, and Express to improve scalability and maintainability, integrated Redis caching to reduce API response latency, and implemented a secure backend architecture with MongoDB to support long-term platform growth.',
+      'Developed a full-stack event management platform with modular REST APIs, Redis caching, and MongoDB persistence. Designed the backend for scalability, reducing response latency through caching while supporting secure ticket management, attendee workflows, and future platform growth.',
     ],
     repoLink: 'https://github.com/JohnUghiovhe/eventful',
     sourceLink: 'https://eventta.vercel.app',
@@ -100,11 +123,20 @@ export const PROJECTS = [
   {
     imgSrc: 'https://res.cloudinary.com/djd7bdpdm/image/upload/v1780355490/request-detail_xftryp.png',
     title: 'Retry Engine - A Node.js Library for Reliable API Request Retrying',
-    techStack: ['TypeScript', 'Node.js', 'SQLite'],
+    techIcons: [
+      getSkillByLabel(FRONTEND_SKILLS, 'Typescript'),
+      getSkillByLabel(BACKEND_SKILLS, 'Node.js'),
+    ],
+    engineeringConcepts: [
+      'Circuit Breaker',
+      'Retry Strategy',
+      'Exponential Backoff',
+      'Jitter',
+      'Distributed Systems',
+      'Queues',
+    ],
     description: [
-      'Built the retry strategies, circuit-breaker logic, and lifecycle tracking for outbound requests.',
-      'Persisted request state in SQLite and exposed simple operational endpoints.',
-      'Added jittered backoff, validation, timeout cancellation, and worker locking.'
+      'Built a resilient request retry library for Node.js applications featuring configurable retry strategies, circuit breaker protection, timeout cancellation, and persistent request lifecycle tracking. Implemented jittered exponential backoff, worker locking, and SQLite-backed state management to improve reliability of outbound API communication.'
     ],
     repoLink: 'https://github.com/JohnUghiovhe/retry-engine',
     category: [PROJECT_CATEGORY.BACKEND]
@@ -120,8 +152,14 @@ export const PROJECTS = [
       getSkillByLabel(BACKEND_SKILLS, 'Express (Node.js Framework)'),
       getSkillByLabel(BACKEND_SKILLS, 'PostgreSQL'),
     ],
+    engineeringConcepts: [
+      'State Machine',
+      'REST API',
+      'PostgreSQL',
+      'Server-Side Validation',
+    ],
     description: [
-      'A full-stack invoice management system built with a backend-first architecture, supporting structured invoice workflows (draft → pending → paid), server-side validation, and dual persistence (PostgreSQL with automatic schema bootstrap and JSON fallback for local/test isolation). Designed for reliability across environments, with clean API design, validation boundaries, and testable data flows.',
+      'Built a backend-first invoice workflow engine supporting state-driven invoice lifecycles, strict server-side validation, and PostgreSQL persistence with automatic local JSON fallback. Designed clean API boundaries and reliable data flows that remain consistent across development and production environments.',
     ],
     repoLink: 'https://github.com/JohnUghiovhe/invoice-management-app',
     sourceLink: 'https://invoice-management-apy.netlify.app',
@@ -137,8 +175,14 @@ export const PROJECTS = [
       getSkillByLabel(BACKEND_SKILLS, 'Express (Node.js Framework)'),
       getSkillByLabel(BACKEND_SKILLS, 'socket.io'),
     ],
+    engineeringConcepts: [
+      'WebSockets',
+      'Real-Time',
+      'Event-Driven',
+      'Room-Based Communication',
+    ],
     description: [
-      'Developed a real-time multiplayer guessing game using Node.js, Express, and Socket.IO, enabling low-latency gameplay through WebSocket-based bidirectional communication. Implemented core game mechanics including timers, scoring, rounds, and player attempts while designing an event-driven architecture capable of supporting multiple concurrent users, alongside a responsive frontend built with HTML, CSS, and JavaScript.', 
+      'Built a real-time multiplayer game using Socket.IO and an event-driven backend architecture. Implemented synchronized gameplay, timers, scoring, and room-based communication to support low-latency interaction between concurrent players.', 
     ],
     repoLink: 'https://github.com/JohnUghiovhe/Guessing-Game',
     sourceLink: 'https://jayguessgame.vercel.app', 
@@ -155,8 +199,15 @@ export const PROJECTS = [
       getSkillByLabel(BACKEND_SKILLS, 'NestJS (Node.js Framework)'),
       getSkillByLabel(BACKEND_SKILLS, 'Sql')
     ],
+    engineeringConcepts: [
+      'REST API',
+      'TypeORM',
+      'SQL',
+      'Session Management',
+      'Payment Processing',
+    ],
     description: [
-      'Built a chat-based food ordering system using NestJS and TypeScript with modular REST APIs for menu management, ordering, and payment processing. Designed a session-based ordering flow to improve accessibility, integrated Paystack payment verification, structured relational data using SQLite and TypeORM, and developed a responsive frontend with real-time backend interactions.',
+      'Developed an AI-assisted restaurant ordering platform with NestJS, TypeScript, and TypeORM. Designed modular APIs for menu management, order processing, and payment verification while implementing a session-based conversational ordering workflow.',
     ],
     repoLink: 'https://github.com/JohnUghiovhe/Restaurant-ChatBot',
     sourceLink: 'https://jayeffchatbot.vercel.app',
@@ -171,8 +222,15 @@ export const PROJECTS = [
       getSkillByLabel(FRONTEND_SKILLS, 'Javascript'),
       getSkillByLabel(BACKEND_SKILLS, 'REST Api'),
     ],
+    engineeringConcepts: [
+      'REST API',
+      'Authentication',
+      'JWT',
+      'RBAC',
+      'Content Management',
+    ],
     description: [
-      'Developed a blogging backend that supports article publishing, content management, and public content access through RESTful endpoints. Implemented authentication and access control mechanisms to separate author permissions from public reader interactions, while creating a reusable API structure that simplifies content operations across both protected and open routes.',
+      'Designed a RESTful blogging API with authentication, role-based authorization, and content management capabilities. Implemented reusable endpoint architecture supporting secure publishing workflows alongside public content access.',
     ],
     repoLink: 'https://github.com/JohnUghiovhe/blogging-api',
     sourceLink: 'https://jayeffblog.vercel.app/',

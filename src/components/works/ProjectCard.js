@@ -4,7 +4,7 @@ import Iconify from '../Iconify';
 
 // ----------------------------------------------------------------------
 
-export default function ProjectCard({ imgSrc, title, description, repoLink, sourceLink, techIcons }) {
+export default function ProjectCard({ imgSrc, title, description, repoLink, sourceLink, techIcons, engineeringConcepts }) {
   const impactPoints = Array.isArray(description) ? description : [description];
 
   return (
@@ -29,6 +29,24 @@ export default function ProjectCard({ imgSrc, title, description, repoLink, sour
             ))}
           </ul>
         </div>
+
+        {engineeringConcepts && engineeringConcepts.length > 0 && (
+          <div className="mb-3">
+            <p className="mb-2 text-[11px] font-bold tracking-widest text-primary-600 dark:text-primary-300">
+              ENGINEERING
+            </p>
+            <div className="flex flex-wrap gap-1.5">
+              {engineeringConcepts.map((concept, i) => (
+                <span
+                  key={`concept-${i}`}
+                  className="inline-flex items-center rounded-md bg-primary-500/10 px-2 py-0.5 text-[11px] font-medium text-primary-700 dark:text-primary-300 ring-1 ring-inset ring-primary-500/20"
+                >
+                  {concept}
+                </span>
+              ))}
+            </div>
+          </div>
+        )}
 
         {techIcons && techIcons.length > 0 && (
           <div className="mt-4 flex flex-wrap gap-5">
@@ -88,4 +106,5 @@ ProjectCard.propTypes = {
   repoLink: PropTypes.string,
   sourceLink: PropTypes.string,
   techIcons: PropTypes.array,
+  engineeringConcepts: PropTypes.array,
 };

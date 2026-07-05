@@ -7,35 +7,52 @@ import LoadAnimate from '../components/animate/LoadAnimate';
 
 const EXPERIENCES = [
   {
-    role: 'Backend Engineer Intern',
-    company: 'HNG Tech',
-    period: 'April 2026 – June 2026',
-    location: 'Lagos, Nigeria',
-    highlights: [
-      'Contributing to the backend development of SEIL, a guided marketing funnel platform helping SMBs generate and execute personalized marketing workflows through conversational onboarding, automated funnel blueprint generation, and guided activation flows.',
-      'Collaborating in a cross-functional team environment to build scalable APIs and workflow orchestration logic supporting MVP delivery under real product constraints and iterative development cycles.',
-      'Built Insighta Labs+, a multi-interface TypeScript/Express backend powering both Web and CLI experiences with secure GitHub OAuth (PKCE), role-based access control, deterministic natural-language profile search, and a unified token model ensuring consistent authentication and authorization across clients.',
-      'Architected secure authentication infrastructure with token rotation, hashed token storage, middleware-driven request pipelines, and route-scoped access enforcement to improve reliability and system security.',
-      'Built a backend-driven invoice workflow system supporting structured invoice lifecycle states (draft → pending → paid), PostgreSQL persistence with development fallbacks, schema-driven validation, and testable API flows.',
-      'Designed modular backend systems with clear separation between routing, validation, business logic, persistence, and error handling to improve maintainability and scalability across projects.'
-    ],
-  },
-
-  {    role: 'Backend Developer (Intern)',
-    company: 'AltSchool Africa',
-    period: 'September 2025 – February 2026',
+    role: 'Backend Software Engineer',
+    company: 'SEIL',
+    period: 'June 2026 – Present',
     location: 'Remote',
     highlights: [
-      'Built Eventful, a full-stack event ticketing and management platform that streamlined event creation, ticket checkout, and attendee workflows, replacing manual coordination processes with a scalable digital system.',
-      'Designed modular REST APIs using Node.js, TypeScript, and Express, and integrated Redis caching to improve response performance and support long-term scalability across backend services.',
-      'Developed a real-time multiplayer game system using WebSockets and Socket.IO, implementing low-latency bidirectional communication, event-driven game logic, timers, scoring systems, and concurrent user interactions.',
-      'Built a chat-based food ordering platform using NestJS and TypeScript, implementing modular APIs, session-driven workflows, and payment verification flows to improve user accessibility and transaction handling.',
-      'Designed backend systems supporting authentication, access control, relational data modeling, and payment integrations, strengthening experience with production-style application architecture.',
-      'Developed a content publishing backend with role-based access controls and reusable RESTful API structures for protected and public content operations.',
-      'Applied modern backend engineering practices including modular architecture, API design, validation, persistence design, and scalable system organization across multiple projects.'
+      'Designed and shipped 10+ production backend features, including Google OAuth authentication, Funnel Generation & Display APIs, notification services, profile management, and funnel stage progression workflows.',
+      'Improved backend maintainability by introducing database migrations, Swagger documentation, automated tests, and consistent API design patterns.',
+      'Collaborated with cross-functional engineers to evolve SEIL from its internship MVP into a production-focused platform serving growing businesses.',
     ],
   },
 
+  {
+    role: 'Backend Engineering Intern',
+    company: 'HNG Tech',
+    period: 'April 2026 – June 2026',
+    location: 'Remote',
+    highlights: [
+      'Selected into the HNG Internship 14 Backend track and advanced to the Top 140 finalists from over 22,000 participants.',
+      'Delivered production-ready backend functionality while collaborating in agile teams using Git workflows, peer reviews, and iterative feature delivery.',
+      'Successfully transitioned into continued product development on SEIL following the internship.',
+    ],
+  },
+
+  {
+    role: 'Backend Software Engineer (Hackathon Team)',
+    company: 'Distill AI',
+    period: 'May 2026 – Present',
+    location: 'Remote',
+    highlights: [
+      'Engineered orchestration services for multi-stage AI document extraction with resumable processing pipelines.',
+      'Built live execution trace streaming, intelligent request classification, explainable routing, and confidence-scoring services for AI workflows.',
+      'Implemented configurable policy and pricing engines alongside authenticated configuration management and tool registry infrastructure.',
+    ],
+  },
+
+  {
+    role: 'Customer Service Manager (Operations & Systems Thinking)',
+    company: 'KIJ Villa',
+    period: 'May 2024 – Present',
+    location: 'Lagos, Nigeria',
+    highlights: [
+      'Lead customer service operations while improving internal workflows, service delivery, and stakeholder collaboration.',
+      'Applied systems thinking and analytical problem-solving to streamline operations and enhance the customer experience.',
+      'Partnered across teams to identify operational bottlenecks and implement scalable process improvements.',
+    ],
+  },
 ];
 
 // ----------------------------------------------------------------------

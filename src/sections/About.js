@@ -31,29 +31,31 @@ export default function About() {
                             <div className="relative mb-8">
                                 <div className="absolute -left-4 top-0 h-1 w-1 rounded-full bg-[#1a5fff] shadow-lg shadow-[#1a5fff]/50" />
                                 <h3 className="text-xl font-bold text-neutral-100 md:text-2xl">
-                                    Building Reliable Systems That Power Real Products
+                                Engineering Backend Systems That Scale
                                 </h3>
                             </div>
 
                             {/* About text placeholder */}
                             <div className="space-y-6">
                                 <p className="leading-relaxed text-neutral-300">
-                                I’m John Ughiovhe, a software engineer passionate about building scalable backend systems and modern web applications. I specialize in designing reliable APIs, secure server-side architectures, and backend systems that power real-world digital products.
+                                    I'm John Ughiovhe, a Backend Software Engineer who enjoys designing systems that are secure, scalable, and built to last. I specialize in TypeScript and Node.js, building APIs, backend services, and application infrastructure that power real-world digital products.
                                 </p>
 
                                 <p className="leading-relaxed text-neutral-300">
-                                My journey into software engineering started with curiosity about how applications work behind the scenes. That curiosity evolved into a passion for solving complex problems with code and designing systems that remain reliable, maintainable, and scalable as products grow.
+                                    My engineering journey began with a curiosity about how software works behind the scenes. That curiosity evolved into a passion for solving complex problems through thoughtful system design, clean architecture, and maintainable code. Today, I focus on building backend systems that remain reliable as products and teams grow.
                                 </p>
 
                                 <p className="leading-relaxed text-neutral-300">
-                                I recently completed a Diploma in Backend Engineering at AltSchool Africa, where I was recognized as Best Learner. Through that experience and hands-on engineering work, I gained practical experience building backend services, full-stack applications, and production-style systems using modern development tools and workflows.
+                                    I graduated as the Best Learner in the Backend Engineering Diploma program at AltSchool Africa, an experience that strengthened my foundation in software engineering and reinforced my commitment to building production-quality software. Since then, I've contributed to real-world products by implementing authentication systems, notification infrastructure, workflow engines, and API-first architectures used by growing businesses.
                                 </p>
 
                                 <p className="leading-relaxed text-neutral-300">
-                                My work spans multi-interface platforms, workflow-driven systems, secure authentication architectures, and API-first applications. I’ve built projects ranging from backend systems supporting Web and CLI experiences to workflow engines with strict validation and data integrity rules, and I currently contribute to SEIL, a real-world product helping SMBs simplify marketing execution.
+                                    Alongside engineering, my experience leading customer service operations has shaped how I think about software. Working closely with business processes and end users has taught me to build solutions that don't just function correctly, but also solve meaningful problems, improve operational efficiency, and deliver measurable value.
                                 </p>
 
-                                <p className="leading-relaxed text-neutral-300">I enjoy thinking beyond endpoints and features, focusing on system design, developer experience, reliability, and building technology that creates measurable value for users.</p>
+                                <p className="leading-relaxed text-neutral-300">
+                                    Whether I'm designing APIs, improving backend architecture, or implementing complex business workflows, I strive to write software that's reliable, maintainable, and easy for other engineers to build upon. I'm always looking for opportunities to learn, collaborate, and create technology that makes a lasting impact.
+                                </p>
                             </div>
 
                             <div className="mt-10 grid grid-cols-2 gap-6 md:grid-cols-3">
@@ -63,7 +65,7 @@ export default function About() {
                                 </div>
                                 <div className="rounded-lg bg-[#1a2f5a]/40 p-4">
                                     <p className="text-sm font-semibold text-[#00b4ff]">Focus</p>
-                                    <p className="mt-2 text-lg font-bold text-neutral-100">Backend Development • API Design • Scalable Web Applications • System Architecture</p>
+                                    <p className="mt-2 text-lg font-bold text-neutral-100">Backend Engineering • API Development • Distributed Systems • Scalable Architecture</p>
                                 </div>
                             </div>
                         </div>

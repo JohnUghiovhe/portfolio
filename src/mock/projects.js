@@ -12,22 +12,12 @@ export const TABS = [
   {
     label: 'All',
     value: PROJECT_CATEGORY.ALL,
-    icon: 'fluent:tab-desktop-20-regular',
+    icon: 'ic:baseline-all-inclusive',
   },
   {
     label: 'Full Stack',
     value: PROJECT_CATEGORY.FULL_STACK,
     icon: 'bx:code-block',
-  },
-  {
-    label: 'Open Source',
-    value: PROJECT_CATEGORY.OPEN_SOURCE,
-    icon: 'fluent-mdl2:open-source',
-  },
-  {
-    label: 'Frontend',
-    value: PROJECT_CATEGORY.FRONTEND,
-    icon: 'fluent-mdl2:color',
   },
   {
     label: 'Backend',
@@ -95,6 +85,90 @@ export const PROJECTS = [
     category: [PROJECT_CATEGORY.FULL_STACK],
   },
   {
+  imgSrc: 'https://res.cloudinary.com/djd7bdpdm/image/upload/v1786828207/Qpass_vk2ovo.png',
+  title: 'Qpass-Backend',
+  techIcons: [
+    getSkillByLabel(BACKEND_SKILLS, 'Node.js'),
+    getSkillByLabel(BACKEND_SKILLS, 'Express (Node.js Framework)'),
+    getSkillByLabel(BACKEND_SKILLS, 'Typescript'),
+    getSkillByLabel(BACKEND_SKILLS, 'PostgreSQL'),
+    getSkillByLabel(BACKEND_SKILLS, 'Prisma'),
+    getSkillByLabel(BACKEND_SKILLS, 'Redis'),
+    getSkillByLabel(BACKEND_SKILLS, 'Socket.io'),
+  ],
+  engineeringConcepts: [
+    'RESTful API',
+    'JWT Authentication',
+    'RBAC',
+    'OAuth 2.0',
+    'Real-Time Communication',
+    'Redis Distributed Locking',
+    'Event-Driven Architecture',
+    'Unit & Integration Testing',
+    'API Documentation',
+    'Modular Architecture',
+  ],
+  description: [
+    'Built a production-oriented backend for event registration, ticketing, QR-based attendance verification, and event analytics, featuring JWT authentication, Google OAuth, RBAC, Redis-backed real-time communication and distributed locking, bulk attendee imports, reporting, and comprehensive API testing.',
+  ],
+  repoLink: 'https://github.com/EventNester/QPass-Backend',
+  sourceLink: '',
+  category: [PROJECT_CATEGORY.BACKEND],
+},
+{
+    imgSrc: 'https://res.cloudinary.com/djd7bdpdm/image/upload/v1780355490/request-detail_xftryp.png',
+    title: 'Retry Engine - A Node.js Library for Reliable API Request Retrying',
+    techIcons: [
+      getSkillByLabel(FRONTEND_SKILLS, 'Typescript'),
+      getSkillByLabel(BACKEND_SKILLS, 'Node.js'),
+    ],
+    engineeringConcepts: [
+      'Circuit Breaker',
+      'Retry Strategy',
+      'Exponential Backoff',
+      'Jitter',
+      'Distributed Systems',
+      'Queues',
+    ],
+    description: [
+      'Built a resilient request retry library for Node.js applications featuring configurable retry strategies, circuit breaker protection, timeout cancellation, and persistent request lifecycle tracking. Implemented jittered exponential backoff, worker locking, and SQLite-backed state management to improve reliability of outbound API communication.'
+    ],
+    repoLink: 'https://github.com/JohnUghiovhe/retry-engine',
+    category: [PROJECT_CATEGORY.BACKEND]
+  },
+  {
+  imgSrc: 'https://res.cloudinary.com/djd7bdpdm/image/upload/v1786828781/AWS_qhyxbe.png',
+  title: 'Approval-workflow',
+  techIcons: [
+    getSkillByLabel(BACKEND_SKILLS, 'Node.js'),
+    getSkillByLabel(BACKEND_SKILLS, 'Express (Node.js Framework)'),
+    getSkillByLabel(BACKEND_SKILLS, 'Typescript'),
+    getSkillByLabel(BACKEND_SKILLS, 'PostgreSQL'),
+    getSkillByLabel(BACKEND_SKILLS, 'Prisma'),
+    getSkillByLabel(BACKEND_SKILLS, 'Zod'),
+    getSkillByLabel(BACKEND_SKILLS, 'Pino'),
+  ],
+  engineeringConcepts: [
+    'Layered Architecture',
+    'State Machine',
+    'Transactional Workflows',
+    'Append-Only Activity History',
+    'Concurrency Control',
+    'Request Validation',
+    'Rate Limiting',
+    'Request Timeouts',
+    'Structured Logging',
+    'Unit & Integration Testing',
+    'OpenAPI Documentation',
+  ],
+  description: [
+    'Built a backend approval workflow service that models departmental requests through validated state transitions, reviewer decisions, and append-only activity history, with transactional concurrency control, PostgreSQL persistence, structured logging, rate limiting, health checks, and comprehensive API contract testing.',
+  ],
+  repoLink: 'https://github.com/JohnUghiovhe/approval-workflow',
+  sourceLink: '',
+  category: [PROJECT_CATEGORY.BACKEND],
+},
+  {
     imgSrc: 'https://res.cloudinary.com/djd7bdpdm/image/upload/v1772226789/Screenshot_9_lschdp.png',
     title: 'Eventful - Event Ticketing and Management Platform',
     techIcons: [
@@ -121,26 +195,34 @@ export const PROJECTS = [
     category: [PROJECT_CATEGORY.FULL_STACK],
   },
   {
-    imgSrc: 'https://res.cloudinary.com/djd7bdpdm/image/upload/v1780355490/request-detail_xftryp.png',
-    title: 'Retry Engine - A Node.js Library for Reliable API Request Retrying',
-    techIcons: [
-      getSkillByLabel(FRONTEND_SKILLS, 'Typescript'),
-      getSkillByLabel(BACKEND_SKILLS, 'Node.js'),
-    ],
-    engineeringConcepts: [
-      'Circuit Breaker',
-      'Retry Strategy',
-      'Exponential Backoff',
-      'Jitter',
-      'Distributed Systems',
-      'Queues',
-    ],
-    description: [
-      'Built a resilient request retry library for Node.js applications featuring configurable retry strategies, circuit breaker protection, timeout cancellation, and persistent request lifecycle tracking. Implemented jittered exponential backoff, worker locking, and SQLite-backed state management to improve reliability of outbound API communication.'
-    ],
-    repoLink: 'https://github.com/JohnUghiovhe/retry-engine',
-    category: [PROJECT_CATEGORY.BACKEND]
-  },
+  imgSrc: 'https://res.cloudinary.com/djd7bdpdm/image/upload/v1786828781/Rehearsify_gdpts3.png',
+  title: 'Rehearsify',
+  techIcons: [
+    getSkillByLabel(BACKEND_SKILLS, 'Node.js'),
+    getSkillByLabel(BACKEND_SKILLS, 'Express (Node.js Framework)'),
+    getSkillByLabel(BACKEND_SKILLS, 'PostgreSQL'),
+    getSkillByLabel(BACKEND_SKILLS, 'Prisma'),
+    getSkillByLabel(BACKEND_SKILLS, 'Zod'),
+    getSkillByLabel(BACKEND_SKILLS, 'Cloudinary'),
+  ],
+  engineeringConcepts: [
+    'Modular Monolith',
+    'RESTful API',
+    'JWT Authentication',
+    'RBAC',
+    'Recommendation Engine',
+    'Scheduled Jobs',
+    'Transaction Management',
+    'Query Optimization',
+    'Unit & Integration Testing',
+  ],
+  description: [
+    'Built a modular backend platform for choir repertoire planning and intelligent song recommendations, featuring repertoire management, service scheduling, performance history, recommendation scoring, planning workflows, reporting, and automated weekly planning with scheduled jobs.',
+  ],
+  repoLink: 'https://github.com/JohnUghiovhe/Rehearsify',
+  sourceLink: '',
+  category: [PROJECT_CATEGORY.BACKEND],
+},
   {
     imgSrc: 'https://res.cloudinary.com/djd7bdpdm/image/upload/v1777813377/Invoice_management_app_fn51t7.png',
     title: 'Invoice Workflow Engine',
@@ -163,7 +245,7 @@ export const PROJECTS = [
     ],
     repoLink: 'https://github.com/JohnUghiovhe/invoice-management-app',
     sourceLink: 'https://invoice-management-apy.netlify.app',
-    category: [PROJECT_CATEGORY.FULL_STACK],
+    category: [PROJECT_CATEGORY.BACKEND],
   },
   {
     imgSrc: 'https://res.cloudinary.com/djd7bdpdm/image/upload/v1772798770/Guessing-game_lgqh0w.png',

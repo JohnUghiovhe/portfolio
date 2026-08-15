@@ -13,7 +13,9 @@ module.exports = {
           100: '#d6f2ff',
           300: '#66e0ff',
           500: '#00b4ff',
-          700: '#1a5fff'
+          600: '#0e8cff',
+          700: '#1a5fff',
+          800: '#1644cc'
         }
       },
       fontFamily: {

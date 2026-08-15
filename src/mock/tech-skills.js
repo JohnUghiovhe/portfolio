@@ -13,10 +13,9 @@ export const SKILL_GROUPS = [
     label: 'Backend & Frameworks',
     accent: '#00b4ff',
     skills: [
-      { label: 'Node.js',    icon: 'vscode-icons:file-type-node' },
+      { label: 'Node.js', icon: 'vscode-icons:file-type-node' },
       { label: 'Express.js', icon: 'simple-icons:express' },
-      { label: 'NestJS',     icon: 'logos:nestjs' },
-      ,
+      { label: 'NestJS', icon: 'logos:nestjs' },
     ],
   },
   {
@@ -32,16 +31,16 @@ export const SKILL_GROUPS = [
   },
   {
     id: 'tools',
-    label: 'Tools & Development',
+    label: 'DevOps & Tools',
     accent: '#1a5fff',
     skills: [
-      { label: 'Git',        icon: 'logos:git' },
-      { label: 'Jest',       icon: 'logos:jest' },
-      { label: 'Docker',     icon: 'logos:docker-icon' },
-      { label: 'AWS',        icon: 'logos:aws' },
-      { label: 'Postman',    icon: 'logos:postman-icon' },
-      { label: 'Swagger',    icon: 'logos:swagger' },
-      { label: 'Redis',      icon: 'logos:redis' },
+      { label: 'Git', icon: 'logos:git' },
+      { label: 'Jest', icon: 'logos:jest' },
+      { label: 'Docker', icon: 'logos:docker-icon' },
+      { label: 'AWS', icon: 'logos:aws' },
+      { label: 'Postman', icon: 'logos:postman-icon' },
+      { label: 'Swagger', icon: 'logos:swagger' },
+      { label: 'Redis', icon: 'logos:redis' },
     ],
   },
   {

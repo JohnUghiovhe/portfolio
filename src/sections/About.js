@@ -31,30 +31,59 @@ export default function About() {
                             <div className="relative mb-8">
                                 <div className="absolute -left-4 top-0 h-1 w-1 rounded-full bg-[#1a5fff] shadow-lg shadow-[#1a5fff]/50" />
                                 <h3 className="text-xl font-bold text-neutral-100 md:text-2xl">
-                                Engineering Backend Systems That Scale
+                                    Engineering Backend Systems That Scale
                                 </h3>
                             </div>
 
-                            {/* About text placeholder */}
+                            {/* About text */}
                             <div className="space-y-6">
                                 <p className="leading-relaxed text-neutral-300">
-                                    I'm John Ughiovhe, a Backend Software Engineer who enjoys designing systems that are secure, scalable, and built to last. I specialize in TypeScript and Node.js, building APIs, backend services, and application infrastructure that power real-world digital products.
+                                    I'm John Ughiovhe, a Backend-focused Software Engineer who enjoys designing
+                                    secure, scalable, and maintainable systems that solve real-world problems.
+                                    I specialize in TypeScript, Node.js, and backend architecture, building APIs,
+                                    services, and application infrastructure that support reliable digital products.
                                 </p>
 
                                 <p className="leading-relaxed text-neutral-300">
-                                    My engineering journey began with a curiosity about how software works behind the scenes. That curiosity evolved into a passion for solving complex problems through thoughtful system design, clean architecture, and maintainable code. Today, I focus on building backend systems that remain reliable as products and teams grow.
+                                    My engineering journey has evolved from learning the fundamentals to working
+                                    on collaborative, production-style systems. I've contributed to backend
+                                    products involving authentication, authorization, workflow engines, event
+                                    processing, real-time communication, background jobs, testing, and API
+                                    architecture. These experiences have taught me to think beyond simply making
+                                    software work—to designing systems that are easier to maintain, test, and scale.
                                 </p>
 
                                 <p className="leading-relaxed text-neutral-300">
-                                    I graduated as the Best Learner in the Backend Engineering Diploma program at AltSchool Africa, an experience that strengthened my foundation in software engineering and reinforced my commitment to building production-quality software. Since then, I've contributed to real-world products by implementing authentication systems, notification infrastructure, workflow engines, and API-first architectures used by growing businesses.
+                                    I graduated as the Best Learner from the Backend Engineering Diploma program
+                                    at AltSchool Africa and later completed TechCrush's Backend Engineering
+                                    Cohort 7. Along the way, I worked on collaborative products including Qpass,
+                                    a QR-based event registration and attendance platform, Rehearsify, a choir
+                                    repertoire planning and recommendation platform, and other backend systems
+                                    that challenged me to apply engineering principles in practical settings.
                                 </p>
 
                                 <p className="leading-relaxed text-neutral-300">
-                                    Alongside engineering, my experience leading customer service operations has shaped how I think about software. Working closely with business processes and end users has taught me to build solutions that don't just function correctly, but also solve meaningful problems, improve operational efficiency, and deliver measurable value.
+                                    My experience at HNG Tech and with engineering teams such as SEIL further
+                                    exposed me to collaborative development, code reviews, product thinking, and
+                                    shipping software as part of a team. These experiences have strengthened my
+                                    ability to communicate technical ideas, work through complex problems with
+                                    other engineers, and take ownership of features from implementation to delivery.
                                 </p>
 
                                 <p className="leading-relaxed text-neutral-300">
-                                    Whether I'm designing APIs, improving backend architecture, or implementing complex business workflows, I strive to write software that's reliable, maintainable, and easy for other engineers to build upon. I'm always looking for opportunities to learn, collaborate, and create technology that makes a lasting impact.
+                                    I'm currently expanding beyond backend development into cloud computing through
+                                    a new TechCrush cohort, with a growing interest in infrastructure, deployment,
+                                    and the systems that keep applications reliable in production. Alongside
+                                    engineering, my background in customer service operations continues to shape
+                                    how I approach software, keeping users, business processes, and measurable
+                                    outcomes at the centre of what I build.
+                                </p>
+
+                                <p className="leading-relaxed text-neutral-300">
+                                    Whether I'm designing an API, modelling a business workflow, improving system
+                                    reliability, or exploring cloud infrastructure, I aim to build software that
+                                    is thoughtful, dependable, and useful. I'm always looking to learn, collaborate,
+                                    and contribute to products and engineering teams solving meaningful problems.
                                 </p>
                             </div>
 

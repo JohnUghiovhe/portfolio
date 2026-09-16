@@ -58,7 +58,7 @@ src/
 ### 1) Install dependencies
 
 ```bash
-npm install
+pnpm install
 ```
 
 ### 2) Configure environment variables
@@ -74,28 +74,26 @@ NEXT_PUBLIC_EMAIL_PUBLIC_KEY="YOUR_PUBLIC_KEY"
 ### 3) Start development server
 
 ```bash
-npm run dev
+pnpm dev
 ```
 
 The app runs on `http://localhost:3031`.
 
 ## Scripts
 
-- `npm run dev` - Start development server on port 3031
-- `npm run build` - Create production build
-- `npm run start` - Start production server
-- `npm run lint` - Run Next.js lint
-- `npm run lint:es` - Run ESLint on .js/.jsx files
-- `npm run lint:fix` - Auto-fix lint issues
+- `pnpm dev` - Start development server on port 3031
+- `pnpm build` - Create production build
+- `pnpm start` - Start production server
+- `pnpm lint` - Run Next.js lint
+- `pnpm lint:es` - Run ESLint on .js/.jsx files
+- `pnpm lint:fix` - Auto-fix lint issues
 
 ### Maintenance scripts in package.json
 
-The following scripts use `rm -rf` and are Unix-style:
+The following scripts use `rimraf` for cross-platform recursive deletion:
 - `clear-all`
 - `re-start`
 - `re-build`
-
-If you are on Windows PowerShell, replace `rm -rf` with `Remove-Item -Recurse -Force` equivalents before using them.
 
 ## Content Customization
 
@@ -140,8 +138,8 @@ This section records the implemented fixes and cleanup completed in this codebas
 ### Validation status
 
 After the cleanup and navigation updates:
-- `npm run lint:es` passed
-- `npm run build` passed (last run exit code: 0)
+- `pnpm lint:es` passed
+- `pnpm build` passed (last run exit code: 0)
 
 ## Troubleshooting
 

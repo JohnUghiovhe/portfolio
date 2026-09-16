@@ -9,10 +9,10 @@
     "dev": "next dev --webpack -p 3031",
     "start": "next start",
     "build": "next build",
-    "export": "yarn build && next export -o _static",
-    "clear-all": "rm -rf .next .swc _static node_modules",
-    "re-start": "rm -rf .next .swc _static node_modules && yarn install && yarn dev",
-    "re-build": "rm -rf .next .swc _static node_modules && yarn install && yarn build"
+    "export": "pnpm build && next export -o _static",
+    "clear-all": "rimraf .next .swc _static node_modules",
+    "re-start": "rimraf .next .swc _static node_modules && pnpm install && pnpm dev",
+    "re-build": "rimraf .next .swc _static node_modules && pnpm install && pnpm build"
   },
   "dependencies": {
     "@emailjs/browser": "^3.9.1",
@@ -36,6 +36,7 @@
     "postcss": "^8.4.14",
     "prettier": "^2.7.1",
     "prettier-plugin-tailwindcss": "^0.1.13",
+    "rimraf": "^6.0.1",
     "tailwindcss": "^4.2.1"
   }
 }

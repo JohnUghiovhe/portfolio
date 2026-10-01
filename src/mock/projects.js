@@ -165,7 +165,6 @@ export const PROJECTS = [
     'Built a backend approval workflow service that models departmental requests through validated state transitions, reviewer decisions, and append-only activity history, with transactional concurrency control, PostgreSQL persistence, structured logging, rate limiting, health checks, and comprehensive API contract testing.',
   ],
   repoLink: 'https://github.com/JohnUghiovhe/approval-workflow',
-  sourceLink: '',
   category: [PROJECT_CATEGORY.BACKEND],
 },
   {

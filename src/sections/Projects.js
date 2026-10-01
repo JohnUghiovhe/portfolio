@@ -14,7 +14,7 @@ export default function Works() {
   const [showAllProjects, setShowAllProjects] = useState(false);
 
   const activeClass =
-    'inline-flex min-w-fit items-center space-x-4 p-4 text-primary-700 rounded-t-lg border-b-2 border-primary-700 active dark:text-primary-300 dark:border-primary-300 group';
+    'inline-flex min-w-fit items-center gap-2 rounded-t-lg border-b-2 border-primary-700 p-3 text-sm text-primary-700 group sm:gap-3 sm:p-4 sm:text-base dark:text-primary-300 dark:border-primary-300';
 
   const handleOnClick = (_value) => {
     setCurrentTab(_value);
@@ -33,11 +33,14 @@ export default function Works() {
 
   return (
     <>
-      <section id="projects" className="relative container mx-auto mt-16 space-y-10 pb-16 sm:pb-16 space-x-5 md:space-x-0 scroll-mt-24">
+      <section
+        id="projects"
+        className="relative mx-auto mt-16 w-full max-w-6xl space-y-10 px-4 pb-16 sm:px-6"
+      >
         {/* Neon ambient glow */}
         <div className="neon-section-ambient pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_50%_0%,rgba(123,0,255,0.07),transparent_55%)]" />
         <HeadingAnimate>
-          <h2 className="mb-10 text-center font-lato text-3xl font-bold text-primary-700 dark:text-primary-300 sm:text-4xl">
+          <h2 className="mb-10 text-center font-lato text-2xl font-bold text-primary-700 sm:text-3xl dark:text-primary-300 md:text-4xl">
             Projects
           </h2>
         </HeadingAnimate>
@@ -46,7 +49,7 @@ export default function Works() {
           <div className="flex w-full flex-col items-center">
             <ul
               id="works-tab"
-              className="-mb-px flex max-w-full gap-x-2 border-b border-gray-200 font-medium  hover:cursor-pointer dark:border-gray-700"
+              className="-mb-px flex w-full flex-wrap items-center justify-center gap-x-1 border-b border-gray-200 font-medium sm:gap-x-2 dark:border-gray-700"
             >
               {TABS.map((tab, i) => (
                 <li
@@ -55,7 +58,7 @@ export default function Works() {
                   className={
                     currentTab === tab.value
                       ? activeClass
-                      : 'group inline-flex min-w-fit items-center space-x-4 rounded-t-lg border-b-2 border-transparent p-4 hover:border-gray-300'
+                      : 'group inline-flex min-w-fit cursor-pointer items-center gap-2 rounded-t-lg border-b-2 border-transparent p-3 text-sm text-gray-500 transition hover:border-gray-300 hover:text-primary-700 sm:gap-3 sm:p-4 sm:text-base dark:text-gray-400'
                   }
                 >
                   <Iconify icon={tab.icon} />
@@ -64,7 +67,7 @@ export default function Works() {
               ))}
             </ul>
 
-            <div className="mt-10 grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-y-7 lg:grid-cols-3 lg:px-7 xl:grid-cols-4 xl:px-0">
+            <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6 xl:grid-cols-3 2xl:grid-cols-4">
               {visibleProjects.map((project, i) => (
                 <ProjectCard key={`project-${currentTab}-${i}`} {...project} />
               ))}

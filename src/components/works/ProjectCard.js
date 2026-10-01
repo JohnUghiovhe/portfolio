@@ -8,11 +8,16 @@ export default function ProjectCard({ imgSrc, title, description, repoLink, sour
   const impactPoints = Array.isArray(description) ? description : [description];
 
   return (
-    <div className="flex h-full min-h-124 w-full max-w-xs flex-col rounded-lg border border-gray-200 shadow-md dark:border-gray-700 dark:bg-[#132f4c]/70">
-      <img className="h-37.5 w-full rounded-t-lg object-cover" src={imgSrc} alt={title} />
+    <div className="flex h-full w-full flex-col overflow-hidden rounded-lg border border-gray-200 shadow-md dark:border-gray-700 dark:bg-[#132f4c]/70">
+      <img
+        className="aspect-video w-full shrink-0 rounded-t-lg object-cover"
+        src={imgSrc}
+        alt={title}
+        loading="lazy"
+      />
 
       <div className="flex flex-1 flex-col p-5">
-        <h1 className="mb-2 text-lg font-semibold  text-gray-900 dark:text-white">{title}</h1>
+        <h3 className="mb-2 text-base font-semibold text-gray-900 sm:text-lg dark:text-white">{title}</h3>
         <div className="mb-3">
           <p className="mb-2 text-[11px] font-bold tracking-widest text-primary-600 dark:text-primary-300">
             IMPACT

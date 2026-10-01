@@ -68,7 +68,7 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="relative w-full max-w-none py-24 sm:py-32"
+      className="relative w-full max-w-none px-4 py-20 sm:px-6 sm:py-28 md:py-32"
     >
       {/* Space: ambient nebula */}
       <div className="space-nebula pointer-events-none absolute inset-0 -z-10 opacity-60" />
@@ -76,9 +76,9 @@ export default function Experience() {
       {/* Navy neon ambient glow from bottom */}
       <div className="neon-section-ambient pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_50%_100%,rgba(15,40,130,0.18),transparent_60%)]" />
 
-      <div className="container mx-auto px-5 md:px-8">
+      <div className="container mx-auto max-w-6xl px-4 sm:px-6">
         <HeadingAnimate>
-          <h2 className="mb-16 text-center font-lato text-3xl font-semibold text-primary-700 dark:text-primary-300 sm:text-4xl">
+          <h2 className="mb-12 text-center font-lato text-2xl font-semibold text-primary-700 sm:text-3xl sm:mb-16 dark:text-primary-300 md:text-4xl">
             Experience
           </h2>
         </HeadingAnimate>
@@ -88,7 +88,7 @@ export default function Experience() {
             {EXPERIENCES.map(({ role, company, period, location, highlights }, i) => (
               <article
                 key={`experience-${i}`}
-                className="rounded-xl border border-gray-700/50 bg-[#0b1220]/70 p-6 backdrop-blur-sm transition hover:border-[#1a5fff]/40 hover:shadow-lg hover:shadow-[#1a5fff]/10"
+                className="rounded-xl border border-gray-700/50 bg-[#0b1220]/70 p-5 backdrop-blur-sm transition hover:border-[#1a5fff]/40 hover:shadow-lg hover:shadow-[#1a5fff]/10 sm:p-6"
               >
                 <div className="mb-3 flex flex-wrap items-start gap-x-3 gap-y-1">
                   <h3 className="font-lato text-lg font-bold text-neutral-100">

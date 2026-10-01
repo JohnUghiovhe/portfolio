@@ -33,16 +33,26 @@ function ScrollProvider({ children }) {
   };
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 70) {
-        setIsScroll(true);
-      } else {
-        setIsScroll(false);
-      }
+    // The header grows taller when the nav wraps onto extra rows on narrow
+    // screens, so derive the threshold from its measured height.
+    let threshold = 70;
+
+    const updateThreshold = () => {
+      const header = document.querySelector('header nav');
+      threshold = header ? header.offsetHeight + 10 : 70;
     };
-    window.addEventListener('scroll', handleScroll);
+
+    const handleScroll = () => {
+      setIsScroll(window.scrollY > threshold);
+    };
+
+    updateThreshold();
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener('resize', updateThreshold);
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', updateThreshold);
     };
   }, []);
 

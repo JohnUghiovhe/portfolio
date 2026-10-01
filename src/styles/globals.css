@@ -51,6 +51,33 @@ body {
   overflow-x: hidden;
 }
 
+/*
+  The header wraps onto extra rows on narrow screens, so anchor targets need a
+  larger scroll offset there than on wide ones. Centralised here so every
+  section stays clear of the fixed header at any width.
+*/
+section[id] {
+  scroll-margin-top: 7.5rem;
+}
+
+@media (min-width: 48rem) {
+  section[id] {
+    scroll-margin-top: 6rem;
+  }
+}
+
+/* Never let a long unbroken string force the page to scroll sideways. */
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+li,
+span {
+  overflow-wrap: break-word;
+}
+
 /* ─── Neon Animated Background System ─────────────────────────────── */
 
 @keyframes neon-border-sweep {
@@ -310,7 +337,8 @@ body {
   }
 }
 
-@media screen and (min-height: 650px) {
+/* Only show the scroll cue where there is room for it: wide enough and tall enough. */
+@media screen and (min-width: 40rem) and (min-height: 650px) {
   #mouse-scroll {
     display: block;
   }

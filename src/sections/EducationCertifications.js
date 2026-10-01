@@ -9,19 +9,19 @@ export default function EducationCertifications() {
   return (
     <section
       id="education"
-      className="relative container mx-auto mt-12 px-5 py-12 scroll-mt-24"
+      className="relative mx-auto mt-12 w-full max-w-6xl px-4 py-12 sm:px-6"
     >
       <div className="neon-section-ambient pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_50%_0%,rgba(26,95,255,0.08),transparent_55%)]" />
 
       <HeadingAnimate>
-        <h2 className="mb-12 text-center font-lato text-3xl font-semibold text-primary-700 dark:text-primary-300 sm:text-4xl">
-          Education & Certifications
+        <h2 className="mb-12 text-center font-lato text-2xl font-semibold text-primary-700 sm:text-3xl dark:text-primary-300 md:text-4xl">
+          Education &amp; Certifications
         </h2>
       </HeadingAnimate>
 
       <LoadAnimate amount={0}>
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-2">
-          <div className="rounded-xl border border-gray-700/50 bg-[#0b1220]/70 p-6 backdrop-blur-sm">
+          <div className="rounded-xl border border-gray-700/50 bg-[#0b1220]/70 p-5 backdrop-blur-sm sm:p-6">
             <h3 className="mb-4 text-lg font-bold text-neutral-100">Education</h3>
             <div className="space-y-4">
               {EDUCATION.map((item, index) => (
@@ -40,7 +40,7 @@ export default function EducationCertifications() {
             </div>
           </div>
 
-          <div className="rounded-xl border border-gray-700/50 bg-[#0b1220]/70 p-6 backdrop-blur-sm">
+          <div className="rounded-xl border border-gray-700/50 bg-[#0b1220]/70 p-5 backdrop-blur-sm sm:p-6">
             <h3 className="mb-4 text-lg font-bold text-neutral-100">Certifications</h3>
             <div className="space-y-4">
               {CERTIFICATIONS.map((item, index) => (

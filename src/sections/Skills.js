@@ -13,19 +13,19 @@ export default function Skills() {
   const activeGroup = SKILL_GROUPS.find((group) => group.id === activeGroupId) || SKILL_GROUPS[0];
 
   return (
-    <section id="skills" className="relative container mx-auto mt-16 pb-16 text-center sm:mt-10">
+    <section id="skills" className="relative mx-auto mt-16 w-full max-w-6xl px-4 pb-16 text-center sm:px-6 sm:mt-10">
       {/* Neon ambient glow */}
       <div className="neon-section-ambient pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_50%_0%,rgba(0,245,255,0.07),transparent_60%)]" />
 
       <HeadingAnimate>
-        <h2 className="mb-10 font-roboto text-3xl font-semibold text-primary-700 dark:text-primary-300 sm:text-4xl">
+        <h2 className="mb-10 font-lato text-2xl font-semibold text-primary-700 sm:text-3xl dark:text-primary-300 md:text-4xl">
           Skills &amp; Tech Stack
         </h2>
       </HeadingAnimate>
 
       <LoadAnimate amount={0}>
-        <div className="mx-auto max-w-5xl px-4">
-          <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:justify-center">
+        <div className="mx-auto max-w-5xl">
+          <div className="mb-6 flex flex-wrap justify-center gap-2 sm:gap-3">
             {SKILL_GROUPS.map(({ id, label, accent }) => {
               const isActive = id === activeGroupId;
 
@@ -35,7 +35,7 @@ export default function Skills() {
                   type="button"
                   onClick={() => setActiveGroupId(id)}
                   aria-pressed={isActive}
-                  className="group relative flex-1 rounded-2xl border border-gray-400/30 bg-[#161b2e]/80 px-5 py-4 text-center text-base font-medium text-slate-200 shadow-[0_0_0_1px_rgba(148,163,184,0.08)] backdrop-blur-sm transition duration-200 hover:-translate-y-0.5 hover:border-gray-500/60 hover:shadow-lg focus:outline-none"
+                  className="group relative w-full rounded-2xl border border-gray-400/30 bg-[#161b2e]/80 px-4 py-3 text-center font-medium text-slate-200 shadow-[0_0_0_1px_rgba(148,163,184,0.08)] backdrop-blur-sm transition duration-200 hover:-translate-y-0.5 hover:border-gray-500/60 hover:shadow-lg focus:outline-none sm:w-[calc(50%-0.375rem)] sm:py-4 sm:text-base md:w-auto md:flex-1"
                   style={{
                     borderColor: isActive ? accent : 'rgba(148,163,184,0.25)',
                     boxShadow: isActive ? `0 0 0 1px ${accent}40, 0 10px 30px rgba(15, 23, 42, 0.35)` : 'none',
@@ -43,7 +43,7 @@ export default function Skills() {
                   }}
                 >
                   <span
-                    className="block text-sm font-semibold uppercase tracking-[0.12em] sm:text-base"
+                    className="block text-xs font-semibold uppercase tracking-[0.12em] sm:text-sm md:text-base"
                     style={{ color: isActive ? accent : '#e2e8f0' }}
                   >
                     {label}

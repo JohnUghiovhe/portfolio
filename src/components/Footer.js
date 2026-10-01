@@ -9,7 +9,7 @@ export default function Footer() {
 
   return (
     <footer className="border-t border-gray-200 bg-neutral-50/80 dark:border-gray-700 dark:bg-[#0a1929]">
-      <div className="container mx-auto px-5 py-8">
+      <div className="container mx-auto max-w-6xl px-4 py-8 sm:px-6">
         {/* Social Links */}
         <div className="mb-6 flex flex-wrap justify-end gap-4">
           {FOOTER_SOCIAL_LINKS.map(({ icon, link, label }, index) => (

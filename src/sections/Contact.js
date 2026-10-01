@@ -51,20 +51,20 @@ export default function Contact() {
     }
   };
   return (
-    <section id="contact" className="relative container mx-auto mt-12 px-5 py-12">
+    <section id="contact" className="relative mx-auto mt-12 w-full max-w-6xl px-4 py-12 sm:px-6">
       {/* Neon ambient glow */}
       <div className="neon-section-ambient pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_50%_0%,rgba(255,107,0,0.07),transparent_55%)]" />
       <HeadingAnimate>
-        <h2 className="mb-12 text-center font-lato text-3xl font-semibold text-primary-700 dark:text-primary-300 sm:text-4xl">
+        <h2 className="mb-12 text-center font-lato text-2xl font-semibold text-primary-700 sm:text-3xl dark:text-primary-300 md:text-4xl">
           Get In Touch
         </h2>
       </HeadingAnimate>
 
       <LoadAnimate amount={0}>
-        <div className="mx-auto grid grid-cols-1 gap-8 lg:grid-cols-2 lg:max-w-4xl">
+        <div className="mx-auto grid grid-cols-1 gap-8 md:grid-cols-2 lg:max-w-4xl">
           {/* Left Column - Contact Info */}
-          <div className="rounded-lg border border-gray-200 bg-gray-50/50 p-8 dark:border-gray-700 dark:bg-[#132f4c]/50">
-            <h3 className="mb-3 font-lato text-2xl font-semibold text-gray-900 dark:text-white">
+          <div className="rounded-lg border border-gray-200 bg-gray-50/50 p-5 sm:p-8 dark:border-gray-700 dark:bg-[#132f4c]/50">
+            <h3 className="mb-3 font-lato text-xl font-semibold text-gray-900 sm:text-2xl dark:text-white">
               Let's Connect
             </h3>
             <p className="mb-8 text-sm leading-relaxed text-gray-700 dark:text-gray-300">
@@ -135,7 +135,7 @@ export default function Contact() {
           </div>
 
           {/* Right Column - Form */}
-          <div className="rounded-lg border border-gray-200 bg-gray-50/50 p-8 dark:border-gray-700 dark:bg-[#132f4c]/50">
+          <div className="rounded-lg border border-gray-200 bg-gray-50/50 p-5 sm:p-8 dark:border-gray-700 dark:bg-[#132f4c]/50">
             <form ref={formRef} onSubmit={sendEmail} className="space-y-6">
               {/* Name and Email Row */}
               <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">

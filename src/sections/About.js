@@ -31,59 +31,62 @@ export default function About() {
                             <div className="relative mb-8">
                                 <div className="absolute -left-4 top-0 h-1 w-1 rounded-full bg-[#1a5fff] shadow-lg shadow-[#1a5fff]/50" />
                                 <h3 className="text-xl font-bold text-neutral-100 md:text-2xl">
-                                    Engineering Backend Systems That Scale
+                                    Building Reliable Backend Systems
                                 </h3>
                             </div>
 
                             {/* About text */}
+
                             <div className="space-y-6">
                                 <p className="leading-relaxed text-neutral-300">
-                                    I'm John Ughiovhe, a Backend-focused Software Engineer who enjoys designing
-                                    secure, scalable, and maintainable systems that solve real-world problems.
-                                    I specialize in TypeScript, Node.js, and backend architecture, building APIs,
-                                    services, and application infrastructure that support reliable digital products.
+                                    I'm John Ughiovhe, a Backend Software Engineer focused on building
+                                    reliable APIs, backend services, and distributed systems that solve
+                                    real-world problems. I work primarily with TypeScript, Node.js,
+                                    NestJS, PostgreSQL, Redis, and cloud technologies, with a strong
+                                    interest in system reliability, maintainability, and scalable
+                                    architecture.
                                 </p>
 
                                 <p className="leading-relaxed text-neutral-300">
-                                    My engineering journey has evolved from learning the fundamentals to working
-                                    on collaborative, production-style systems. I've contributed to backend
-                                    products involving authentication, authorization, workflow engines, event
-                                    processing, real-time communication, background jobs, testing, and API
-                                    architecture. These experiences have taught me to think beyond simply making
-                                    software work—to designing systems that are easier to maintain, test, and scale.
+                                    My engineering work spans authentication and authorization, API
+                                    architecture, workflow orchestration, background processing,
+                                    transactional systems, caching, distributed locking, real-time
+                                    communication, and AI-powered backend services. I enjoy working on
+                                    problems where the challenge goes beyond making a feature work to
+                                    designing how the system behaves as it grows.
                                 </p>
 
                                 <p className="leading-relaxed text-neutral-300">
-                                    I graduated as the Best Learner from the Backend Engineering Diploma program
-                                    at AltSchool Africa and later completed TechCrush's Backend Engineering
-                                    Cohort 7. Along the way, I worked on collaborative products including Qpass,
-                                    a QR-based event registration and attendance platform, Rehearsify, a choir
-                                    repertoire planning and recommendation platform, and other backend systems
-                                    that challenged me to apply engineering principles in practical settings.
+                                    I've contributed to engineering teams and products including SEIL,
+                                    Distill AI, and Qpass, while independently building systems such as
+                                    Insighta Labs+ and a distributed Background Job Scheduler. These
+                                    projects have given me hands-on experience with multi-client backend
+                                    architecture, OAuth and RBAC, AI orchestration, job scheduling,
+                                    retries, distributed coordination, and operational visibility.
                                 </p>
 
                                 <p className="leading-relaxed text-neutral-300">
-                                    My experience at HNG Tech and with engineering teams such as SEIL further
-                                    exposed me to collaborative development, code reviews, product thinking, and
-                                    shipping software as part of a team. These experiences have strengthened my
-                                    ability to communicate technical ideas, work through complex problems with
-                                    other engineers, and take ownership of features from implementation to delivery.
+                                    I also hold a Backend Engineering Diploma from AltSchool Africa,
+                                    where I graduated as Best Learner, and completed TechCrush's Backend
+                                    Engineering Cohort 7. I've since expanded my engineering toolkit into
+                                    cloud computing, working with AWS, Docker, Kubernetes, Linux, and
+                                    CI/CD as I deepen my understanding of how backend systems are
+                                    deployed, operated, and maintained in production.
                                 </p>
 
                                 <p className="leading-relaxed text-neutral-300">
-                                    I'm currently expanding beyond backend development into cloud computing through
-                                    a new TechCrush cohort, with a growing interest in infrastructure, deployment,
-                                    and the systems that keep applications reliable in production. Alongside
-                                    engineering, my background in customer service operations continues to shape
-                                    how I approach software, keeping users, business processes, and measurable
-                                    outcomes at the centre of what I build.
+                                    My background in customer operations continues to influence how I
+                                    approach engineering. It taught me to look beyond the technical
+                                    implementation and consider the users, business processes, and
+                                    operational realities behind the software being built.
                                 </p>
 
                                 <p className="leading-relaxed text-neutral-300">
-                                    Whether I'm designing an API, modelling a business workflow, improving system
-                                    reliability, or exploring cloud infrastructure, I aim to build software that
-                                    is thoughtful, dependable, and useful. I'm always looking to learn, collaborate,
-                                    and contribute to products and engineering teams solving meaningful problems.
+                                    I'm particularly interested in backend engineering, distributed
+                                    systems, cloud infrastructure, platform engineering, and the
+                                    intersection of AI with reliable production systems. I enjoy
+                                    learning, collaborating with other engineers, and turning complex
+                                    requirements into dependable software.
                                 </p>
                             </div>
 
@@ -94,7 +97,7 @@ export default function About() {
                                 </div>
                                 <div className="rounded-lg bg-[#1a2f5a]/40 p-4">
                                     <p className="text-sm font-semibold text-[#00b4ff]">Focus</p>
-                                    <p className="mt-2 text-lg font-bold text-neutral-100">Backend Engineering • API Development • Distributed Systems • Scalable Architecture</p>
+                                    <p className="mt-2 text-lg font-bold text-neutral-100">Backend Engineering • Distributed Systems • Cloud Infrastructure • AI Systems</p>
                                 </div>
                             </div>
                         </div>

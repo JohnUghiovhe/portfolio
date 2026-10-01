@@ -32,9 +32,9 @@ export const FOOTER_SOCIAL_LINKS = [
   },
 ];
 
-export const HERO_TITLES = ['Backend Software Engineer', 'Designing systems that scale'];
+export const HERO_TITLES = ['Backend Software Engineer', 'Building Reliable Distributed Systems that Scale'];
 export const aboutParagraph =
-  'I build secure, scalable backend systems with TypeScript and Node.js, designing APIs, authentication flows, and backend infrastructure that deliver reliable, production-ready software.';
+  'I build reliable backend systems with TypeScript and Node.js, designing APIs, distributed workflows, and cloud-ready infrastructure that power maintainable, production-focused software.';
 
 export const contactEmail = 'ughiovhejohn@gmail.com';
 

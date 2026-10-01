@@ -9,12 +9,20 @@
  */
 export const EDUCATION = [
   {
-    program: 'Backend Engineering',
-    institution: 'TechCrush (Cohort 7)',
-    period: 'May 2026 – Present',
+    program: 'Cloud Computing',
+    institution: 'TechCrush',
+    period: 'September 2026 – Present',
     location: 'Remote',
     details:
-      'Advanced backend engineering program focused on scalable distributed systems, modern backend architecture, cloud-native development, and production software engineering.',
+      'Hands-on cloud engineering program covering AWS, Docker, Kubernetes, Linux, CI/CD, cloud deployment, containerization, and production infrastructure.',
+  },
+  {
+    program: 'Backend Engineering',
+    institution: 'TechCrush (Cohort 7)',
+    period: 'May 2026 – August 2026',
+    location: 'Remote',
+    details:
+      'Hands-on backend engineering program focused on backend architecture, API development, databases, collaborative software development, and production-oriented engineering practices.',
   },
   {
     program: 'Diploma in Backend Engineering',
@@ -22,7 +30,7 @@ export const EDUCATION = [
     period: 'March 2025 – February 2026',
     location: 'Remote',
     details:
-      'Graduated as Best Learner. Specialized in backend engineering with emphasis on API design, authentication, database systems, scalable architectures, and production-ready software development.',
+      'Graduated as Best Learner. Specialized in backend engineering with emphasis on API design, authentication, database systems, backend architecture, and production-ready software development.',
   },
   {
     program: 'B.Sc. (Ed.) in Technical Education',
@@ -30,7 +38,7 @@ export const EDUCATION = [
     period: '2013 – 2017',
     location: 'Edo, Nigeria',
     details:
-      'Bachelor’s degree in Technical Education, building strong foundations in analytical thinking, technical instruction, and structured problem solving.',
+      'Bachelor’s degree in Technical Education, developing foundations in analytical thinking, technical instruction, and structured problem solving.',
   },
 ];
 
@@ -46,11 +54,27 @@ export const EDUCATION = [
  */
 export const CERTIFICATIONS = [
   {
+    title: 'Backend Engineering Cohort 7',
+    issuer: 'TechCrush',
+    issued: 'August 2026',
+    credentialType: 'Program Certificate',
+    note: 'Completed an intensive backend engineering program focused on modern backend development and production-oriented engineering practices.',
+    skills: [
+      'Node.js',
+      'Express.js',
+      'TypeScript',
+      'REST APIs',
+      'PostgreSQL',
+      'Backend Architecture',
+      'Software Engineering',
+    ],
+  },
+  {
     title: 'HNG Internship 14 Backend Finalist',
     issuer: 'HNG Tech',
     issued: 'June 2026',
     credentialType: 'Internship Recognition',
-    note: 'Finished as a Top 140 finalist out of 22,487 participants in the highly competitive Backend Engineering track.',
+    note: 'Finished among the Top 140 participants out of 22,487 in the Backend Engineering track.',
     skills: [
       'Backend Engineering',
       'API Development',
@@ -63,17 +87,30 @@ export const CERTIFICATIONS = [
   {
     title: 'Backend Engineering Diploma',
     issuer: 'AltSchool Africa',
-    issued: 'March 2026',
+    issued: 'February 2026',
     credentialType: 'Program Certificate',
-    note: 'Recognized as Best Learner in the cohort.',
-    skills: ['Node.js', 'Express.js', 'API Design', 'Redis', 'Authentication', 'Database Architecture', 'System Design'],
+    note: 'Completed the Backend Engineering Diploma and graduated as Best Learner.',
+    skills: [
+      'Node.js',
+      'Express.js',
+      'API Design',
+      'Redis',
+      'Authentication',
+      'Database Architecture',
+      'System Design',
+    ],
   },
   {
-    title: 'Project Management Professional (PMP)',
-    issuer: 'PMI',
+    title: 'Project Management Professional',
+    issuer: 'Project and Safety Management Institute',
     issued: '2019',
     credentialType: 'Professional Certificate',
-    note: 'Demonstrated expertise in project management principles and practices.',
-    skills: ['Risk Management', 'Stakeholder Communication', 'Project Planning'],
+    note: 'Professional training in project management principles and practices.',
+    skills: [
+      'Project Planning',
+      'Risk Management',
+      'Stakeholder Communication',
+      'Project Coordination',
+    ],
   },
 ];

@@ -7,14 +7,21 @@ import LoadAnimate from '../components/animate/LoadAnimate';
 
 const EXPERIENCES = [
   {
+    role: 'Backend Engineer, Young Accelerator Program',
+    company: 'Peerless SGS',
+    period: 'October 2026 – Present',
+    location: 'Lagos, Nigeria',
+  },
+
+  {
     role: 'Backend Software Engineer',
     company: 'SEIL',
-    period: 'June 2026 – Present',
+    period: 'June 2026 – September 2026',
     location: 'Remote',
     highlights: [
-      'Designed and shipped 10+ production backend features, including Google OAuth authentication, Funnel Generation & Display APIs, notification services, profile management, and funnel stage progression workflows.',
-      'Improved backend maintainability by introducing database migrations, Swagger documentation, automated tests, and consistent API design patterns.',
-      'Collaborated with cross-functional engineers to evolve SEIL from its internship MVP into a production-focused platform serving growing businesses.',
+      'Designed and shipped 10+ backend features spanning Google OAuth authentication, funnel generation and retrieval APIs, notifications, profile management, and funnel-stage progression workflows.',
+      'Improved backend maintainability through database migrations, Swagger documentation, automated testing, and consistent API design patterns.',
+      'Collaborated with engineers across product development to evolve SEIL from an internship MVP into a production-focused platform.',
     ],
   },
 
@@ -24,33 +31,33 @@ const EXPERIENCES = [
     period: 'April 2026 – June 2026',
     location: 'Remote',
     highlights: [
-      'Selected into the HNG Internship 14 Backend track and advanced to the Top 140 finalists from over 22,000 participants.',
-      'Delivered production-ready backend functionality while collaborating in agile teams using Git workflows, peer reviews, and iterative feature delivery.',
-      'Successfully transitioned into continued product development on SEIL following the internship.',
+      'Selected for the HNG Internship 14 Backend track and advanced to the Top 140 finalists from 22,487 participants.',
+      'Built and shipped backend functionality in collaborative engineering teams using Git workflows, pull requests, peer reviews, and iterative development.',
+      'Transitioned into continued product development on SEIL following completion of the internship.',
     ],
   },
 
   {
-    role: 'Backend Software Engineer (Hackathon Team)',
+    role: 'Backend Software Engineer',
     company: 'Distill AI',
-    period: 'May 2026 – Present',
+    period: 'May 2026 – June 2026',
     location: 'Remote',
     highlights: [
-      'Engineered orchestration services for multi-stage AI document extraction with resumable processing pipelines.',
-      'Built live execution trace streaming, intelligent request classification, explainable routing, and confidence-scoring services for AI workflows.',
-      'Implemented configurable policy and pricing engines alongside authenticated configuration management and tool registry infrastructure.',
+      'Engineered orchestration services for multi-stage AI document processing with resumable workflows.',
+      'Built live execution trace streaming, request classification, explainable routing, and confidence-scoring services for AI workflows.',
+      'Implemented configurable policy and pricing rules alongside authenticated configuration and tool-registry infrastructure.',
     ],
   },
 
   {
-    role: 'Customer Service Manager (Operations & Systems Thinking)',
+    role: 'Customer Service Manager',
     company: 'KIJ Villa',
-    period: 'May 2024 – Present',
+    period: 'May 2024 – September 2026',
     location: 'Lagos, Nigeria',
     highlights: [
-      'Lead customer service operations while improving internal workflows, service delivery, and stakeholder collaboration.',
-      'Applied systems thinking and analytical problem-solving to streamline operations and enhance the customer experience.',
-      'Partnered across teams to identify operational bottlenecks and implement scalable process improvements.',
+      'Led customer service operations while improving internal workflows, service delivery, and stakeholder collaboration.',
+      'Used analytical problem-solving to identify operational bottlenecks, improve processes, and strengthen the customer experience.',
+      'Coordinated across teams and communicated operational insights to management to support service and process improvements.',
     ],
   },
 ];
